@@ -1,3 +1,57 @@
+@font-face {
+    font-family: 'Gabarito';
+    src: url('./font/Gabarito-Black.woff2') format('woff2'),
+        url('./font/Gabarito-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('./font/Gabarito-ExtraBold.woff2') format('woff2'),
+        url('./font/Gabarito-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('./font/Gabarito-Bold.woff2') format('woff2'),
+        url('./font/Gabarito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('./font/Gabarito-Regular.woff2') format('woff2'),
+        url('./font/Gabarito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('./font/Gabarito-Medium.woff2') format('woff2'),
+        url('./font/Gabarito-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('./font/Gabarito-SemiBold.woff2') format('woff2'),
+        url('./font/Gabarito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-size: 17px;
 }

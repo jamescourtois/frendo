@@ -26,8 +26,8 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
-    <body x-data="{ navOpen: false, dark: false }" :class="navOpen ? 'overflow-hidden fixed' : ''" class="flex flex-col justify-between min-h-screen bg-white text-gray-800 leading-normal font-sans">
-        <header class="fixed z-[99] w-full flex items-center backdrop-blur-lg bg-white/70 h-20" role="banner">
+    <body x-data="{ navOpen: false, dark: false }" :class="navOpen ? 'overflow-hidden' : ''" class="flex flex-col justify-between min-h-screen bg-white text-gray-800 leading-normal font-sans">
+        <header class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
@@ -38,8 +38,6 @@
                 </div>
 
                 <div id="vue-search" class="flex flex-1 justify-end items-center">
-                    <!-- @include('_components.search') -->
-
                     @include('_nav.menu')
 
                     @include('_nav.menu-toggle')
@@ -49,11 +47,11 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto pt-28 pb-16 px-6">
+        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto pt-28 pb-6 px-6">
             @yield('body')
         </main>
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+        <footer class="bg-black text-white text-center text-sm py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center list-none">
                 <li class="md:mr-2">
                     &copy; Frendo Web Development {{ date('Y') }}.
