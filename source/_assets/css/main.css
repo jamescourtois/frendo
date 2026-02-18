@@ -1,7 +1,14 @@
 @import "tailwindcss";
+/* 
+@theme {
+	--color-red: red;
+	--color-green: green;
+	--color-blue: blue;
+} */
 
 @import './base.css' layer(components);
 @import './blog.css' layer(components);
+@import './hamburgers.css' layer(components);
 
 @layer base {
   :root {
