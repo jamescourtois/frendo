@@ -26,12 +26,12 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
-    <body x-data="{ navOpen: false, dark: false }" :class="navOpen ? 'overflow-hidden' : ''" class="flex flex-col justify-between min-h-screen bg-white text-gray-800 leading-normal font-sans">
-        <header class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
+    <body x-data="{ navOpen: false, dark: false }" :class="[navOpen ? 'overflow-hidden' : '', dark ? 'bg-black' : 'bg-white']" class="flex flex-col justify-between min-h-screen  text-gray-800 leading-normal font-sans">
+        <header :class="dark ? 'bg-black/70' : 'bg-white/70'" class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3" src="/assets/img/frendo_logo.svg" alt="{{ $page->siteName }} logo" />
+                        <img class="h-8 md:h-10 mr-3":src="dark ? '/assets/img/frendo_logo_dark.svg' : '/assets/img/frendo_logo.svg'" alt="{{ $page->siteName }} logo" />
 
                         <span class="sr-only">{{ $page->siteName }}</span>
                     </a>
@@ -47,14 +47,14 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto pt-28 pb-6 px-6">
+        <main role="main" class="flex-auto w-full container mx-auto pt-28 px-4 pb-6">
             @yield('body')
         </main>
 
-        <footer class="bg-black text-white text-center text-sm py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-none">
+        <footer class="bg-black text-gray-400 text-center text-sm py-4" role="contentinfo">
+            <ul class="flex flex-col font-normal md:flex-row justify-center list-none">
                 <li class="md:mr-2">
-                    &copy; Frendo Web Development {{ date('Y') }}.
+                    <span class="text-xl inline-block translate-y-[4px]">&copy;</span> <a class="text-base text-blue-500" href="{{ $page->baseUrl }}" class="font-extrabold">Frendo</a> Web Development {{ date('Y') }}.
                 </li>
             </ul>
         </footer>

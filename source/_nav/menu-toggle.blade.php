@@ -6,5 +6,5 @@
       <div class="hamburger-inner"></div>
     </div>
   </div>
-	<span class="sr-only">Main Menu</span>
+	<span class="sr-only" x-text="navOpen ? 'Close Main Menu' : 'Open Main Menu'"></span>
 </button>

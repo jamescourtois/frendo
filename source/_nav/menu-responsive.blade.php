@@ -2,14 +2,22 @@
 	x-cloak
 	:class="navOpen ? 'block left-0 opacity-100' : 'left-[100vw] opacity-0 pointer-events-none'" 
 	id="js-nav-menu" 
-	class="w-full h-full inset-0 duration-300 ease-out overscroll-contain flex items-center justify-center py-24 px-2 bg-white fixed z-[98]">
-    <ul class="list-none m-0 p-0 " :class="navOpen ? 'opacity-100 duration-800' : 'opacity-0'">
+	:class="dark ? 'bg-black/70' : 'bg-white/70'"
+	class="w-full h-full inset-0 duration-150 ease-out overscroll-contain flex justify-center flex-wrap pt-32 pb-8 px-2 backdrop-blur-md fixed z-[98]">
+    <ul class="list-none w-full text-center flex flex-col m-0 p-0 " :class="navOpen ? 'opacity-100 duration-400' : 'opacity-0'">
 			<li class="pl-4">
 				<a
 				title="{{ $page->siteName }} About"
 				href="/"
 				class="block mt-0 mb-4 text-4xl no-underline {{ $page->getPath() == '' ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
 				>Home </a>
+			</li>
+			<li class="pl-4">
+				<a
+				title="{{ $page->siteName }} Services"
+				href="/services"
+				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/services') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
+				>Services </a>
 			</li>
 			<li class="pl-4">
 				<a
@@ -20,17 +28,23 @@
 			</li>
 			<li class="pl-4">
 				<a
+				title="{{ $page->siteName }} Blog"
+				href="/blog"
+				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/blog') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
+				>Blog</a>
+			</li>
+			<li class="pl-4">
+				<a
 				title="{{ $page->siteName }} Contact"
 				href="/contact"
 				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/contact') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
 				>Contact</a>
 			</li>
-			<li class="pl-4">
-					<a
-							title="{{ $page->siteName }} Blog"
-							href="/blog"
-							class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/blog') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
-					>Blog</a>
-			</li>
     </ul>
+
+		
+			<button class="self-end" @click="dark = !dark" aria-name="Enable dark theme">
+				<span x-text="dark ? 'Switch to Light Mode' : 'Switch to Dark Mode'">Dark theme</span>
+			</button>
+		
 </nav>
