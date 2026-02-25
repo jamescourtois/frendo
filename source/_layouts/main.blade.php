@@ -26,7 +26,7 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
-    <body x-data="{ navOpen: false, dark: false }" :class="[navOpen ? 'overflow-hidden' : '', dark ? 'bg-black' : 'bg-white']" class="flex flex-col justify-between min-h-screen  text-gray-800 leading-normal font-sans">
+    <body x-data="{ navOpen: false, dark: false }" :class="[navOpen ? 'overflow-hidden' : '', dark ? 'bg-black text-gray-100' : 'bg-white text-gray-800']" class="flex flex-col justify-between min-h-screen leading-normal font-sans">
         <header :class="dark ? 'bg-black/70' : 'bg-white/70'" class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">

@@ -1,8 +1,7 @@
 <nav
 	x-cloak
-	:class="navOpen ? 'block left-0 opacity-100' : 'left-[100vw] opacity-0 pointer-events-none'" 
+	:class="[navOpen ? 'block left-0 opacity-100' : 'left-[100vw] opacity-0 pointer-events-none', dark ? 'bg-black/70' : 'bg-white/70']" 
 	id="js-nav-menu" 
-	:class="dark ? 'bg-black/70' : 'bg-white/70'"
 	class="w-full h-full inset-0 duration-150 ease-out overscroll-contain flex justify-center flex-wrap pt-32 pb-8 px-2 backdrop-blur-md fixed z-[98]">
     <ul class="list-none w-full text-center flex flex-col m-0 p-0 " :class="navOpen ? 'opacity-100 duration-400' : 'opacity-0'">
 			<li class="pl-4">
