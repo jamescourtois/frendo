@@ -7,5 +7,11 @@ description: What it is we say we do here
 @section('body')
     <h1>Services</h1>
 
-    <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum officia dolorem accusantium veniam quae, possimus, temporibus explicabo magni voluptas. fugit natus deserunt atque veniam!</p>
+    <ul>
+			<li>Websites</li>
+			<li>E-Commerce</li>
+			<li>Web Apps</li>
+			<li>Digital Consulting</li>
+			<li>AI Code Cleanup</li>
+		</ul>
 @endsection

@@ -26,12 +26,12 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
-    <body x-data="{ navOpen: false, dark: false }" :class="[navOpen ? 'overflow-hidden' : '', dark ? 'bg-black text-gray-100' : 'bg-white text-gray-800']" class="flex flex-col justify-between min-h-screen leading-normal font-sans">
-        <header :class="dark ? 'bg-black/70' : 'bg-white/70'" class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
+    <body x-data="{ navOpen: false }" :class="[navOpen ? 'overflow-hidden' : '', $store.theme.dark ? 'bg-black text-gray-100' : 'bg-white text-gray-800']" class="flex flex-col justify-between min-h-screen leading-normal font-sans">
+        <header :class="$store.theme.dark ? 'bg-black/70' : 'bg-white/70'" class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3":src="dark ? '/assets/img/frendo_logo_dark.svg' : '/assets/img/frendo_logo.svg'" alt="{{ $page->siteName }} logo" />
+                        <img class="h-8 md:h-10 mr-3":src="$store.theme.dark ? '/assets/img/frendo_logo_dark.svg' : '/assets/img/frendo_logo.svg'" alt="{{ $page->siteName }} logo" />
 
                         <span class="sr-only">{{ $page->siteName }}</span>
                     </a>
@@ -58,6 +58,8 @@
                 </li>
             </ul>
         </footer>
+				<div x-init="setTimeout(() => $store.theme.closeIntro(), 3000)" :class="$store.theme.showIntro ? 'fixed inset-0 z-[99] bg-red-500' : 'hidden pointer-events-none' " id="intro" class="intro"></div>
         @stack('scripts')
     </body>
+
 </html>
