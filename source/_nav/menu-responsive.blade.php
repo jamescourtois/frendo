@@ -51,8 +51,14 @@
     </ul>
 
 		
-			<button class="self-end" @click="$store.theme?.toggle()" aria-name="Toggle dark theme">
-				<span x-text="$store.theme?.dark ? 'Switch to Light Mode' : 'Switch to Dark Mode'">Dark theme</span>
-			</button>
+			<div class="self-end flex flex-col items-center justify-center gap-4">
+				<button class="text-xs" @click="$store.theme?.toggle()" aria-label="Toggle dark theme">
+					<span x-text="$store.theme?.dark ? 'Turn on the lights' : 'Turn out the lights'">Dark theme</span>
+				</button>
+				<div class="toggle">
+					<input @click="$store.theme?.toggle()" :checked="!$store.theme?.dark" type="checkbox"/>
+				<label></label>
+			</div>
+</div>
 		
 </nav>
