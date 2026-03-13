@@ -6,46 +6,46 @@
     <ul class="list-none w-full text-center flex flex-col m-0 p-0 " :class="navOpen ? 'opacity-100 duration-400' : 'opacity-0'">
 			<li class="pl-4">
 				<a
-				title="{{ $page->siteName }} About"
+				title="<?php echo e($page->siteName); ?> About"
 				href="/"
-				class="block mt-0 mb-4 text-4xl no-underline {{ $page->getPath() == '' ? 'active text-blue-500' : 'hover:text-blue-500' }}"
+				class="block mt-0 mb-4 text-4xl no-underline <?php echo e($page->getPath() == '' ? 'active text-blue-500' : 'hover:text-blue-500'); ?>"
 				>Home </a>
 			</li>
 			<li class="pl-4">
 				<a
-				title="{{ $page->siteName }} Services"
+				title="<?php echo e($page->siteName); ?> Services"
 				href="/services"
-				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/services') ? 'active text-blue-500' : 'hover:text-blue-500' }}"
+				class="block mt-0 mb-4 text-4xl no-underline <?php echo e($page->isActive('/services') ? 'active text-blue-500' : 'hover:text-blue-500'); ?>"
 				>Services </a>
 			</li>
 
 			</li>
 			<li class="pl-4">
 				<a
-				title="{{ $page->siteName }} Work"$
+				title="<?php echo e($page->siteName); ?> Work"$
 				href="/work"
-				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/work') ? 'active text-blue-500' : 'hover:text-blue-500' }}"
+				class="block mt-0 mb-4 text-4xl no-underline <?php echo e($page->isActive('/work') ? 'active text-blue-500' : 'hover:text-blue-500'); ?>"
 				>Work</a>
 			</li>
 			<li class="pl-4">
 				<a
-				title="{{ $page->siteName }} About"$
+				title="<?php echo e($page->siteName); ?> About"$
 				href="/about"
-				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/about') ? 'active text-blue-500' : 'hover:text-blue-500' }}"
+				class="block mt-0 mb-4 text-4xl no-underline <?php echo e($page->isActive('/about') ? 'active text-blue-500' : 'hover:text-blue-500'); ?>"
 				>About</a>
 			</li>
 			<li class="pl-4">
 				<a
-				title="{{ $page->siteName }} Blog"
+				title="<?php echo e($page->siteName); ?> Blog"
 				href="/blog"
-				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/blog') ? 'active text-blue-500' : 'hover:text-blue-500' }}"
+				class="block mt-0 mb-4 text-4xl no-underline <?php echo e($page->isActive('/blog') ? 'active text-blue-500' : 'hover:text-blue-500'); ?>"
 				>Blog</a>
 			</li>
 			<li class="pl-4">
 				<a
-				title="{{ $page->siteName }} Contact"
+				title="<?php echo e($page->siteName); ?> Contact"
 				href="/contact"
-				class="block mt-0 mb-4 text-4xl no-underline {{ $page->isActive('/contact') ? 'active text-blue-500' : 'hover:text-blue-500' }}"
+				class="block mt-0 mb-4 text-4xl no-underline <?php echo e($page->isActive('/contact') ? 'active text-blue-500' : 'hover:text-blue-500'); ?>"
 				>Contact</a>
 			</li>
     </ul>
@@ -62,3 +62,4 @@
 </div>
 		
 </nav>
+<?php /**PATH /Users/jamescourtois/Sites/frendo/source/_nav/menu-responsive.blade.php ENDPATH**/ ?>

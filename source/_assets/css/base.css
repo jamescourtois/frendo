@@ -256,3 +256,30 @@ pre {
     top: 10px;
     border: 2px dashed #FFF;
 }
+
+.btn-special {
+	background: linear-gradient(to right, #3a47d5, #FCEE21, #00A8C5, #D9E021);
+	background-size: 350% 100%;
+
+	transition: all .4s ease-in-out;
+}
+
+.btn-special:hover {
+	background-position: 100% 0;
+}
+
+.btn:hover {
+	animation-name: flow;
+	animation-duration: 500ms;
+	animation-timing-function: linear;
+}
+
+@keyframes flow {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100%;
+	}
+}
