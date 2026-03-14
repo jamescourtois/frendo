@@ -68,7 +68,7 @@
 				<div id="intro"  class="intro fixed inset-0 z-[99] bg-black flex items-center justify-center">
 					<div>
 						<div class="animate-f relative w-[300px] h-[300px]">
-							<div class="absolute inset-0 top-[60px] left-[60px]">
+							<div class="absolute top-[60px] left-[60px]">
 								<div class="absolute gradient-1"></div>
 								<div class="absolute gradient-2"></div>
 								<div class="absolute gradient-3"></div>
@@ -77,7 +77,7 @@
 								<div class="absolute backfill-3"></div>
 							</div>
 							<svg
-								class="absolute top-0 left-0 z-[-1] shield" 
+								class="absolute top-0 left-0 shield z-[-1]" 
 								width="100%"
 								height="100%" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
@@ -88,6 +88,8 @@
 									d="M202.962,-0l46.786,47.168l-0,53.738l-148.481,148.292l-53.409,0l-47.858,-49.003l0,-153.16l48.279,-47.035l154.683,-0Zm-153.056,4l-45.906,44.723l-0,149.844l45.542,46.633l50.069,-0l146.136,-145.951l-0,-50.432l-44.452,-44.816l-151.39,0Z"
 									style="fill:#fff;" />
 							</svg>
+							<div class="shield-cover absolute bg-black"></div>
+							<div class="shield-cover-2 absolute bg-black"></div>
 						</div>
 					</div>
 
