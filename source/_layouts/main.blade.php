@@ -34,7 +34,7 @@
         <header :class="$store.theme?.dark ? 'bg-black/70' : 'bg-white/70'" class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
+                    <a href="/" @click="$store.theme.showIntro = true" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <div class="flex w-[139px] h-[32px]">
 													@include('_layouts.logo')
 												</div>
@@ -57,15 +57,16 @@
             @yield('body')
         </main>
 
-        <footer class="bg-black text-gray-400 text-center text-sm py-4" role="contentinfo">
+        <footer :class="$store.theme?.dark ? 'bg-black text-gray-400' : 'bg-white text-gray-700'" class="text-center text-sm py-4" role="contentinfo">
             <ul class="flex flex-col font-normal md:flex-row justify-center list-none">
                 <li class="md:mr-2">
                     <span class="text-xl inline-block translate-y-[4px]">&copy;</span> <a class="text-base text-blue-500" href="{{ $page->baseUrl }}" class="font-extrabold">Frendo</a> Web Development {{ date('Y') }}.
                 </li>
             </ul>
         </footer>
-				<!-- <div x-init="setTimeout(() => $store.theme?.closeIntro(), 3000)" :class="$store.theme?.showIntro ? 'fixed inset-0 z-[99] bg-red-500' : 'hidden pointer-events-none' " id="intro" class="intro"></div> -->
-				<div id="intro"  class="intro fixed inset-0 z-[99] bg-black flex items-center justify-center">
+				
+<!--  x-init="setTimeout(() => $store.theme?.closeIntro(), 5000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  -->
+				<div  id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 5000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex items-center justify-center">
 					<div>
 						<div class="animate-f relative w-[300px] h-[300px]">
 							<div class="absolute top-[60px] left-[60px]">
