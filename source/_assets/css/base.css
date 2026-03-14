@@ -283,3 +283,146 @@ pre {
 		background-position: 100%;
 	}
 }
+
+.backfill-1 {
+	width: 180px;
+	height: 60px;
+	background: white;
+}
+
+.gradient-1 {
+	width: 180px;
+	height: 60px;
+	background: blue;
+	background: linear-gradient(90deg, cyan, blue);
+}
+
+.backfill-2 {
+	width: 60px;
+	height: 180px;
+	background: white;
+	
+}
+
+.gradient-2 {
+	width: 60px;
+	height: 180px;
+	background: red;
+	background: linear-gradient(0deg, red, orange);
+}
+
+.backfill-3 {
+	width: 120px;
+	height: 120px;
+	background: white;
+	
+}
+
+.gradient-3 {
+	width: 120px;
+	height: 120px;
+	background: linear-gradient(-45deg, green, yellow);
+}
+
+.backfill-1,
+.backfill-2,
+.backfill-3 {
+	/* change to normal on white bg overlay on black bg  */
+	mix-blend-mode: overlay;
+	z-index: -1;
+}
+
+.gradient-1,
+.gradient-2,
+.gradient-3 {
+	mix-blend-mode: screen;
+	z-index: 1;
+}
+
+.gradient-1,
+.backfill-1 {
+	animation: 3s expand-1 ease-out;
+	
+}
+
+.gradient-2,
+.backfill-2 {
+	animation: 2s expand-2 ease-out;
+}
+
+.gradient-3,
+.backfill-3 {
+	animation: 2s expand-3 ease-out;
+}
+
+.shield {
+	animation: 2s reveal-1 ease-out;
+}
+
+@keyframes expand-1 {
+	0% {
+		width: 0px;
+		height: 60px;
+		top: 0px;
+		left: 180px;
+		opacity: 0;
+	}
+
+	25% {
+		width: 180px;
+		height: 60px;
+		top: 0px;
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes expand-2 {
+	0% {
+		width: 60px;
+		height: 0px;
+		/* top: 180px; */
+		left: 0px;
+		opacity: 0;
+	}
+
+	45% {
+		width: 60px;
+		height: 180px;
+		top: 0px;
+		left: 0px;
+		opacity: 1;
+	}
+
+}
+
+@keyframes expand-3 {
+	0% {
+		width: 0px;
+		height: 0px;
+		top: 120px;
+		left: 120px;
+		opacity: 0;
+	}
+
+	65% {
+		width: 120px;
+		height: 120px;
+		top: 0px;
+		left: 0px;
+		opacity: 1;
+	}
+
+}
+
+@keyframes reveal-1 {
+	0% {
+		opacity: 0;
+	}
+	65% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
