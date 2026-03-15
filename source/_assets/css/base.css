@@ -258,7 +258,7 @@ pre {
 }
 
 .btn-special {
-	background: linear-gradient(to right, mediumblue, blue, cyan, chartreuse, green);
+	background: linear-gradient(to right, mediumblue, blue, cyan, chartreuse, rgb(0, 174, 0), green);
 	background-size: 350% 100%;
 	transition: all 1s ease-in-out;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
