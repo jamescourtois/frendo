@@ -6,24 +6,31 @@ description: Let's keep in touch
 
 @section('body')
 	<div class="flex flex-col items-center justify-center text-center">
-			<h1 class="uppercase text-xs m-0 font-normal tracking-widest">Contact Frendo</h1>
+			<h1 class="uppercase text-xs m-0 font-normal tracking-widest">Contact Card</h1>
 			<h2 class="mt-3 leading-[2.8rem] text-5xl mb-5">Let's keep in touch.</h2>
-			
 			
 			<a href="{{ $page->baseUrl . '/frendo.vcf' }}"
 				download="frendo.vcf"
 				type="text/vcard"
 				target="_blank"
-				class="mt-4 mb-2 text-xl px-5 py-3 btn-special text-white rounded-full font-bold">
-				Add Frendo as a Contact
+				x-data="{clicked:false}"
+				@click="clicked = true"
+				x-text="clicked ? 'Saved!' : 'Add Frendo as a Contact '"
+				class="min-w-[260px] mt-4 mb-2 text-xl px-5 py-3 btn-special text-white rounded-full font-bold">
 		</a>
-		<span class="text-xs text-gray-500">(Save Frendo.vcf contact card to your device)</span>
+		<span class="text-xs text-gray-500">(Save the Frendo.vcf contact card to your device.)</span>
 			
-		<ul class="list-none  text-xl font-bold mt-8">
-			<li>(314) 249-4760</li>
-			<li>james@frendo.dev</li>
+		<ul :class="$store.theme.dark ? 'bg-gray-800' : 'bg-blue-100'" class="list-none text-3xl font-bold mt-8 p-8">
+			<li><a class="active-text-green-500" href="tel:+13142494760">(314) 249-4760</a></li>
+			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
-			
+
+		<ul class="list-none">
+			<li class="uppercase text-xs m-0 font-normal tracking-widest mb-3">Get Acquainted</li>
+			<li class="mb-2"><a href="/services">View a full list of services</a></li>
+			<li class="mb-2"><a href="/about">Learn more about Frendo</a></li>
+			<li class="mb-2"><a href="/blog">Check out the blog</a></li>
+		</ul>
 	</div>
 
 @endsection

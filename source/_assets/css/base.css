@@ -258,10 +258,10 @@ pre {
 }
 
 .btn-special {
-	background: linear-gradient(to right, #3a47d5, #FCEE21, #00A8C5, #D9E021);
+	background: linear-gradient(to right, mediumblue, blue, cyan, chartreuse, green);
 	background-size: 350% 100%;
-
-	transition: all .4s ease-in-out;
+	transition: all 1s ease-in-out;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
 }
 
 .btn-special:hover {
