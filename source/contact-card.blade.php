@@ -15,12 +15,12 @@ description: Let's keep in touch
 				target="_self"
 				@click="clicked = true"
 				x-text="clicked ? 'Frendo.vcf Saved!' : 'Add Frendo as a Contact'"
-				class="min-w-[260px] mt-4 mb-2 text-xl px-5 py-3 btn-special text-white rounded-full font-bold">
+				class="min-w-[260px] mt-4 mb-2 text-xl px-5 py-3 btn-special text-white rounded-full font-bold cursor-pointer">
 		</a>
 		<span x-text="clicked ? 'Check your downloads folder and open the contact card.' : 'Save the Frendo.vcf contact card to your device.'" class="text-xs text-gray-500"></span>
 			
 		<ul :class="$store.theme.dark ? 'bg-gray-800' : 'bg-blue-100'" class="list-none text-3xl font-bold mt-8 p-8">
-			<li><a class="active-text-green-500" href="tel:+13142494760">(314) 249-4760</a></li>
+			<li><a class="active-text-green-500" href="tel:+13146687244">(314) 668-7244</a></li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 

@@ -64,9 +64,7 @@
                 </li>
             </ul>
         </footer>
-				
-<!--  x-init="setTimeout(() => $store.theme?.closeIntro(), 5000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  -->
-				<div  id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 5000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex items-center justify-center">
+				<div x-cloak id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 5000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex items-center justify-center">
 					<div>
 						<div class="animate-f relative w-[300px] h-[300px]">
 							<div class="absolute top-[60px] left-[60px]">
