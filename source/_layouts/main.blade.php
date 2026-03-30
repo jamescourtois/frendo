@@ -31,7 +31,8 @@
     </head>
 
     <body x-cloak x-data="{ navOpen: false }" :class="[navOpen ? 'overflow-hidden' : '', $store.theme?.dark ? 'bg-black text-gray-100' : 'bg-white text-gray-800']" class="flex flex-col justify-between min-h-screen leading-normal font-sans">
-        <header :class="$store.theme?.dark ? 'bg-black/70' : 'bg-white/70'" class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
+      
+			<header :class="$store.theme?.dark ? 'bg-black/70' : 'bg-white/70'" class="fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" @click="$store.theme.showIntro = true" title="{{ $page->siteName }} home" class="inline-flex items-center">

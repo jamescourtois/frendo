@@ -13,14 +13,14 @@ description: Get in touch with us
 <div class="flex flex-col lg:flex-row items-start justify-start gap-8">
 	<div class="w-full lg:w-1/3 lg:order-2 flex flex-wrap justify-around items-start lg:justify-between">
 		<p class="mb-8 mt-0 hidden sm:block">
-				Anything is possible and everything starts with a simple conversation. Don't hesitate to reach out and learn how <span class="font-extrabold">Frendo</span> can elevate your web presence!
+				Big ideas start with small talk. Don't hesitate to reach out and learn how <span class="font-extrabold">Frendo</span> can elevate and enlighten your web presence.
 		</p>
 		<ul class="list-none text-center md:text-left m-0 text-xl"> <!-- :class="$store.theme.dark ? 'bg-gray-800' : 'bg-blue-100'"  -->
-			<li :class="$store.theme.dark ? 'text-gray-300' : 'text-gray-900'"  class="text-sm uppercase">Call or text</li>
+			<li :class="$store.theme.dark ? 'text-gray-300' : 'text-gray-900'"  class="uppercase text-xs m-0 font-normal tracking-widest">Call or text</li>
 			<li class="mb-2"><a href="tel:+13146687244">(314) 668-7244</a></li>
 		</ul>
 		<ul class="list-none text-center md:text-left m-0 text-xl"> <!-- :class="$store.theme.dark ? 'bg-gray-800' : 'bg-blue-100'"  -->
-			<li :class="$store.theme.dark ? 'text-gray-300' : 'text-gray-900'"  class="text-sm uppercase">Keep it old school</li>
+			<li :class="$store.theme.dark ? 'text-gray-300' : 'text-gray-900'"  class="uppercase text-xs m-0 font-normal tracking-widest">Send a note</li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 	</div>
@@ -85,7 +85,7 @@ description: Get in touch with us
 						>
 				</div>
 		</form>
-		<span class="inline-block mt-8 text-xs leading-[1rem]">Frendo never sells or shares your form data. All form data is deleted after 90 days. Entries are handled securely via <a href="https://form-data.com">form-data.com</a>.</span>
+		<span class="inline-block mt-8 text-xs leading-[1rem]">Frendo never sells or shares your data. All form data is deleted after 90 days. Entries are handled securely via <a href="https://form-data.com">form-data.com</a>.</span>
 	</div>
 </div>
 @stop

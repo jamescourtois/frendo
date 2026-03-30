@@ -1,4 +1,5 @@
 <button
+	class="lg:hidden"
 	aria-label="Toggle the main menu" 
 	@click="navOpen = !navOpen">
 	<div class="w-[70px] h-[55px] hamburger hamburger--arrow-r" :class="navOpen ? 'is-active' : ''">
