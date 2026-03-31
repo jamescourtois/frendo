@@ -16,6 +16,9 @@ return [
             'sort' => '-date',
             'path' => 'blog/{filename}',
         ],
+				'services' => [
+            'path' => 'services/{filename}',
+        ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {
