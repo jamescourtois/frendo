@@ -15,7 +15,7 @@
 				<button
 				title="Services"
 				@click="subNavOpen = !subNavOpen"
-				class="block w-full py-4 text-center text-blue-500 font-semibold text-3xl no-underline"
+				class="block w-full py-4 text-center text-blue-500 font-semibold text-3xl no-underline	1"
 				>
 				Services
 					<span class="block absolute right-[30px] top-0 w-[32px] h-[69px]">
@@ -26,15 +26,15 @@
 				<ul x-collapse x-show="subNavOpen" class="duration-500 transition list-none m-0 p-0 bg-blue-100/40 py-4">
 					<li>
 						<a
-							class="mb-4 block text-xl"
+							class="mb-4 block text-2xl"
 							title="Services Overview"
 							href="/services">
-								Overview
+								Services Overview
 						</a>
 					</li>
 					<li>
 						<a
-							class="mb-4 block text-xl"
+							class="mb-4 block text-2xl"
 							title="Website Services"
 							href="/services/websites">
 								Websites
@@ -42,7 +42,7 @@
 					</li>
 					<li>
 						<a
-							class="mb-4 block text-xl"
+							class="mb-4 block text-2xl"
 							title="E-Commerce Services"
 							href="/services/ecommerce">
 								E-Commerce
@@ -50,7 +50,7 @@
 					</li>
 					<li>
 						<a
-							class="mb-4 block text-xl"
+							class="mb-4 block text-2xl"
 							title="Custom Web Apps"
 							href="/services/custom-web-apps">
 								Custom Web Apps
@@ -58,7 +58,7 @@
 					</li>
 					<li>
 						<a
-							class="mb-0 block text-xl"
+							class="mb-0 block text-2xl"
 							title="Digital Consulting"
 							href="/services/digital-consulting">
 								Digital Consulting
@@ -70,21 +70,21 @@
 				<a
 				title="About"$
 				href="/about"
-				class="block py-4 bg-white/25 text-3xl no-underline"
+				class="block py-4 bg-white/25 text-3xl no-underline	1"
 				>About</a>
 			</li>
 			<li class="border-b-1 border-b-blue-200">
 				<a
 				title="Blog"
 				href="/blog"
-				class="block py-4 bg-white/25 text-3xl no-underline"
+				class="block py-4 bg-white/25 text-3xl no-underline	1"
 				>Blog</a>
 			</li>
 			<li class="border-b-1 border-b-blue-200">
 				<a
 				title="Contact"
 				href="/contact"
-				class="block py-4 bg-white/25 text-3xl no-underline"
+				class="block py-4 bg-white/25 text-3xl no-underline	1"
 				>Contact</a>
 			</li>
     </ul>

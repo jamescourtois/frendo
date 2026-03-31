@@ -57,20 +57,24 @@
 .gradient-1,
 .backfill-1 {
 	animation: 3s expand-1 ease-out ;
+	animation-delay: 1s;
 }
 
 .gradient-2,
 .backfill-2 {
 	animation: 3s expand-2 ease-out ;
+	animation-delay: 1s;
 }
 
 .gradient-3,
 .backfill-3 {
 	animation: 3s expand-3 ease-out ;
+	animation-delay: 1s;
 }
 
 .shield-cover {
 	animation: 3s reveal-1 ease-out ;
+	animation-delay: 1s;
 	/* background: transparent !important; */
 	width: 125%;
 	height: 125%;
@@ -82,6 +86,7 @@
 
 .shield-cover-2 {
 	animation: 3s reveal-2 ease-out ;
+	animation-delay: 1s;
 	/* background: red !important; */
 	width: 82%;
 	height: 82%;
@@ -94,6 +99,20 @@
 #intro {
 	animation: 0.5s fade-1 ease-out;
 	animation-delay: 4.5s;
+}
+
+.animate-f {
+	animation: 3.4s hide-for-a-bit;
+}
+
+@keyframes hide-for-a-bit {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0;
+	}
 }
 
 @keyframes expand-1 {
