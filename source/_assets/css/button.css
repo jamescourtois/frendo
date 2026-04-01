@@ -10,16 +10,22 @@
 
 .btn-special-2 {
 	appearance: none;
-	background: linear-gradient(to right, seagreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato);
+	color:darkgreen;
+	border:1px solid darkgreen;
+	background: linear-gradient(to right, transparent, transparent, transparent, lime, limegreen, green, darkgreen);
+	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
 	background-size: 350% 100%;
 	transition: all 400ms ease-in-out;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
+	/* box-shadow: 0px 2px 5px rgba(0,0,0,0.55); */
 }
 
-.btn-special:hover {
+.btn-special:hover,
+.btn-special:active, {
 	background-position: 100% 0;
 }
 
-.btn-special-2:hover {
+.btn-special-2:hover,
+.btn-special-2:active {
 	background-position: 100% 0;
+	color: white;
 }

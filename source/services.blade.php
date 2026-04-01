@@ -22,28 +22,28 @@ description: What it is we say we do here
 				<span class="font-bold">Check out each core service</span> below for more details. It is time to take control of your digital presence and Frendo is in your corner. Whether you need a full website build or a simple bug fix, you are in the right place. <a href="/contact">Reach out</a> anytime.
 			</p>
 		</div>
-		<hr class="border-indigo-100 my-1">
+		<hr class="border-indigo-100 dark:border-lime-700 my-1">
 		<h2 class="uppercase text-center text-xs mb-8 block font-normal tracking-widest">Core Services</h2>
     <ul class="list-none flex flex-wrap justify-stretch align-start gap-8 text-gray-900 dark:text-gray-200">
-			<li class="flex items-start justify-start flex-wrap bg-lime-100 dark:bg-lime-900 w-full lg:w-3/5 px-8 py-10 -m-2">
+			<li class="flex items-start justify-start flex-wrap bg-green-100 dark:bg-green-900 w-full lg:w-3/5 px-8 py-10 -m-2">
 				<h2 class="mt-0 mb-2">Websites</h2>
 				<p class="mt-0 mb-8">Your website is your digital flagship. Users demand original content, contemporary design and lightspeed performance. Are you sharing the right message and the best experience?</p>
-				<a href="/services/websites" class="self-end btn-special-2 btn px-4 py-2 text-white rounded-full">View All Website Services</a>
+				<a href="/services/websites" class="self-end btn-special-2 btn px-4 py-2 rounded-full">View All Website Services</a>
 			</li>
-			<li class="flex items-start justify-start flex-wrap  bg-green-100 dark:bg-green-900 w-full lg:w-2/5 px-8 py-10 -m-2">
+			<li class="flex items-start justify-start flex-wrap  bg-emerald-100 dark:bg-emerald-900 w-full lg:w-2/5 px-8 py-10 -m-2">
 				<h2 class="mt-0 mb-2">E-Commerce</h2>
 				<p class="mt-0 mb-8">It's easier than ever to sell directly to your raving fans. Are you ready to discover the best e-commerce stack?</p>
-				<a href="/services/ecommerce" class="self-end btn-special-2 btn px-4 py-2 text-white rounded-full">View All E-Commerce Services</a>
+				<a href="/services/ecommerce" class="self-end btn-special-2 btn px-4 py-2 rounded-full">View All E-Commerce Services</a>
 			</li>
-			<li class="flex items-start justify-start flex-wrap bg-emerald-100 dark:bg-emerald-900 w-full lg:w-2/5 px-8 py-10 -m-2">
+			<li class="flex items-start justify-start flex-wrap bg-teal-100 dark:bg-teal-900 w-full lg:w-2/5 px-8 py-10 -m-2">
 				<h2 class="mt-0 mb-2">Custom Web Apps</h2>
 				<p class="mt-0 mb-8">When you boldly go where none have gone before, you need custom web apps that power productivity and create visibility.</p>
-				<a href="/services/custom-web-apps" class="self-end btn-special-2 btn px-4 py-2 text-white rounded-full">View All Custom Web App Services</a>
+				<a href="/services/custom-web-apps" class="self-end btn-special-2 btn px-4 py-2 rounded-full">View All Custom Web App Services</a>
 			</li>
-			<li class="flex items-start justify-start flex-wrap  bg-teal-100 dark:bg-teal-900 w-full lg:w-3/5 px-8 py-10 -m-2">
+			<li class="flex items-start justify-start flex-wrap  bg-cyan-100 dark:bg-cyan-900 w-full lg:w-3/5 px-8 py-10 -m-2">
 				<h2 class="mt-0 mb-2">Digital Consulting</h2>
 				<p class="mt-0 mb-8">Crafting the right technical strategy is mission critical. A solid digital foundation is the launch pad for everything else. Are you leveraging the best web technologies?</p>
-				<a href="/services/digital-consulting" class="self-end btn-special-2 btn px-4 py-2 text-white rounded-full">View All Digital Consulting Services</a>
+				<a href="/services/digital-consulting" class="self-end btn-special-2 btn px-4 py-2 rounded-full">View All Digital Consulting Services</a>
 			</li>
 		</ul>
 @endsection
