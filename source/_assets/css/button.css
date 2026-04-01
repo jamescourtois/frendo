@@ -3,7 +3,16 @@
 	appearance: none;
 	background: linear-gradient(to right, mediumblue, blue, cyan, chartreuse, green, green);
 	background-size: 350% 100%;
-	transition: all 1s ease-in-out;
+	transition: all 400ms ease-in-out;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
+}
+
+
+.btn-special-2 {
+	appearance: none;
+	background: linear-gradient(to right, seagreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato);
+	background-size: 350% 100%;
+	transition: all 400ms ease-in-out;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
 }
 
@@ -11,18 +20,6 @@
 	background-position: 100% 0;
 }
 
-.btn:hover {
-	animation-name: flow;
-	animation-duration: 500ms;
-	animation-timing-function: linear;
-}
-
-@keyframes flow {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	100% {
-		background-position: 100%;
-	}
+.btn-special-2:hover {
+	background-position: 100% 0;
 }
