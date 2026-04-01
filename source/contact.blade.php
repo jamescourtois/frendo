@@ -15,21 +15,21 @@ description: Get in touch with us
 		<p class="mb-8 mt-0 hidden sm:block">
 				Big ideas start with small talk. Don't hesitate to reach out and learn how <span class="font-extrabold">Frendo</span> can elevate and enlighten your web presence.
 		</p>
-		<ul class="list-none text-center md:text-left m-0 text-xl"> <!-- :class="$store.theme.dark ? 'bg-gray-800' : 'bg-blue-100'"  -->
-			<li :class="$store.theme.dark ? 'text-gray-300' : 'text-gray-900'"  class="uppercase text-xs m-0 font-normal tracking-widest">Call or text</li>
+		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
+			<li class="uppercase text-xs m-0 font-normal tracking-widest">Call or text</li>
 			<li class="mb-2"><a href="tel:+13146687244">(314) 668-7244</a></li>
 		</ul>
-		<ul class="list-none text-center md:text-left m-0 text-xl"> <!-- :class="$store.theme.dark ? 'bg-gray-800' : 'bg-blue-100'"  -->
-			<li :class="$store.theme.dark ? 'text-gray-300' : 'text-gray-900'"  class="uppercase text-xs m-0 font-normal tracking-widest">Send a note</li>
+		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
+			<li class="uppercase text-xs m-0 font-normal tracking-widest">Send a note</li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 	</div>
-	<div class="w-full lg:w-2/3 p-8 shadow-lg" :class="$store.theme.dark ? 'bg-gray-800' : 'bg-cyan-100 border-l-1 border-b-1 border-b-cyan-400 border-l-cyan-200'">
+	<div class="w-full lg:w-2/3 p-8 shadow-lg bg-cyan-100 dark:bg-gray-800">
 		<span class="block text-center mb-4 uppercase text-xs m-0 font-normal tracking-widest">Official Contact Form</span>
 		<form class="form-style" method="POST" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" class="mb-12">
 				<div class="flex flex-wrap mb-6 -mx-3">
 						<div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
-								<label :class="$store.theme.dark ? 'text-gray-100' : 'text-cyan-800'" class="block mb-2 font-semibold" for="contact-name">
+								<label class="block mb-2 font-semibold" for="contact-name">
 										Name&ast;
 								</label>
 	
@@ -38,14 +38,13 @@ description: Get in touch with us
 										id="contact-name"
 										placeholder="e.g. Guy Fieri"
 										name="name"
-										:class="$store.theme.dark ? 'text-gray-900' : 'border-b-cyan-200 border-l-cyan-200 border-1 border-cyan-400'"
-										class="bg-white/85 outline-hidden inset-shadow-sm block w-full border    mb-2 px-4 py-3"
+										class="bg-white/85 dark:bg-gray-900 border-cyan-200 dark:border-black outline-hidden inset-shadow-sm block w-full border    mb-2 px-4 py-3"
 										required
 								>
 						</div>
 	
 						<div class="w-full px-3 md:w-1/2">
-								<label :class="$store.theme.dark ? 'text-gray-100' : 'text-cyan-800'" class="block font-semibold mb-2" for="contact-email">
+								<label class="block font-semibold mb-2" for="contact-email">
 										Email Address&ast;
 								</label>
 	
@@ -54,15 +53,14 @@ description: Get in touch with us
 										id="contact-email"
 										placeholder="e.g. welcome@flavortown.com"
 										name="email"
-										:class="$store.theme.dark ? 'text-gray-900' : 'border-b-cyan-200 border-l-cyan-200 border-1 border-cyan-400'"
-										class="bg-white/85 outline-hidden inset-shadow-sm block w-full border mb-2 px-4 py-3"
+										class="bg-white/85 dark:bg-gray-900 border-cyan-200 dark:border-black outline-hidden inset-shadow-sm block w-full border mb-2 px-4 py-3"
 										required
 								>
 						</div>
 				</div>
 	
 				<div class="w-full mb-12">
-						<label :class="$store.theme.dark ? 'text-gray-100' : 'text-cyan-800'" class="block font-semibold mb-2" for="contact-message">
+						<label class="block font-semibold mb-2" for="contact-message">
 								Message&ast;
 						</label>
 	
@@ -70,8 +68,7 @@ description: Get in touch with us
 								id="contact-message"
 								rows="4"
 								name="message"
-								:class="$store.theme.dark ? 'text-gray-900' : 'border-b-cyan-200 border-l-cyan-200 border-1 border-cyan-400'"
-								class="bg-white/85 outline-hidden inset-shadow-sm block w-full border appearance-none mb-2 px-4 py-3"
+								class="bg-white/85 dark:bg-gray-900 border-cyan-200 dark:border-black outline-hidden inset-shadow-sm block w-full border appearance-none mb-2 px-4 py-3"
 								placeholder="Share your thoughts here."
 								required
 						></textarea>

@@ -1,7 +1,7 @@
 <!-- light -->
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg :class="$store.theme?.dark ? 'hidden pointer-events-none' : ''" width="100%" height="100%" viewBox="0 0 703 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg class="dark:hidden dark:pointer-events-none" width="100%" height="100%" viewBox="0 0 703 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <path d="M30.319,-0L130.308,-0L159.668,29.599L159.668,62.909L63.148,159.305L30.079,159.305L-0,128.506L0,29.538L30.319,-0Z"/>
     <path d="M202.579,115.573L202.579,159.142L169.282,159.142L169.282,29.576L251.695,29.576L251.695,63.061L202.579,63.061L202.579,82.087L243.601,82.087L243.601,115.573L202.579,115.573Z"/>
     <path d="M287.084,101.59L287.084,159.142L253.787,159.142L253.787,65.915L278.254,65.915L281.378,75.206C281.765,74.811 282.164,74.41 282.577,74.001C285.459,71.147 288.801,68.642 292.602,66.486C296.404,64.33 300.39,63.252 304.56,63.252C306.645,63.252 308.453,63.41 309.986,63.727C311.519,64.044 312.776,64.52 313.758,65.154L313.758,96.547L307.503,96.547C300.022,96.547 293.798,97.879 288.831,100.542C288.225,100.868 287.642,101.217 287.084,101.59Z"/>
@@ -19,7 +19,7 @@
     </g>
 </svg>
 <!-- dark  -->
-<svg :class="$store.theme?.dark ? '' : 'hidden pointer-events-none'"  width="100%" height="100%" viewBox="0 0 703 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg class="hidden pointer-events-none dark:inline-block dark:pointer-events-all"  width="100%" height="100%" viewBox="0 0 703 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <path d="M30.319,-0l99.989,-0l29.359,29.599l0,33.309l-96.519,96.396l-33.069,0l-30.079,-30.799l0,-98.968l30.319,-29.538Z"/>
     <path d="M30.319,-0l99.989,-0l29.359,29.599l0,33.309l-96.519,96.396l-33.069,0l-30.079,-30.799l0,-98.968l30.319,-29.538Zm1.22,3l-28.539,27.804l0,96.48l28.343,29.021l30.564,0l94.761,-94.64l-0,-30.83l-27.609,-27.835l-97.519,-0Z" style="fill:#fff;"/>
     <path d="M202.579,115.573l0,43.569l-33.296,0l0,-129.567l82.413,0l0,33.486l-49.117,0l0,19.026l41.023,0l0,33.486l-41.023,0Z" style="fill:#fff;"/>

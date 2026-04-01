@@ -48,7 +48,7 @@
   .hamburger-inner::after {
     bottom: -10px; }
 
-body.bg-black {
+@media (prefers-color-scheme: dark) {
 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 		background-color: white;
 	}
