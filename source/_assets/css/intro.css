@@ -70,7 +70,7 @@
 }
 
 .shield-cover {
-	animation: 12s reveal-1 ease-out;
+	animation: 12s reveal-1 ease-in;
 	/* background: transparent !important; */
 	width: 125%;
 	height: 125%;
@@ -79,17 +79,39 @@
 	transform: rotate(45deg);
 	pointer-events: none;
 	z-index:-1;
+	opacity: 0;
 }
 
 .shield-cover-2 {
-	animation: 12s reveal-2 ease;
+	animation: 12s reveal-2 ease-in;
 	/* background: red !important; */
 	width: 82%;
 	height: 82%;
 	pointer-events: none;
 	transform: rotate(45deg);
 	z-index:-1;
+	opacity: 0;
 }
+
+#intro {
+	animation: 12s fade-1 ease-out;
+}
+
+@keyframes fade-1 {
+	0% {
+		background: black;
+	}
+	74% {
+		background: black;
+	}
+	75% {
+		background: white;
+	}
+	100% {
+		background: white;
+	}
+}
+
 
 @keyframes expand-1 {
 	0% {
@@ -171,18 +193,27 @@
 
 @keyframes reveal-1 {
 	0% {
+		opacity: 1;
 		top: -15%;
 		left: -15%;
 	}
-	10% {
+	8% {
+		opacity: 1;
 		top: -15%;
 		left: -15%;
 	}
-	15% {
+	12% {
+		opacity: 1;
+		top: 52%;
+		left: 52%;
+	}
+	13% {
+		opacity: 0;
 		top: 52%;
 		left: 52%;
 	}
 	100% {
+		opacity: 0;
 		top: 52%;
 		left: 52%;
 	}
@@ -190,23 +221,33 @@
 
 @keyframes reveal-2 {
 	0% {
+		opacity: 1;
 		left: 33.333%;
 		top: 33.333%;
 		height: 81%;
 	}
-	15% {
+	12% {
+		opacity: 1;
 		left: 33.333%;
 		top: 33.333%;
 		height: 81%;
 	}
-	19% {
+	14% {
+		opacity: 1;
 		left: 25%;
 		top: 75%;
 		height: 0;
+	}
+	15% {
+		left: 25%;
+		top: 75%;
+		height: 0;
+		opacity: 0;
 	}
 	100% {
 		left: 25%;
 		top: 75%;
 		height: 0;
+		opacity: 0;
 	}
 }

@@ -5,27 +5,42 @@
 	background-size: 350% 100%;
 	transition: all 400ms ease-in-out;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
+	background-position: 100% 0;
 }
 
 
 .btn-special-2 {
 	appearance: none;
-	color:darkgreen;
-	border:1px solid darkgreen;
-	background: linear-gradient(to right, transparent, transparent, transparent, lime, limegreen, green, darkgreen);
+	color:#002c22;
+	border:1px solid #002c22;
+	background: linear-gradient(to right, transparent, transparent, transparent, lime, limegreen, green, darkgreen, #002c22);
 	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
 	background-size: 350% 100%;
 	transition: all 400ms ease-in-out;
 	/* box-shadow: 0px 2px 5px rgba(0,0,0,0.55); */
 }
 
-.btn-special:hover,
-.btn-special:active, {
-	background-position: 100% 0;
+.btn-special-3 {
+	appearance: none;
+	color:#f54a00;
+	border:1px solid #f54a00;
+	background: linear-gradient(to right, transparent, transparent, transparent, yellow, orange, #f54a00);
+	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
+	background-size: 350% 100%;
+	transition: all 400ms ease-in-out;
+	/* box-shadow: 0px 2px 5px rgba(0,0,0,0.55); */
 }
 
-.btn-special-2:hover,
-.btn-special-2:active {
+@media (prefers-color-scheme: dark) {
+	.btn-special-2,
+	.btn-special-3 {
+		color: white;
+		border-color: white;
+	}
+}
+
+.btn-special-3:hover,
+.btn-special-2:hover {
 	background-position: 100% 0;
 	color: white;
 }

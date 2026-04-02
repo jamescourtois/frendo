@@ -54,8 +54,11 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full container mx-auto pt-28 px-4 pb-6">
-            @yield('body')
+        <main role="main" class="flex-auto w-full pt-28">
+            <div class="container mx-auto px-4">
+							@yield('body')
+						</div>
+						@yield('body-full')
         </main>
 
         <footer class="bg-white text-gray-700 dark:bg-black dark:text-gray-400 text-center text-sm py-4" role="contentinfo">
@@ -65,8 +68,8 @@
                 </li>
             </ul>
         </footer>
-				<div x-cloak id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 10000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex items-center justify-center">
-					<div id="intro-wrapper">
+				<div x-cloak id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 12000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex flex-col items-center justify-center">
+					<div id="intro-wrapper relative">
 						<div class="animate-f relative w-[300px] h-[300px]">
 							<div class="absolute top-[60px] left-[60px]">
 								<div class="absolute gradient-1"></div>
@@ -90,9 +93,14 @@
 							</svg>
 							<div class="shield-cover absolute bg-black"></div>
 							<div class="shield-cover-2 absolute bg-black"></div>
+							
+							<div class="text-wrapper absolute top-full left-0 w-full">
+								<div class="font-extrabold text-[6rem] text-white text-center w-full">Frendo</div>
+								<div class="text-[0.925rem] tracking-widest uppercase text-white text-center mb-1 w-full">Web Development & Consulting</div>
+								<div class="text-[0.625rem]  tracking-widest uppercase text-white text-center w-full">St. Louis, MO</div>
+							</div>
 						</div>
-					</div>
-
+						</div>
 				</div>
         @stack('scripts')
     </body>

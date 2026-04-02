@@ -55,12 +55,19 @@
 body {
     font-size: 17px;
 }
-
+/* light buttons  */
 a {
     @apply font-semibold;
     @apply no-underline;
-    @apply text-blue-500;
-    @apply hover:text-blue-700;
+    @apply text-blue-600;
+    @apply hover:text-blue-800;
+}
+ /* dark buttons  */
+@media (prefers-color-scheme: dark) {
+	a {
+			@apply text-cyan-300;
+			@apply hover:text-cyan-700;
+	}
 }
 
 blockquote {

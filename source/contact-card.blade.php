@@ -15,7 +15,7 @@ description: Let's keep in touch
 				target="_self"
 				@click="clicked = true"
 				x-text="clicked ? 'Frendo.vcf Saved!' : 'Add Frendo as a Contact'"
-				class="min-w-[260px] mt-4 mb-2 text-xl px-5 py-3 btn btn-special text-white rounded-full font-bold cursor-pointer">
+				class="min-w-[260px] mt-4 mb-2 text-xl px-5 py-3 btn-special text-white rounded-full font-bold cursor-pointer">
 		</a>
 		<span x-text="clicked ? 'Check your downloads folder and open the contact card.' : 'Save the Frendo.vcf contact card to your device.'" class="text-xs text-gray-500"></span>
 			
