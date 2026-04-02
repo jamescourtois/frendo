@@ -211,3 +211,16 @@ pre {
 	/* outline: 1px solid red; */
  }
 }
+
+input,
+textarea {
+	background: white;
+}
+
+ /* dark form inputs  */
+@media (prefers-color-scheme: dark) {
+	input,
+	textarea {
+			@apply bg-gray-900;
+	}
+}

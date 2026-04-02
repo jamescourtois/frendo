@@ -61,10 +61,10 @@
 						@yield('body-full')
         </main>
 
-        <footer class="bg-white text-gray-700 dark:bg-black dark:text-gray-400 text-center text-sm py-4" role="contentinfo">
+        <footer class="bg-white text-gray-700 dark:bg-black dark:text-gray-400 text-center text-xs py-2" role="contentinfo">
             <ul class="flex flex-col font-normal md:flex-row justify-center list-none">
                 <li class="md:mr-2">
-                    <span class="text-xl inline-block translate-y-[4px]">&copy;</span> <a class="text-base text-blue-500" href="{{ $page->baseUrl }}" class="font-extrabold">Frendo</a> Web Development {{ date('Y') }}.
+                    <span class="text-xl inline-block translate-y-[4px]">&copy;</span> <a href="{{ $page->baseUrl }}" class="font-extrabold">Frendo</a> Web Development {{ date('Y') }} All Rights Reserved.
                 </li>
             </ul>
         </footer>

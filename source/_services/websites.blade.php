@@ -36,8 +36,8 @@ description: Services for website stuff
 @endsection
 
 @section('body-full')
-<div class="w-full bg-blue-500 flex text-center items-center justify-center flex-col text-white py-24">
-	<h2 class="text-[10rem]">Take the first step towards acheiving your {{ date('Y') }} web goals.</h2>
-	<a href="/contact" class="min-w-[260px] mt-4 mb-2 text-xl px-5 py-3 btn-special text-white rounded-full font-bold cursor-pointer">Contact Frendo Today</a>
+<div class="w-full bg-emerald-500 dark:bg-emerald-950 flex text-center items-center justify-center flex-col text-white py-24">
+	<h2 class="text-[4rem] lg:text-[6rem] leading-[4.5rem] lg:leading-[6.5rem] text-green-950 dark:text-white">Take the first step towards acheiving your {{ date('Y') }} web goals.</h2>
+	<a href="/contact" class="min-w-[260px] mt-10 text-4xl btn-green px-8 py-4 rounded-full">Contact Frendo Today</a>
 </div>
 @endsection

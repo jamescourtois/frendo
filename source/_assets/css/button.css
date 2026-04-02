@@ -5,11 +5,13 @@
 	background-size: 350% 100%;
 	transition: all 400ms ease-in-out;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
+}
+
+.btn-special:hover {
 	background-position: 100% 0;
 }
 
-
-.btn-special-2 {
+.btn-green {
 	appearance: none;
 	color:#002c22;
 	border:1px solid #002c22;
@@ -31,16 +33,37 @@
 	/* box-shadow: 0px 2px 5px rgba(0,0,0,0.55); */
 }
 
+.btn-green:hover {
+	background-position: 100% 0;
+	color: white;
+}
+
+.btn-special-3:hover {
+	background-position: 100% 0;
+	color: white;
+}
+
 @media (prefers-color-scheme: dark) {
-	.btn-special-2,
+	.btn-green,
 	.btn-special-3 {
 		color: white;
 		border-color: white;
 	}
+
+	.btn-green {
+		background: linear-gradient(to right, transparent, transparent, transparent, lime,white, white, white);
+		background-size: 350% 100%;
+	}
+
+	.btn-green:hover {
+		background-position: 100% 0;
+		color: #002c22;
+	}
+
+
+	
 }
 
-.btn-special-3:hover,
-.btn-special-2:hover {
-	background-position: 100% 0;
-	color: white;
-}
+
+
+
