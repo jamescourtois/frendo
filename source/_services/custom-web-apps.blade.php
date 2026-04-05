@@ -5,11 +5,23 @@ description: Special sauce
 @extends('_layouts.main')
 
 @section('body')
-	<h1>Custom Web Apps</h1>
-	<ul>
-		<li>Sometimes you have a problem that no app can solve. Sometimes you have too many apps that don't talk to each other. A custom web app can be the answer to problems that no subscription service can solve.</li>
-		<li>Custom web app stacks recommended are Laravel, Ruby on Rails, or WordPress</li>
-		<li>When users need to log in and do special tasks that is a custom web app. When you are pulling data from multiple sources to display in one place that is a custom web app. When you make two things talk to each other that is a custom web app.</li>
-		<li>When is it a good time for a custom web app? Progressive Web Apps work on every platform, they can be installed as an app icon on your phone, you can CI/CD so the life of the project is long.</li>
+	<div class="flex flex-col items-center justify-center text-center mb-2 lg:mb-8">
+		<h1 class="uppercase text-xs m-0 font-normal tracking-widest">Custom Web Apps</h1>
+		<h2 class="mt-3 leading-[2.8rem] text-5xl text-emerald-950 dark:text-white">Customized logic for original thinkers.</h2>
+		<p>In a world with millions of apps, there are still gaps that no existing service can fill. When you need to cross the divide, Frendo is here to build the bridge.</p> 
+	</div>
+	<p class="font-bold">Services include:</p>
+	<ul class="pl-4">
+		<li>Laravel / PHP custom apps</li>
+		<li>Ruby on Rails custom apps</li>
+		<li>WordPress custom apps</li>
+	</ul>
+
+	<p class="font-bold">Advantages:</p>
+	<ul class="pl-4">
+		<li>CI/CD for ongoing innovation</li>
+		<li>Build as PWA, Install on phone like app</li>
+		<li>Let users log in and be autonomous</li>
+		<li>Make two apps talk to each other that don't do that already</li>
 	</ul>
 @endsection

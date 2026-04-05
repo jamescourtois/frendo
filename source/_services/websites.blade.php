@@ -13,12 +13,20 @@ description: Services for website stuff
 	<ul class="list-none grid grid-cols-2 gap-2">
 		<li class="bg-green-100 dark:bg-gray-900 flex flex-col gap-4 items-center justify-center py-8">
 			<span class="uppercase text-xs m-0 font-normal tracking-widest">New Websites</span>
-			<button class="btn-green text-xl font-bold  rounded-full px-4 py-2 ">"I want a whole new system."</button>
+			<button 
+				@click="document.querySelector('#new').scrollIntoView({ behavior: 'smooth' })"
+				class="btn-green text-xl font-bold  rounded-full px-4 py-2 ">
+				"I want a whole new system."
+			</button>
 			
 		</li>
 		<li class="bg-green-100 dark:bg-gray-900 flex flex-col gap-4 items-center justify-center py-8">
 			<span class="uppercase text-xs m-0 font-normal tracking-widest">Existing Websites</span>
-			<button class="btn-green text-xl font-bold  rounded-full px-4 py-2 ">"I need support for my existing website."</button>
+			<button 
+				@click="document.querySelector('#existing').scrollIntoView({ behavior: 'smooth' })"
+				class="btn-green text-xl font-bold  rounded-full px-4 py-2 ">
+				"I need support for my website."
+			</button>
 			
 		</li>
 	</ul>
@@ -26,35 +34,37 @@ description: Services for website stuff
 
 @section('body-full')
 <div class="m-0 flex flex-col">
-	<div class="bg-gray-900 w-full">
+	<div class="dark:bg-gray-900 bg-gray-100 w-full">
 		<div class="pt-24 pb-12 container mx-auto" id="new">
-			<h3>New Websites</h3>
-			<h4>Build for the future.</h4>
+			<h3 class="uppercase text-xs m-0 font-normal tracking-widest">New Websites</h3>
+			<h4 class="mt-0 text-5xl font-bold lg:text-[5rem]">Build for the future.</h4>
 			<p>When you build with Frendo, you get an enterprise-level tech stack designed to scale. Content, features, and longevity are engineered into the core of your project from the start.</p>
-			<ul>
+			<p class="font-bold">Services include:</p>
+			<ul class="pl-4">
 				<li>Enterprise-Level Tech Stacks - Leverage the power of Laravel, WordPress, or Ruby on Rails to build a site that fast and flexible.</li>
 				<li>Total Sovereignty - The code, the data, and the content belong to you. No proprietary "rental" locks, ever.</li>
 				<li>Tailored Autonomy - Choose your level of involvement. Take the keys and manage it yourself, or let Frendo handle the technical heavy lifting.</li>
 				<li>Future-Proof Engineering - A rock-solid foundation means adding new features and content is seamless, ensuring your site exceeds your needs for years to come.</li>
 			</ul>
 			<p>Your new website starts with a simple conversation. Reach out anytime.</p>
-			<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full">Contact Frendo</a>
+			<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full">Let's start your new project</a>
 		
 		</div>
 	</div>
-	<div class="bg-gray-950 w-full">
+	<div class="dark:bg-gray-950 bg-gray-200 w-full">
 		<div class="pt-12 pb-18 container mx-auto" id="existing">
-			<h3>Existing Websites</h3>
-			<h4>Evolve, Adapt, Overcome.</h4>
+			<h3 class="uppercase text-xs m-0 font-normal tracking-widest">Existing Websites</h3>
+			<h4 class="mt-0 text-5xl font-bold lg:text-[5rem]">Evolve, adapt, overcome.</h4>
 			<p>Owning a website requires maintenance and problem solving. If you are fighting with your website to keep things running, <a href="/contact">Frendo is in your corner</a>.</p>
-			<ul>
+			<p class="font-bold">Services include:</p>
+			<ul class="pl-4">
 				<li>Content updates - Professional updates for your media and content</li>
 				<li>Improve performance - Fix bugs, broken pages, loading issues, you name it.</li>
 				<li>Teach an old dog new tricks - Build user features, integrate third-party services, and more.</li>
 				<li>Site Audits - Accessibility, search engine optimization, speed and performance, and more.</li>
 			</ul>
 			<p>Legacy websites can be a dumpster fire. When you feel the heat, call Frendo for backup.</p>
-			<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full">Contact Frendo</a>
+			<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full">Get the anwers you need</a>
 		</div>
 	</div>
 </div>
