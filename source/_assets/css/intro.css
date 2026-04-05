@@ -93,22 +93,57 @@
 	opacity: 0;
 }
 
-#intro {
-	animation: 12s fade-1 ease-out;
+.text-wrapper {
+	animation: 12s fade-text ease-out;
 }
 
-@keyframes fade-1 {
+#intro {
+	animation: 12s fade-intro ease-out;
+}
+
+.animate-f {
+	animation: 12s slide-up ease-out;
+}
+
+@keyframes slide-up {
 	0% {
-		background: black;
+		margin-top: 0;
 	}
-	74% {
-		background: black;
+	15% {
+		margin-top: 0;
 	}
-	75% {
-		background: white;
+	18% {
+		margin-top: -78px;
 	}
 	100% {
-		background: white;
+		margin-top: -78px;
+	}
+}
+
+@keyframes fade-text {
+	0%{
+		opacity: 0;
+	}
+	16%{
+		opacity: 0;
+	}
+	19%{
+		opacity: 1;
+	}
+}
+
+@keyframes fade-intro {
+	0% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 1;
+	}
+	45% {	
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
 	}
 }
 

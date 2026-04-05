@@ -68,6 +68,7 @@
                 </li>
             </ul>
         </footer>
+
 				<div x-cloak id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 12000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex flex-col items-center justify-center">
 					<div id="intro-wrapper relative">
 						<div class="animate-f relative w-[300px] h-[300px]">
@@ -95,7 +96,7 @@
 							<div class="shield-cover-2 absolute bg-black"></div>
 							
 							<div class="text-wrapper absolute top-full left-0 w-full">
-								<div class="font-extrabold text-[6rem] text-white text-center w-full">Frendo</div>
+								<div class="font-extrabold text-[6rem] leading-[6.5rem] text-white text-center w-full">Frendo</div>
 								<div class="text-[0.925rem] tracking-widest uppercase text-white text-center mb-1 w-full">Web Development & Consulting</div>
 								<div class="text-[0.625rem]  tracking-widest uppercase text-white text-center w-full">St. Louis, MO</div>
 							</div>
