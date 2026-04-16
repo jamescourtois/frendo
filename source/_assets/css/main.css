@@ -1,10 +1,8 @@
 @import "tailwindcss";
 
-/* @theme {
-	--color-cyan: red;
-	--color-green: green;
-	--color-blue: blue;
-} */
+@theme {
+	--color-not-black: #0c0b0e;
+}
 
 @import './base.css' layer(components);
 @import './blog.css' layer(components);

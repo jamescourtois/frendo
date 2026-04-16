@@ -30,8 +30,7 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
-    <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-800 dark:bg-black dark:text-gray-100 flex flex-col justify-between min-h-screen leading-normal font-sans">
-      
+    <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-800 dark:bg-black dark:text-gray-400 flex flex-col justify-between min-h-screen leading-normal font-sans">
 			<header class="bg-white/70 dark:bg-black/70 fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
@@ -69,7 +68,7 @@
             </ul>
         </footer>
 
-				<div x-cloak id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 12000)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex flex-col items-center justify-center">
+				<div x-cloak id="intro" x-init="setTimeout(() => $store.theme?.closeIntro(), 5500)" :class="$store.theme?.showIntro ? '' : 'hidden pointer-events-none'"  class="intro fixed inset-0 z-[99] bg-black flex flex-col items-center justify-center">
 					<div id="intro-wrapper relative">
 						<div class="animate-f relative w-[300px] h-[300px]">
 							<div class="absolute top-[60px] left-[60px]">
@@ -98,7 +97,13 @@
 							<div class="text-wrapper absolute top-full left-0 w-full">
 								<div class="font-extrabold text-[6rem] leading-[6.5rem] text-white text-center w-full">Frendo</div>
 								<div class="text-[0.925rem] tracking-widest uppercase text-white text-center mb-1 w-full">Web Development & Consulting</div>
-								<div class="text-[0.625rem]  tracking-widest uppercase text-white text-center w-full">St. Louis, MO</div>
+								<div class="text-[0.625rem]  tracking-widest uppercase text-white text-center w-full flex items-center justify-center gap-1">
+									
+									<svg class="fill-white size-[0.75rem] inline-block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
+									</svg>
+									St. Louis, MO
+								</div>
 							</div>
 						</div>
 						</div>
