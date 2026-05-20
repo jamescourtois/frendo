@@ -5,11 +5,13 @@ description: Special sauce
 @extends('_layouts.main')
 
 @section('body')
-	<div class="flex flex-col items-center justify-center text-center mb-2 lg:mb-8">
-		<h1 class="uppercase text-xs m-0 font-normal tracking-widest">Custom Web Apps</h1>
-		<h2 class="mt-3 leading-[2.8rem] text-5xl text-emerald-950 dark:text-white">Customized logic for original thinkers.</h2>
-		<p>In a world with millions of apps, there are still gaps that no existing service can fill. When you need to cross the divide, Frendo is here to build the bridge.</p> 
-	</div>
+
+	@include('_layouts.header', [
+		'h1' => 'Custom Web App Services',
+		'h2' => 'Customized logic for original thinkers.',
+		'desc' => 'Millions of apps exist, but there are still gaps that no existing service can fill. When you need to span that divide, Frendo is here to build your bridge.',
+	])
+
 	<p class="font-bold">Services include:</p>
 	<ul class="pl-4">
 		<li>Laravel / PHP custom apps</li>

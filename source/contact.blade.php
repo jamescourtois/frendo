@@ -6,9 +6,14 @@ description: Get in touch with us
 
 @section('body')
 <div class="flex flex-col items-center justify-center text-center mb-2 lg:mb-8">
-	<h1 class="uppercase text-xs m-0 font-normal tracking-widest">Contact Frendo</h1>
-	<h2 class="mt-3 leading-[2.8rem] text-5xl">Don't be a stranger.</h2>
+	<h1 class="uppercase text-xs m-0 font-normal tracking-widest"></h1>
+	<h2 class="mt-3 leading-[2.8rem] text-5xl"></h2>
 </div>
+@include('_layouts.header', [
+	'h1' => 'Contact Frendo',
+	'h2' => 'Don&rsquo;t be a stranger.',
+	'desc' => 'Frendo is here for your web needs. Wherever you are in your journey, Frendo is ready to step in.',
+])
 
 <div class="flex flex-col lg:flex-row items-start justify-start gap-8">
 	<div class="w-full lg:w-1/3 lg:order-2 flex flex-wrap justify-around items-start lg:justify-between">

@@ -5,11 +5,11 @@ description: People buy shit online
 @extends('_layouts.main')
 
 @section('body')
-	<div class="flex flex-col items-center justify-center text-center mb-2 lg:mb-8">
-		<h1 class="uppercase text-xs m-0 font-normal tracking-widest">E-commerce Services</h1>
-		<h2 class="mt-3 leading-[2.8rem] text-5xl text-emerald-950 dark:text-white">Sell directly to your raving fans.</h2>
-		<p>It's easier than ever to sell online. What is the best platform out there for you? Frendo helps you navigate the modern e-commerce ecosystem and build the best system for your needs.</p> 
-	</div>
+		@include('_layouts.header', [
+			'h1' => 'E-commerce Services',
+			'h2' => 'Sell directly to your raving fans.',
+			'desc' => 'There are more ways than ever to sell online. What is the best platform out there for you? Frendo helps you navigate the modern e-commerce ecosystem and build the best system for your needs.',
+		])
 	<ul class="list-none grid grid-cols-2 gap-2">
 		<li class="bg-green-100 dark:bg-gray-900 flex flex-col gap-4 items-center justify-center py-8">
 			<span class="uppercase text-xs m-0 font-normal tracking-widest">Custom E-Commerce</span>

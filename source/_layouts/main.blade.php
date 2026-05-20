@@ -30,7 +30,7 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
-    <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-800 dark:bg-black dark:text-gray-400 flex flex-col justify-between min-h-screen leading-normal font-sans">
+    <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-800 dark:bg-not-black dark:text-not-white flex flex-col justify-between min-h-screen leading-normal font-sans">
 			<header class="bg-white/70 dark:bg-black/70 fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">

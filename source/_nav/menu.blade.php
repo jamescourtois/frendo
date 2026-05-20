@@ -11,7 +11,7 @@
 					<span :class="subNavOpen ? ' bg-blue-600 dark:bg-cyan-300' : ' bg-black dark:bg-white'" class="rotate-[45deg] block absolute transition duration-50 top-[50%] left-0 w-[12px] h-[3px] rounded-full group-hover:bg-blue-600 group-hover:dark:bg-cyan-300"></span>
 					<span :class="subNavOpen ? ' bg-blue-600 dark:bg-cyan-300' : ' bg-black dark:bg-white'" class="rotate-[-45deg] block absolute transition duration-50 top-[50%] right-0 w-[12px] h-[3px] rounded-full group-hover:bg-blue-600 group-hover:dark:bg-cyan-300"></span>
 				</span>
-				<ul x-collapse x-show="subNavOpen" class="py-2 border-l-2 dark:border-gray-700 shadow-lg border-blue-400 dark:border-cyan-300 w-[250px] text-left absolute top-full left-0 duration-500 transition list-none m-0 p-0 bg-blue-100 dark:bg-gray-800">
+				<ul x-collapse x-show="subNavOpen" class="py-2 border-l-2 dark:border-gray-700 shadow-lg border-blue-400 dark:border-not-black w-[250px] text-left absolute top-full left-0 duration-500 transition list-none m-0 p-0 bg-blue-100 dark:bg-black">
 					<li>
 						<a
 							class="block dark:text-white dark:hover:text-cyan-300 text-xl px-4 py-2"

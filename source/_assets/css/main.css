@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-	--color-not-black: #0c0b0e;
+	--color-not-black: #121212;
+	--color-not-white: #E0E0E0;
 }
 
 @import './base.css' layer(components);
