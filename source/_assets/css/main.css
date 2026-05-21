@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-	--color-not-black: #121212;
+	--color-not-black: #0c0c0c;
 	--color-not-white: #E0E0E0;
 }
 

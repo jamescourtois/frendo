@@ -4,22 +4,26 @@ description: Services for website stuff
 ---
 @extends('_layouts.main')
 
-@section('body')
+@section('header')
 		@include('_layouts.header', [
 			'h1' => 'Website Services',
 			'h2' => 'The foundation of your online reputation.',
 			'desc' => 'Your website is your source of truth and your doorstep for the world. When users stop by for a visit, serve the right message and the best experience.',
 		])
+@endsection
+
+@section('body')
+
 
 	<ul class="list-none m-0 flex items-center justify-center gap-8 mt-4 mb-16 lg:mb-24">
-		<li class="bg-green-100 dark:bg-transparent flex flex-col gap-4 items-center justify-center">
+		<li class="flex flex-col gap-4 items-center justify-center">
 			<button 
 				@click="document.querySelector('#new').scrollIntoView({ behavior: 'smooth' })"
 				class="btn-green text-xl lg:text-2xl font-bold  rounded-full px-4 py-2 ">
 				"I want a whole new website."
 			</button>
 		</li>
-		<li class="bg-green-100 dark:bg-transparent flex flex-col gap-4 items-center justify-center">
+		<li class="flex flex-col gap-4 items-center justify-center">
 			<button 
 				@click="document.querySelector('#existing').scrollIntoView({ behavior: 'smooth' })"
 				class="btn-green text-xl lg:text-2xl font-bold  rounded-full px-4 py-2 ">
@@ -76,7 +80,7 @@ description: Services for website stuff
 @endsection
 @section('body-full')
 	<div class="w-full bg-green-500 dark:bg-green-950 flex text-center items-center justify-center flex-col text-white py-24">
-		<h2 class="max-w-screen block text-[4rem] lg:text-[6rem] leading-[4.5rem] lg:leading-[6.5rem] xl:text-[12rem] xl:leading-[12.5rem] text-green-950 dark:text-white">Take the first step towards acheiving your {{ date('Y') }} web goals.</h2>
+		<h2 class="max-w-screen block text-[4rem] lg:text-[6rem] leading-[4.5rem] lg:leading-[6.5rem] text-green-950 dark:text-white">Let's elevate your web presence together.</h2>
 		<a href="/contact" class="min-w-[260px] mt-10 text-4xl btn-green px-8 py-4 rounded-full">Contact Frendo Today</a>
 	</div>
 @endsection

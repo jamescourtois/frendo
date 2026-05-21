@@ -4,26 +4,27 @@ description: People buy shit online
 ---
 @extends('_layouts.main')
 
-@section('body')
-		@include('_layouts.header', [
+@section('header')
+@include('_layouts.header', [
 			'h1' => 'E-commerce Services',
-			'h2' => 'Sell directly to your raving fans.',
-			'desc' => 'There are more ways than ever to sell online. What is the best platform out there for you? Frendo helps you navigate the modern e-commerce ecosystem and build the best system for your needs.',
+			'h2' => 'Sell directly for your raving fans.',
+			'desc' => 'There are more ways than ever to sell online. What is the best platform out there for you? Frendo navigates the modern e-commerce ecosystem for you and builds the best system tailored to your needs.',
 		])
-	<ul class="list-none grid grid-cols-2 gap-2">
-		<li class="bg-green-100 dark:bg-gray-900 flex flex-col gap-4 items-center justify-center py-8">
-			<span class="uppercase text-xs m-0 font-normal tracking-widest">Custom E-Commerce</span>
+@endsection
+
+@section('body')
+	<ul class="list-none m-0 flex items-center justify-center gap-8 mt-4 mb-16 lg:mb-24">
+		<li class="flex flex-col gap-4 items-center justify-center">
 			<button 
 				@click="document.querySelector('#custom').scrollIntoView({ behavior: 'smooth' })"
-				class="btn-green text-xl font-bold  rounded-full px-4 py-2 ">
+				class="btn-green text-xl lg:text-2xl font-bold  rounded-full px-4 py-2 ">
 				"I want full control of my online shop."
 			</button>
 		</li>
-		<li class="bg-green-100 dark:bg-gray-900 flex flex-col gap-4 items-center justify-center py-8">
-			<span class="uppercase text-xs m-0 font-normal tracking-widest">Managed E-Commerce</span>
+		<li class="flex flex-col gap-4 items-center justify-center">
 			<button 
 				@click="document.querySelector('#managed').scrollIntoView({ behavior: 'smooth' })"
-				class="btn-green text-xl font-bold  rounded-full px-4 py-2 ">
+				class="btn-green text-xl lg:text-2xl font-bold  rounded-full px-4 py-2 ">
 				"I want the most hassle-free experience."
 			</button>
 		</li>

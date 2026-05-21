@@ -4,14 +4,18 @@ description: Ax me summin
 ---
 @extends('_layouts.main')
 
+@section('header')
+@include('_layouts.header', [
+		'h1' => 'Digital Consulting Services',
+		'h2' => 'Bring new horizons into view.',
+		'desc' => 'Doing what has never been done before requires research, foresight and planning. Frendo is your magic 8 ball. Let&rsquo;s shake things up and get the answers you seek.',
+	])
+@endsection
+
 @section('body')
 
 	
-	@include('_layouts.header', [
-		'h1' => 'Digital Consulting Services',
-		'h2' => 'Bring your new horizon into view.',
-		'desc' => 'Doing what has never been done requires research, foresight, and planning. Frendo is your sherpa ready to chart your ascent to the peak.',
-	])
+	
 
 
 	<p class="font-bold">Services include:</p>

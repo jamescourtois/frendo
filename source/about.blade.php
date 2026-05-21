@@ -4,13 +4,18 @@ description: A little bit about the site
 ---
 @extends('_layouts.main')
 
-@section('body')
 
-	@include('_layouts.header', [
-		'h1' => 'About Frendo',
-		'h2' => 'Web Development & Consulting in St. Louis, MO',
+@section('header')
+	@include('_layouts.header-alt', [
+		'h1' => 'Web Development & Consulting <br class="hidden lg:inline" /> in St. Louis, MO',
+		'h2' => 'About Frendo',
 		'desc' => 'Frendo is your foundry for state-of-the-art web design and coding. If you are searching for a dedicated expert to cut right to heart of what matters, look no further.',
 	])
+
+@endsection
+
+@section('body')
+
 
 	<ul>
 		<li>Explain the process</li>

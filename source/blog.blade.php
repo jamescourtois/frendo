@@ -7,12 +7,16 @@ pagination:
 ---
 @extends('_layouts.main')
 
-@section('body')
+@section('header')
     @include('_layouts.header', [
 			'h1' => 'Blog',
-			'h2' => 'Sharing knowledge is key.',
-			'desc' => 'Everything you see here is designed to level up your approach to the web.',
+			'h2' => 'Knowledge is power.',
+			'desc' => 'Everything you see here is designed to level up your skills and improve how you approach the world wide web.',
 		])
+@endsection
+
+@section('body')
+
 
     <hr class="border-b my-6">
 

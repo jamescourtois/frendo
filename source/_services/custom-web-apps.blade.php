@@ -4,14 +4,17 @@ description: Special sauce
 ---
 @extends('_layouts.main')
 
-@section('body')
-
+@section('header')
 	@include('_layouts.header', [
 		'h1' => 'Custom Web App Services',
 		'h2' => 'Customized logic for original thinkers.',
 		'desc' => 'Millions of apps exist, but there are still gaps that no existing service can fill. When you need to span that divide, Frendo is here to build your bridge.',
 	])
-
+@endsection
+@section('body')
+	<ul>
+		<li>list reasons why would you need a custom web app</li>
+	</ul>
 	<p class="font-bold">Services include:</p>
 	<ul class="pl-4">
 		<li>Laravel / PHP custom apps</li>
