@@ -65,8 +65,9 @@ a {
  /* dark buttons  */
 @media (prefers-color-scheme: dark) {
 	a {
-			@apply text-cyan-300;
-			@apply hover:text-cyan-700;
+			@apply font-normal;
+			@apply text-white;
+			@apply hover:text-green-400;
 	}
 }
 

@@ -6,6 +6,7 @@
 	transition: all 400ms ease-in-out;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
 	cursor: pointer;
+	font-weight: 700;
 }
 
 .btn-special:hover {
@@ -15,8 +16,22 @@
 .btn-green {
 	appearance: none;
 	color:#002c22;
+	font-weight: 700;
 	border:1px solid #002c22;
-	background: linear-gradient(to right, transparent, transparent, transparent, lime, limegreen, green, darkgreen, #002c22);
+	background: linear-gradient(to right, transparent, transparent, transparent, limegreen, #002c22, #002c22, #002c22);
+	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
+	background-size: 350% 100%;
+	transition: all 400ms ease-in-out;
+	cursor: pointer;
+	/* box-shadow: 0px 2px 5px rgba(0,0,0,0.55); */
+}
+
+.btn-not-black {
+	appearance: none;
+	color:#0c0c0c;
+	font-weight: 700;
+	border:1px solid #0c0c0c;
+	background: linear-gradient(to right, transparent, transparent, transparent, white, #0c0c0c, #0c0c0c, #0c0c0c);
 	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
 	background-size: 350% 100%;
 	transition: all 400ms ease-in-out;
@@ -27,6 +42,7 @@
 .btn-special-3 {
 	appearance: none;
 	color:#f54a00;
+	font-weight: 700;
 	border:1px solid #f54a00;
 	background: linear-gradient(to right, transparent, transparent, transparent, yellow, orange, #f54a00);
 	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
@@ -37,6 +53,11 @@
 }
 
 .btn-green:hover {
+	background-position: 100% 0;
+	color: white;
+}
+
+.btn-not-black:hover {
 	background-position: 100% 0;
 	color: white;
 }

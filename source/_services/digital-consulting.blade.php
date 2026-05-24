@@ -8,7 +8,7 @@ description: Ax me summin
 @include('_layouts.header', [
 		'h1' => 'Digital Consulting Services',
 		'h2' => 'Bring new horizons into view.',
-		'desc' => 'Doing what has never been done before requires research, foresight and planning. Frendo is your magic 8 ball. Let&rsquo;s shake things up and get the answers you seek.',
+		'desc' => 'Doing what has never been done before requires research, foresight and planning. Frendo is your magic 8 ball. Let&rsquo;s shake things up and work together on the answers you seek.',
 	])
 @endsection
 
