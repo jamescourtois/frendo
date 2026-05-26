@@ -19,16 +19,16 @@ description: Get in touch with us
 				Big ideas start with small talk. Don't hesitate to reach out and learn how Frendo elevates your online presence.
 		</p>
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
-			<li class="uppercase text-xs m-0 font-normal tracking-widest">Call or text</li>
+			<li class="kicker">Call or text</li>
 			<li class="mb-2"><a href="tel:+13146687244">(314) 668-7244</a></li>
 		</ul>
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
-			<li class="uppercase text-xs m-0 font-normal tracking-widest">Send a note</li>
+			<li class="kicker">Send a note</li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 	</div>
 	<div class="w-full lg:w-2/3 p-8 shadow-lg bg-cyan-100 dark:bg-gray-800">
-		<span class="block text-center mb-4 uppercase text-xs m-0 font-normal tracking-widest">Official Contact Form</span>
+		<span class="block text-center mb-4 kicker">Official Contact Form</span>
 		<form class="form-style" method="POST" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" class="mb-12">
 				<div class="flex flex-wrap mb-6 -mx-3">
 						<div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">

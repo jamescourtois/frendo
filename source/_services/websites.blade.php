@@ -13,28 +13,17 @@ description: Services for website stuff
 @endsection
 
 @section('body')
-
-
-	<ul class="list-none m-0 flex items-center justify-center gap-8 mt-4 mb-16 lg:mb-24">
-		<li class="flex flex-col gap-4 items-center justify-center">
-			<button 
-				@click="document.querySelector('#new').scrollIntoView({ behavior: 'smooth' })"
-				class="btn-green text-xl lg:text-2xl font-bold  rounded-full px-4 py-2 ">
-				"I want a whole new website."
-			</button>
-		</li>
-		<li class="flex flex-col gap-4 items-center justify-center">
-			<button 
-				@click="document.querySelector('#existing').scrollIntoView({ behavior: 'smooth' })"
-				class="btn-green text-xl lg:text-2xl font-bold  rounded-full px-4 py-2 ">
-				"I need support for my website."
-			</button>
-		</li>
-	</ul>
+	@include('_layouts.prompt', [
+    'question' => 'Are you starting something new, or do you need support your existing site?',
+    'answers' => [
+        ['text' => '"I want a whole new system."', 'id' => 'new'],
+        ['text' => '"I need support for my website."', 'id' => 'existing'],
+    ],
+	])
 	<div class="m-0 flex flex-col max-w-[800px] mx-auto">
 		<div class="light:bg-gray-100 w-full">
 			<div class="xl:pt-18 pb-12 container mx-auto" id="new">
-				<h3 class="uppercase text-xs m-0 font-normal tracking-widest">New Websites</h3>
+				<h3 class="kicker">New Websites</h3>
 				<h4 class="mt-0 text-5xl font-bold lg:text-[4.25rem]">Build for the future.</h4>
 				<div class="max-w-[800px]">
 					<p>When you build with Frendo, you get an enterprise-level tech stack designed to scale. Content, features, and longevity are engineered into the core of your project from the start.</p>
@@ -52,7 +41,7 @@ description: Services for website stuff
 		</div>
 		<div class="light:bg-gray-200 w-full">
 			<div class="pt-12 pb-18 container mx-auto" id="existing">
-				<h3 class="uppercase text-xs m-0 font-normal tracking-widest">Existing Websites</h3>
+				<h3 class="kicker">Existing Websites</h3>
 				<h4 class="mt-0 text-5xl font-bold lg:text-[4.25rem]">Evolve, adapt, overcome.</h4>
 				<div class="max-w-[800px]">
 					<p>Owning a website requires maintenance and problem solving. If you are fighting with your website to keep things running, <a href="/contact">Frendo is in your corner</a>.</p>

@@ -6,7 +6,7 @@ description: Let's keep in touch
 
 @section('body')
 	<div x-data="{clicked:false}" class="flex flex-col items-center justify-center text-center">
-			<h1 class="uppercase text-xs m-0 font-normal tracking-widest">Contact Card</h1>
+			<h1 class="kicker">Contact Card</h1>
 			<h2 class="mt-3 leading-[2.8rem] text-5xl mb-5">Let's keep in touch.</h2>
 			
 			<a href="{{ $page->baseUrl . '/frendo.vcf' }}"
@@ -25,7 +25,7 @@ description: Let's keep in touch
 		</ul>
 
 		<ul class="list-none">
-			<li class="uppercase text-xs m-0 font-normal tracking-widest mb-3">Get Acquainted</li>
+			<li class="kicker mb-3">Get Acquainted</li>
 			<li class="mb-2"><a href="/services">View a full list of services</a></li>
 			<li class="mb-2"><a href="/about">Learn more about Frendo</a></li>
 			<li class="mb-2"><a href="/blog">Check out the blog</a></li>

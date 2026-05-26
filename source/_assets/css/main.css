@@ -38,5 +38,9 @@
   .shadow-search {
     box-shadow: var(--shadow-search);
   }
+
+	.kicker {
+		@apply uppercase text-xs m-0 font-normal tracking-widest;
+	}
 }
 

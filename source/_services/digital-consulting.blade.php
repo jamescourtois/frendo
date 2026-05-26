@@ -13,11 +13,16 @@ description: Ax me summin
 @endsection
 
 @section('body')
-
-	
-	
-
-
+	@include('_layouts.prompt', [
+    'question' => 'Which of these sounds the most like you?',
+    'answers' => [
+		['text' => '"I need to overhaul my website and it needs a lot of work"', 'id' => 'rebuild'],
+		['text' => '"I inherited a website and I dont know what to do with it."', 'id' => 'takeover'],
+		['text' => '"I want to build my own development team."', 'id' => 'team'],
+		['text' => '"I know what I want, I just need someone to build it"', 'id' => 'build'],
+		['text' => '"My mom said my website is ugly."', 'id' => 'ugly'],
+    ],
+	])
 	<p class="font-bold">Services include:</p>
 	<ul class="pl-4">
 		<li>Site audits - Accessibility, SEO, GEO, performance, design</li>

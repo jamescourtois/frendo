@@ -12,6 +12,15 @@ description: Special sauce
 	])
 @endsection
 @section('body')
+	@include('_layouts.prompt', [
+    'question' => 'What can I do with my own custom web app?',
+    'answers' => [
+			['text' => 'Build a community', 'id' => 'community'],
+			['text' => 'Create your own tools', 'id' => 'tools'],
+			['text' => 'Stop doing repetitive work', 'id' => 'automate'],
+			['text' => 'Make apps talk to each other', 'id' => 'apps'],
+    ],
+	])
 	<ul>
 		<li>list reasons why would you need a custom web app</li>
 	</ul>

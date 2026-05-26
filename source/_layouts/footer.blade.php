@@ -1,12 +1,41 @@
-<footer class="bg-white text-gray-700 dark:bg-black dark:text-gray-400 py-2" role="contentinfo">
-		<div class="container mx-auto">
-				<ul class="list-none sm:columns-2 mb-8 lg:flex lg:flex-wrap items-center justify-around gap-4 text-center">
-					<li><a href="/services">Services Overview</a></li>
+<footer class="bg-white text-gray-700 dark:bg-not-black dark:text-not-white pt-8" role="contentinfo">
+		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4">
+			
+				<ul class="list-none">
+					<li><div class="flex w-[139px] h-[32px] mb-2">
+					@include('_layouts.logo')
+				</div></li>
+					<li>Web Development + Consulting</li>
+					<li>
+						<svg class="fill-not-black dark:fill-gray-400 size-[0.75rem] translate-y-[-1px] inline-block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+							<path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
+						</svg>
+						Based in St. Louis, MO
+					</li>
+				</ul>
+				<ul class="list-none">
+					<li class="uppercase tracking-widest text-gray-500 text-sm mb-2">Info</li>
 					<li><a href="/about">About Frendo</a></li>
+					<li><a href="/services">Services Overview</a></li>
 					<li><a href="/blog">Learning Center</a></li>
 					<li><a href="/contact">Contact Frendo</a></li>
 					<li class="md:hidden"><a href="/contact">Add Frendo as a Contact</a></li>
 				</ul>
+				<ul class="list-none">
+					<li class="uppercase tracking-widest text-gray-500 text-sm mb-2">Services</li>
+					<li><a href="/websites">Websites</a></li>
+					<li><a href="/ecommerce">E-Commerce</a></li>
+					<li><a href="/custom-web-apps">Custom Web Apps</a></li>
+					<li><a href="/digital-consulting">Digital Consulting</a></li>
+				</ul>
+				<ul class="list-none">
+					<li class="uppercase tracking-widest text-gray-500 text-sm mb-2">Friends</li>
+					<li><a target="_blank" href="https://opensource.org/">Open Source Initiaitive</a></li>
+					<li><a target="_blank" href="https://www.eff.org/">Electronic Frontier Foundation</a></li>
+					<li><a target="_blank" href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
+					<li><a target="_blank" href="https://epic.org/">Electronic Privacy Information Center</a></li>
+				</ul>
+				
 		</div>
 		<ul class="flex flex-col font-normal md:flex-row justify-center list-none text-xs text-center">
 				<li class="md:mr-2">
