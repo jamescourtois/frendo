@@ -7,8 +7,8 @@ description: People buy shit online
 @section('header')
 @include('_layouts.header', [
 			'h1' => 'E-commerce Services',
-			'h2' => 'Sell directly to your raving fans.',
-			'desc' => 'There are more ways than ever to sell online. What is the best platform out there for you? Frendo navigates the modern e-commerce ecosystem for you and builds the best online storefront tailored to your needs.',
+			'h2' => 'It&rsquo;s your product, keep more of every sale.',
+			'desc' => 'The big platforms might be easy to use, but they take big bites out of your revenue. Building your own storefront cuts down the fees, but might not feel feasible. Frendo builds online stores that don&rsquo;t overwhelm your to-do list or budget.',
 		])
 @endsection
 

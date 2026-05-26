@@ -15,16 +15,17 @@ description: Special sauce
 	@include('_layouts.prompt', [
     'question' => 'What can I do with my own custom web app?',
     'answers' => [
-			['text' => 'Build a community', 'id' => 'community'],
-			['text' => 'Create your own tools', 'id' => 'tools'],
-			['text' => 'Stop doing repetitive work', 'id' => 'automate'],
-			['text' => 'Make apps talk to each other', 'id' => 'apps'],
+			['text' => 'Build a space for people like you', 'id' => 'community'],
+			['text' => 'Create your own tools', 'id' => 'productiviy'],
+			['text' => 'Stop doing repetitive work', 'id' => 'automation'],
+			['text' => 'Make apps talk to each other', 'id' => 'integration'],
+			['text' => 'Turn your idea into a real product', 'id' => 'innovation'],
     ],
 	])
 	<ul>
-		<li>list reasons why would you need a custom web app</li>
+		<li>write a section for each prompt </li>
 	</ul>
-	<p class="font-bold">Services include:</p>
+	<p class="font-bold">all of this is garbage Services include:</p>
 	<ul class="pl-4">
 		<li>Laravel / PHP custom apps</li>
 		<li>Ruby on Rails custom apps</li>

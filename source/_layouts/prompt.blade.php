@@ -1,5 +1,5 @@
-<div class="flex flex-col p-10 border border-not-black dark:border-not-white max-w-[900px] mx-auto">
-	<h2 class="text-center mb-8 font-semibold">{!! $question !!}</h2>
+<div class="flex flex-col p-10 border text-center border-not-black dark:border-not-white mx-auto">
+	<h2 class="text-center mb-8 mx-auto font-semibold max-w-[850px]">{!! $question !!}</h2>
 	<ul class="list-none m-0 flex flex-col lg:flex-row flex-wrap items-center justify-center gap-8">
 		@foreach($answers as $a)
 			<li class="flex flex-grow flex-col gap-4 items-center justify-center">

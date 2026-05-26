@@ -7,8 +7,8 @@ description: Ax me summin
 @section('header')
 @include('_layouts.header', [
 		'h1' => 'Digital Consulting Services',
-		'h2' => 'Bring new horizons into view.',
-		'desc' => 'Doing what has never been done before requires research, foresight and planning. Frendo is your magic 8 ball. Let&rsquo;s shake things up and work together on the answers you seek.',
+		'h2' => 'It&rsquo;s okay to ask for help.',
+		'desc' => 'In the web world, it is a rite of passage to encounter a problem that stops you dead in your tracks. The good news is Frendo has already been there.',
 	])
 @endsection
 
@@ -16,10 +16,11 @@ description: Ax me summin
 	@include('_layouts.prompt', [
     'question' => 'Which of these sounds the most like you?',
     'answers' => [
-		['text' => '"I need to overhaul my website and it needs a lot of work"', 'id' => 'rebuild'],
-		['text' => '"I inherited a website and I dont know what to do with it."', 'id' => 'takeover'],
+		['text' => '"My website needs a LOT of work."', 'id' => 'rebuild'],
+		['text' => '"I inherited a website, what do I do with it?"', 'id' => 'takeover'],
 		['text' => '"I want to build my own development team."', 'id' => 'team'],
-		['text' => '"I know what I want, I just need someone to build it"', 'id' => 'build'],
+		['text' => '"I have an idea but how do I build it?"', 'id' => 'build'],
+		['text' => '"I need to learn more about how my website works."', 'id' => 'ugly'],
 		['text' => '"My mom said my website is ugly."', 'id' => 'ugly'],
     ],
 	])

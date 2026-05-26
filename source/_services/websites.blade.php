@@ -7,16 +7,16 @@ description: Services for website stuff
 @section('header')
 		@include('_layouts.header', [
 			'h1' => 'Website Services',
-			'h2' => 'The foundation of your online reputation.',
-			'desc' => 'Your website is your source of truth and your doorstep for the world. When users stop by for a visit, serve the right message and the best experience.',
+			'h2' => 'The foundation of your online presence.',
+			'desc' => 'Your website is your source of truth and your doorstep for the world. When users stop by for a visit, give them a comfortable place to spend time with you.',
 		])
 @endsection
 
 @section('body')
 	@include('_layouts.prompt', [
-    'question' => 'Are you starting something new, or do you need support your existing site?',
+    'question' => 'Are you starting something new or do you need help with a problem?',
     'answers' => [
-        ['text' => '"I want a whole new system."', 'id' => 'new'],
+        ['text' => '"I am starting from scratch."', 'id' => 'new'],
         ['text' => '"I need support for my website."', 'id' => 'existing'],
     ],
 	])
@@ -26,13 +26,12 @@ description: Services for website stuff
 				<h3 class="kicker">New Websites</h3>
 				<h4 class="mt-0 text-5xl font-bold lg:text-[4.25rem]">Build for the future.</h4>
 				<div class="max-w-[800px]">
-					<p>When you build with Frendo, you get an enterprise-level tech stack designed to scale. Content, features, and longevity are engineered into the core of your project from the start.</p>
-					<p class="font-bold">Services include:</p>
+					<p>When you build your new project with Frendo, we craft a website with a powerful tech stack designed to scale. You get everything you need (even the things you haven't thought of yet) and you won't have to start over with a new website when your subscription price is too high.</p>
 					<ul class="pl-4">
-						<li>Enterprise-Level Tech Stacks - Leverage the power of Laravel, WordPress, or Ruby on Rails to build a site that fast and flexible.</li>
-						<li>Total Sovereignty - The code, the data, and the content belong to you. No proprietary "rental" locks, ever.</li>
-						<li>Tailored Autonomy - Choose your level of involvement. Take the keys and manage it yourself, or let Frendo handle the technical heavy lifting.</li>
-						<li>Future-Proof Engineering - A rock-solid foundation means adding new features and content is seamless, ensuring your site exceeds your needs for years to come.</li>
+						<li>Leverage the power of state-of-the-art tech stacks like Laravel, WordPress, Shopify and Ruby on Rails.</li>
+						<li>The code, the data and the content belong to you. Take it with you any time. You are never locked in and you never lose what is yours.</li>
+						<li>Choose your level of involvement. Take the keys and manage it yourself, or let Frendo handle the technical heavy lifting.</li>
+						<li>Adding new features and content as needed is built-in, ensuring your site meets all your needs over a long lifecycle.</li>
 					</ul>
 					<p class="pb-6">Your new website starts with a simple conversation. Reach out anytime.</p>
 					<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Let's start your new project</a>
@@ -44,15 +43,15 @@ description: Services for website stuff
 				<h3 class="kicker">Existing Websites</h3>
 				<h4 class="mt-0 text-5xl font-bold lg:text-[4.25rem]">Evolve, adapt, overcome.</h4>
 				<div class="max-w-[800px]">
-					<p>Owning a website requires maintenance and problem solving. If you are fighting with your website to keep things running, <a href="/contact">Frendo is in your corner</a>.</p>
+					<p>Owning a website can feel like a full time job you did not sign up for. If you are fighting with your website to keep things running, Frendo is in your corner.</p>
 					<p class="font-bold">Services include:</p>
 					<ul class="pl-4">
-						<li>Content updates - Professional updates for your media and content</li>
-						<li>Improve performance - Fix bugs, broken pages, loading issues, you name it.</li>
-						<li>Add new features - Build user features, integrate third-party services, and more.</li>
-						<li>Site Audits - Accessibility, search engine optimization, speed and performance, and more.</li>
+						<li>Professional updates for your media and content</li>
+						<li>Fix bugs, broken pages, loading issues, bad links, out of date plugins, you name it.</li>
+						<li>Build new features, integrate third-party services, modify the layouts, and more.</li>
+						<li>Accessibility audits, performance audits, security audits, QA testing, and more.</li>
 					</ul>
-					<p class="pb-6">Let's be honest; legacy websites can be a dumpster fire. If you feel the heat, <a href="/contact" class="text-green-700 hover:text-green-900 dark:text-green-300 dark:hover:text-green-600">call Frendo</a> for backup.</p>
+					<p class="pb-6">Let's be honest; legacy websites can be a dumpster fire. If you feel the heat, call Frendo for backup.</p>
 					<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get the anwers you need</a>
 				</div>
 			</div>
