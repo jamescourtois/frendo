@@ -24,7 +24,6 @@ description: Ax me summin
 		['text' => '"My mom said my website is ugly."', 'id' => 'ugly'],
     ],
 	])
-	<p class="font-bold">Services include:</p>
 	<ul class="pl-4">
 		<li>Site audits - Accessibility, SEO, GEO, performance, design</li>
 		<li>Web training - Learn how admin your site, upload content, edit photos, and more.</li>
@@ -37,4 +36,10 @@ description: Ax me summin
 		<li>Should you invest in a custom site, or should you use a subscription service? Should you use WordPress or Wix or Squarespace? What about geting a custom emeail domain set up? These are questions we answer together.</li>
 		<li>What people do you need to put in place in order to run an online store, or a lead generation site, etc. </li>
 	</ul>
+@endsection
+@section('body-full')
+	@include('_layouts.cta',[
+		'title' => 'Let&rsquo;s figure it out buttercup.',
+		'link_text' => 'Contact Frendo',
+	])
 @endsection

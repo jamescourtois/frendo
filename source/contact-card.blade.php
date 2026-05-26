@@ -19,8 +19,8 @@ description: Let's keep in touch
 		</a>
 		<span x-text="clicked ? 'Check your downloads folder and open the contact card.' : 'Save the Frendo.vcf contact card to your device.'" class="text-xs text-gray-500"></span>
 			
-		<ul class="bg-blue-100 dark:bg-gray-800 list-none text-3xl font-bold mt-8 p-8">
-			<li><a class="active-text-green-500" href="tel:+13146687244">(314) 668-7244</a></li>
+		<ul class="list-none text-3xl font-bold mt-8 p-8">
+			<li><a href="tel:+13146687244">(314) 668-7244</a></li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 

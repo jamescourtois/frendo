@@ -27,14 +27,6 @@
 					<li>
 						<a
 							class="mb-4 block text-2xl"
-							title="Services Overview"
-							href="/services">
-								Services Overview
-						</a>
-					</li>
-					<li>
-						<a
-							class="mb-4 block text-2xl"
 							title="Website Services"
 							href="/services/websites">
 								Websites

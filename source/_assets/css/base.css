@@ -184,7 +184,11 @@ li {
 
 ol,
 ul {
-    @apply my-4;
+   	@apply my-3;
+
+    @media (width >= theme(--breakpoint-md)) {
+        @apply my-6;
+    }
 }
 
 ol {

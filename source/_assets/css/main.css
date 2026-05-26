@@ -3,6 +3,8 @@
 @theme {
 	--color-not-black: #0c0c0c;
 	--color-not-white: #E0E0E0;
+	--leading-tighter: 1.1;
+	--leading-tightest: 0.9;
 }
 
 @import './base.css' layer(components);
@@ -40,7 +42,7 @@
   }
 
 	.kicker {
-		@apply uppercase text-xs m-0 font-normal tracking-widest;
+		@apply uppercase text-xs mt-0 mb-2 font-normal tracking-widest;
 	}
 }
 

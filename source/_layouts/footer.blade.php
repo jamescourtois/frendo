@@ -1,4 +1,4 @@
-<footer class="bg-white text-gray-700 dark:bg-not-black dark:text-not-white pt-8" role="contentinfo">
+<footer class="pt-8" role="contentinfo">
 		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4">
 			
 				<ul class="list-none">
@@ -19,7 +19,7 @@
 					<li><a href="/services">Services Overview</a></li>
 					<li><a href="/blog">Learning Center</a></li>
 					<li><a href="/contact">Contact Frendo</a></li>
-					<li class="md:hidden"><a href="/contact">Add Frendo as a Contact</a></li>
+					<li class="md:hidden"><a href="/contact-card">Add Frendo as a Contact</a></li>
 				</ul>
 				<ul class="list-none">
 					<li class="uppercase tracking-widest text-gray-500 text-sm mb-2">Services</li>

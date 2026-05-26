@@ -31,11 +31,11 @@
     </head>
 
     <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-800 dark:bg-not-black dark:text-not-white flex flex-col justify-between min-h-screen leading-normal font-sans">
-			<header class="bg-white/70 dark:bg-black/50 fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
+			<header class="bg-white/50 dark:bg-black/50 fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" @click="$store.theme.showIntro = true" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <div class="flex w-[139px] h-[32px]">
+                        <div class="flex w-[103px] h-[24px]">
 													@include('_layouts.logo')
 												</div>
 

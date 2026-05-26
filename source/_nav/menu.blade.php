@@ -1,7 +1,7 @@
-<nav class="hidden lg:flex items-center justify-end text-lg">
+<nav class="hidden lg:flex items-center gap-8 xl:gap-10 justify-end">
 	
 		<a
-			class="ml-6 text-xl text-slate-700 dark:text-white hover:text-blue-600 dark:hover:text-cyan-300 {{ $page->isActive('/websites') ? 'active text-blue-600' : '' }}"
+			class="{{ $page->isActive('/websites') ? 'active' : '' }}"
 			title="Website Services"
 			href="/services/websites">
 				Websites
@@ -9,7 +9,7 @@
 	
 	
 		<a
-			class="ml-6 text-xl text-slate-700 dark:text-white hover:text-blue-600 dark:hover:text-cyan-300 {{ $page->isActive('/ecommerce') ? 'active text-blue-600' : '' }}"
+			class="{{ $page->isActive('/ecommerce') ? 'active' : '' }}"
 			title="E-Commerce Services"
 			href="/services/ecommerce">
 				E-Commerce
@@ -17,7 +17,7 @@
 	
 	
 		<a
-			class="ml-6 text-xl text-slate-700 dark:text-white hover:text-blue-600 dark:hover:text-cyan-300 {{ $page->isActive('/custom-web-apps') ? 'active text-blue-600' : '' }}"
+			class="{{ $page->isActive('/custom-web-apps') ? 'active' : '' }}"
 			title="Custom Web Apps"
 			href="/services/custom-web-apps">
 				Custom Apps
@@ -25,14 +25,14 @@
 	
 	
 		<a
-			class="ml-6 text-xl text-slate-700 dark:text-white hover:text-blue-600 dark:hover:text-cyan-300 {{ $page->isActive('/digital-consulting') ? 'active text-blue-600' : '' }}"
+			class="{{ $page->isActive('/digital-consulting') ? 'active' : '' }}"
 			title="Digital Consulting"
 			href="/services/digital-consulting">
 				Consulting
 		</a>
 
 		<a
-			class="ml-6 text-xl text-slate-700 dark:text-white hover:text-blue-600 dark:hover:text-cyan-300 {{ $page->isActive('/contact') ? 'active text-blue-600' : '' }}"
+			class="{{ $page->isActive('/contact') ? 'active' : '' }}"
 			title="Digital Consulting"
 			href="/contact">
 				Contact
