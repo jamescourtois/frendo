@@ -24,9 +24,9 @@ description: Services for website stuff
 @section('body-full')
 	<div class="m-0 flex flex-col mx-auto max-w-[800px] my-20 lg:my-24 gap-20 lg:gap-24 px-4">
 		
-			<div class="mx-auto" id="new">
+			<div class="mx-auto group" id="new">
 				<h3 class="kicker">New Websites</h3>
-				<h4 class="text-5xl m-0 font-bold ">Build for the future.</h4>
+				<h4 class="text-5xl m-0 font-bold group-hover:text-blue-700 duration-150">Build for the future.</h4>
 				<div>
 					<p>When you build your new project with Frendo, we craft a website with a powerful tech stack designed to scale. You get everything you need (even the things you haven't thought of yet) and you won't have to start over with a new website when your subscription price is too high.</p>
 					<ul class="pl-4">
@@ -40,9 +40,9 @@ description: Services for website stuff
 				</div>
 			</div>
 		
-			<div class="mx-auto" id="existing">
+			<div class="mx-auto group" id="existing">
 				<h3 class="kicker">Existing Websites</h3>
-				<h4 class="text-5xl m-0 font-bold ">There is always a way.</h4>
+				<h4 class="text-5xl m-0 font-bold group-hover:text-blue-700 duration-150">There is always a way.</h4>
 				<div>
 					<p>Owning a website can feel like a full time job you did not sign up for. When a problem pops up you have to first determine is it the code, the database, the server or the user. Log into the admin, ssh onto the server, clear the cache. Are you feeling a little stressed out already? Let Frendo find the answer for you.</p>
 					<ul class="pl-4">

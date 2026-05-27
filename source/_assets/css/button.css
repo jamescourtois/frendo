@@ -14,12 +14,10 @@
 }
 
 .btn-green {
+	@apply text-green-700 border-2 border-green-500;
 	appearance: none;
 	display: inline-block;
-	color:#002c22;
-	font-weight: 700;
-	border:1px solid #002c22;
-	background: linear-gradient(to right, transparent, transparent, transparent, limegreen, #002c22, #002c22, #002c22);
+	background: linear-gradient(to right, transparent, transparent, transparent, cyan, blue, purple, red, orange);
 	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
 	background-size: 350% 100%;
 	transition: all 400ms ease-in-out;
@@ -56,17 +54,19 @@
 }
 
 .btn-green:hover {
-	background-position: 100% 0;
+	background-position: 99% 0;
+	border-color: transparent;
 	color: white;
 }
 
 .btn-not-black:hover {
-	background-position: 100% 0;
+	background-position: 99% 0;
 	color: white;
 }
 
 .btn-special-3:hover {
-	background-position: 100% 0;
+	background-position: 99% 0;
+	border-color: transparent;
 	color: white;
 }
 
@@ -83,7 +83,7 @@
 	}
 
 	.btn-green:hover {
-		background-position: 100% 0;
+		background-position: 99% 0;
 		color: #002c22;
 	}	
 }

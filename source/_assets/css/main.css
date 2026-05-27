@@ -2,7 +2,7 @@
 
 @theme {
 	--color-not-black: #0c0c0c;
-	--color-not-white: #E0E0E0;
+	--color-not-white: #c1c1c1;
 	--leading-tighter: 1.1;
 	--leading-tightest: 0.9;
 }
@@ -41,8 +41,6 @@
     box-shadow: var(--shadow-search);
   }
 
-	.kicker {
-		@apply uppercase text-xs mt-0 mb-2 font-normal tracking-widest;
-	}
+
 }
 

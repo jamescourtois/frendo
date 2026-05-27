@@ -59,15 +59,15 @@ body {
 a {
     @apply font-semibold;
     @apply no-underline;
-    @apply text-blue-600;
-    @apply hover:text-blue-800;
+    @apply text-gray-600;
+    @apply hover:text-blue-600;
 }
  /* dark buttons  */
 @media (prefers-color-scheme: dark) {
 	a {
 			@apply font-normal;
 			@apply text-white;
-			@apply hover:text-green-400;
+			@apply hover:text-blue-300;
 	}
 }
 
@@ -118,6 +118,7 @@ h6 {
     @apply mt-8;
     @apply mb-4;
     @apply leading-tight;
+		@apply text-gray-800;
 
     &:first-child {
         @apply mt-0;
@@ -132,8 +133,12 @@ h6 {
 	h4,
 	h5,
 	h6 {
-		@apply text-gray-100;
+		@apply text-gray-300;
 	}
+}
+
+.kicker {
+	@apply uppercase text-xs mt-0 mb-2 font-normal tracking-widest text-not-black dark:text-not-white;
 }
 
 
@@ -225,8 +230,8 @@ pre {
 }
 
 ::selection {
-    @apply text-white;
-    @apply bg-blue-400;
+    @apply text-not-black;
+    @apply bg-yellow-400;
 }
 
 [x-cloak] { display: none !important; }
@@ -248,4 +253,9 @@ textarea {
 	textarea {
 			@apply bg-gray-900;
 	}
+
+	::selection {
+    @apply text-not-black;
+    @apply bg-purple-300;
+}
 }
