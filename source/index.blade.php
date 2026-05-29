@@ -29,7 +29,7 @@
 		</div>
 
 	@include('_layouts.cta',[
-		'title' => 'Let&rsquo;s crush your 2026 web goals.',
+		'title' => 'Let&rsquo;s build a better web together.',
 		'link_text' => 'Contact Frendo',
 	])
 @endsection

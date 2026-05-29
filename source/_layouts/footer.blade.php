@@ -1,4 +1,4 @@
-<footer class="pt-8" role="contentinfo">
+<footer class="pt-8 bg-gray-100 dark:bg-gray-900" role="contentinfo">
 		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4">
 			
 				<ul class="list-none">
@@ -37,9 +37,12 @@
 				</ul>
 				
 		</div>
-		<ul class="flex flex-col font-normal md:flex-row justify-center list-none text-xs text-center">
-				<li class="md:mr-2">
+		<ul class="flex flex-col font-normal justify-center items-center list-none text-xs text-center">
+				<li>
 						<span class="text-lg font-light inline-block translate-y-[5px]">&copy;</span> Frendo Web Development {{ date('Y') }}. All Rights Reserved.
+				</li>
+				<li>
+					<span class="inline-block text-xs leading-[1rem]">Form entries are handled securely via <a href="https://form-data.com">form-data.com</a> and all data is deleted after 90 days.</span>
 				</li>
 		</ul>
 </footer>

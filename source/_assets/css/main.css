@@ -4,7 +4,7 @@
 	--color-not-black: #0c0c0c;
 	--color-not-white: #e1e1e1;
 	--leading-tighter: 1.1;
-	--leading-tightest: 0.9;
+	--leading-tightest: 1;
 }
 
 @import './base.css' layer(components);
@@ -40,7 +40,5 @@
   .shadow-search {
     box-shadow: var(--shadow-search);
   }
-
-
 }
 

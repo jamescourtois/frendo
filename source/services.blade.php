@@ -9,36 +9,31 @@ description: What it is we say we do here
 		@include('_layouts.header', [
 			'h1' => 'Services Overview',
 			'h2' => 'You have a friend in the web business.',
-			'desc' => 'Check out each core service below. Whether you need a brand new website or a simple bug fix, you are in the right place. Let Frendo guide you to the best and most efficient answers for all your web needs. You have a real partner you can trust with your online presence. <a href="/contact">Reach out</a> anytime.',
+			'desc' => 'We can all agree that the internet did not turn out to be a fad. Having your own space in the digital world is a valuable thing. Whether you are starting a new project, making something better, or just trying to put out fires, you are in the right place.',
 		])
 
 @endsection
 @section('body-full')
 		@include('_layouts.service-blocks')
-		<div class="flex flex-col container mx-auto lg:mt-24 mt-10 px-4">
-			<div class="flex-1 mx-auto">
-				<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Why work with Frendo?</h2>
-			</div>
-			<div class="flex-1 max-w-[800px] mx-auto">
-				<h3 class="text-4xl">Create a digital home base you actually own.</h3>
-				<p class="mt-0 mb-4"><span class="font-bold">Do you truly own your website?</span> If you pay a subscription for an all-in-one service, the answer is likely no. You are essentially renting
-					your website, including all of the data and content. When you want to move your site to a new service, you will have to start over from zero. This can lead to big headaches down the road as your web needs evolve.</p>
-				<p class="mt-0 mb-0">Build with Frendo and maintain full ownership of your code, content and data. Migrate anytime and take it all with you. If maintenance and overhead get too heavy, <a href="/contact">Frendo is here</a> to do the lifting. </p>
-			</div>
+		<div class="text-center mx-auto pt-20 lg:pt-24">
+			<h2 class="kicker">What to Expect</h2>
 		</div>
-		<div class="flex flex-col container mx-auto mt-10 mb-24 px-4">
-			<div class="flex-1 max-w-[800px] mx-auto">
-				<h3 class="text-4xl">Put your money where your code is.</h3>
-				<p class="mt-0 mb-4">Working with Frendo means your investment goes directly into crafting your project. You never pay for layers of
-					account managers, emails, status meetings, or agency bloat. Your money translates into valuable, productive work.
-					By leveraging modern open source stacks like Laravel, Ruby on Rails, and WordPress, Frendo builds high performance sites that are cost
-					efficient.</p>
-					<p class="mt-0">Invest in your future with Frendo and build a web system that can be expanded in the future to match your growth. <a href="/contact">Frendo is ready</a> to chart your course. </p>
+		<div class="mx-auto max-w-[800px] flex flex-col pb-20 gap-6 lg:pb-24">
+			<div>
+				<h3 class="mb-2">Knowledge is free.</h3>
+				<p class="mt-0">If the first question you get asked is "what's your budget," you are not talking to the right person. When you share your passion and it is met with pricepoints and pre-made templates, find a better way. The first step is a conversation that costs nothing.</p>
+			</div>
+			<div>
+				<h3 class="mb-2">Get the real answers.</h3>
+				<p class="mt-0">There are many ways to build websites and apps. The trick is not to paint yourself into a corner or get locked into paying a subscription you can't quit. Frendo presents you with all your options and no strings attached.</p>
+			</div>
+			<div>
+				<h3 class="mb-2">We start when you say go.</h3>
+				<p class="mt-0">When it's time to make a move, you'll know. In the mean time, arm yourself with the facts. Reflect on what you need to change. Visualize the results you want to see. Frendo will be here when you are ready to start.</p>
 			</div>
 		</div>
-
-		<div class="w-full bg-green-200 dark:bg-cyan-950 flex px-4 text-center items-center justify-center flex-col text-white py-24">
-			<h2 class="text-[4rem] lg:text-[6rem] xl:text-[12rem] xl:leading-[12.5rem] leading-[4.5rem] lg:leading-[6.5rem] ">Let's crush your {{ date('Y') }} web goals together.</h2>
-			<a href="/contact" class="min-w-[260px] mt-10 text-4xl btn-green px-8 py-4 rounded-full">Contact Frendo</a>
-		</div>
+		@include('_layouts.cta',[
+			'title' => 'Frendo is your ethical digital partner.',
+			'link_text' => 'Contact Frendo',
+		])
 @endsection

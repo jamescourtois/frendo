@@ -27,19 +27,19 @@ description: People buy shit online
 	
 		<div class="mx-auto group" id="custom">
 			<h3 class="kicker">Custom E-commerce</h3>
-			<h4 class="text-5xl group-hover:text-blue-600 duration-150 m-0 font-bold  leading-tighter">Your store, your rules.</h4>
+			<h4 class="text-5xl group-hover:text-blue-600 dark:group-hover:text-white duration-150 m-0 font-bold  leading-tighter">Your store, your rules.</h4>
 			<p>Adapt your e-commerce site to your needs, not the other way around. Make no compromises and build a custom storefront that integrates with the tools you already use. Cut out your subscription costs and your fees boil down to hosting, credit card processing, and shipping. Frendo helps you leverage the best platform tailored to your product, including:</p>
 			<ul class="pl-4">
 				<li>WordPress + WooCommerce</li>
 				<li>BigCommerce</li>
 				<li>Bagisto</li>
 			</ul>
-			<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Build a custom storefront</a>
+			<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Build a custom storefront</a>
 		</div>
 	
 		<div class="mx-auto group" id="managed">
 			<h3 class="kicker">Managed E-commerce</h3>
-			<h4 class="text-5xl group-hover:text-blue-600 duration-150 m-0 font-bold  leading-tighter">Great power without great responsibility.</h4>
+			<h4 class="text-5xl group-hover:text-blue-600 dark:group-hover:text-white duration-150 m-0 font-bold  leading-tighter">Great power without great responsibility.</h4>
 			<p>Shopify handles the infrastructure so you can focus on your products. Frendo sets everything up, makes it look like you, and makes sure you know how to use it.</p>
 			<ul class="pl-4">
 				<li>Headless Shopify App Development</li>
@@ -48,12 +48,12 @@ description: People buy shit online
 				<li>Store administration training & support</li>
 			</ul>
 			<p>Your new online store is waiting to be switched on. Frendo is ready when you are.</p>
-			<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with Shopify</a>
+			<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with Shopify</a>
 		</div>
 
 		<div class="mx-auto group" id="cheap">
 			<h3 class="kicker">Maximum Cost Efficiency</h3>
-			<h4 class="text-5xl group-hover:text-blue-600 duration-150 m-0 font-bold  leading-tighter">Margins are the name of the game.</h4>
+			<h4 class="text-5xl group-hover:text-blue-600 dark:group-hover:text-white duration-150 m-0 font-bold  leading-tighter">Margins are the name of the game.</h4>
 			<p>Every dollar you don't spend is a dollar you earn. Not everyone needs a totally unique design with flashy animations. A good product stands on its own.</p>
 			<ul class="pl-4">
 				<li>Leverage open-source e-commerce tools with built-in customer flows.</li>
@@ -62,13 +62,13 @@ description: People buy shit online
 				<li>You own everything, take it with you and move to a new platform any time.</li>
 			</ul>
 			<p>Sometimes you just need the simplest solution. Frendo makes it happen.</p>
-			<a href="/contact" class="mt-auto btn-green px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with the basics</a>
+			<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with the basics</a>
 		</div>
 	
 </div>
 
 	@include('_layouts.cta',[
-		'title' => 'Let&rsquo;s sell shit idk.',
-		'link_text' => 'Contact Frendo',
+		'title' => 'Raise your hand if you love paying listing fees',
+		'link_text' => 'Sell with Frendo',
 	])
 @endsection

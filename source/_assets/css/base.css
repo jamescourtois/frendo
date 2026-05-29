@@ -64,7 +64,7 @@ a {
 
 		&.active {
 			/* outline: 1px solid red; */
-			animation: 20s color-change infinite ease;
+			animation: 30s color-change infinite ease;
 			text-decoration: underline;
 			text-decoration-thickness: 1px;
 			text-underline-offset: 6px;
@@ -75,19 +75,19 @@ a {
 	0% {
 		color: green;
 	}
-	10% {
+	20% {
 		color: cyan;
 	}
-	30% {
+	35% {
 		color: blue;
 	}
 	50% {
 		color: magenta;
 	}
-	70% {
+	65% {
 		color: red;
 	}
-	90% {
+	95% {
 		color: orange;
 	}
 	100% {
