@@ -33,7 +33,7 @@ description: What it is we say we do here
 			</div>
 		</div>
 		@include('_layouts.cta',[
-			'title' => 'Frendo is your ethical digital partner.',
+			'title' => 'Big ideas start with small talk',
 			'link_text' => 'Contact Frendo',
 		])
 @endsection

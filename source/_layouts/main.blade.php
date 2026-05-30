@@ -34,7 +34,7 @@
 			<header class="bg-white/50 dark:bg-black/50 fixed z-[99] w-full flex items-center backdrop-blur-lg h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
-                    <a href="/" @click="$store.theme.showIntro = true" title="{{ $page->siteName }} home" class="inline-flex items-center">
+                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <div class="flex w-[103px] h-[24px]">
 													@include('_layouts.logo')
 												</div>
@@ -55,7 +55,7 @@
 
         <main role="main" class="flex-auto w-full pt-20">
             @yield('header')
-						<div class="container mx-auto px-4 pb-6">
+						<div class="container mx-auto px-4">
 							@yield('body')
 						</div>
 						@yield('body-full')

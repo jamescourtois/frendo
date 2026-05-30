@@ -79,10 +79,11 @@
 
 @media (prefers-color-scheme: dark) {
 	.btn-green,
-	.btn-special-3 {
+	.btn-special-3,
+	.btn-not-black {
 		color: white;
 		border-color: white;
-	}
+	} 
 
 	.btn-green {
 		background: linear-gradient(to right, transparent, transparent, transparent, lime,white, white, white);

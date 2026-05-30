@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center justify-center text-center py-12 lg:py-20 px-4">
+<div class="flex flex-col items-center justify-center text-center my-12 lg:my-20 px-4">
 	
 		<div class="group">
 			<h1 class="duration-150 kicker">

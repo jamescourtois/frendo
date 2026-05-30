@@ -15,7 +15,7 @@ description: A little bit about the site
 @endsection
 
 @section('body')
-<div class="mx-auto max-w-[800px] flex flex-col">
+<div class="mx-auto max-w-[800px] flex flex-col gap-12 my-20">
 	<div class="flex flex-col">
 		<div class="text-center">
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Why work with Frendo?</h2>
@@ -49,9 +49,16 @@ description: A little bit about the site
 			</div>
 		</div>
 		<div class="mt-8">
-			<p class="mt-0 mb-4">James is a St. Louis native and the founder of Frendo Web Development. Over the last 15 years, James has delivered countless real-world design solutions and shipped dozens of enterpise-level web projects for agencies and corporations.</p>
-			<p>Frendo represents the idea that the internet is a power meant to be used for good. Frendo believes that you can connect with the people outside of the monetized algorithm-driven platforms if you build a place for them to find you. Frendo strives to make this an option for everyone no matter where they are at in their digital journey.</p>
+			<p class="mt-0 mb-4">James is a St. Louis native and the founder of Frendo. Over 15 years he has designed, built, and shipped web projects for agencies and corporations of all sizes. James is a dog person who loves camping, hiking, and upping his home chef skills. When he wants to unplug, you can find him having a day out on the river or shooting a few games of pool.</p>
+			<p>James started Frendo because he believes the internet is too valuable to surrender to the big platforms. If you build a place for people to find you, they will. Give them a path to connect with you and you will make those connections. That should be an option for everyone, no matter where they are in their digital journey.</p>
 		</div>
 	</div>
 </div>
+@endsection
+
+@section('body-full')
+@include('_layouts.cta',[
+	'title' => 'Connect with a dedicated expert you can trust.',
+	'link_text' => 'Contact Frendo',
+])
 @endsection

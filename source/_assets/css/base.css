@@ -150,7 +150,7 @@ h4,
 h5,
 h6 {
     @apply mt-8;
-    @apply mb-4;
+    @apply mb-3;
     @apply leading-tight;
 		@apply text-gray-800;
 
@@ -239,10 +239,10 @@ ul {
 }
 
 p {
-    @apply my-3;
+    @apply my-2;
 
     @media (width >= theme(--breakpoint-md)) {
-        @apply my-6;
+        @apply my-3;
     }
 }
 
