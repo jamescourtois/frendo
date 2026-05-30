@@ -34,7 +34,7 @@ description: People buy shit online
 				<li>BigCommerce</li>
 				<li>Bagisto</li>
 			</ul>
-			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Build a custom storefront</a>
+			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white">Build a custom storefront</a>
 		</div>
 	
 		<div class="mx-auto group" id="managed">
@@ -48,7 +48,7 @@ description: People buy shit online
 				<li>Store administration training & support</li>
 			</ul>
 			<p>Your new online store is waiting to be switched on. Frendo is ready when you are.</p>
-			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with Shopify</a>
+			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white">Get started with Shopify</a>
 		</div>
 
 		<div class="mx-auto group" id="cheap">
@@ -62,13 +62,13 @@ description: People buy shit online
 				<li>You own everything, take it with you and move to a new platform any time.</li>
 			</ul>
 			<p>Sometimes you just need the simplest solution. Frendo makes it happen.</p>
-			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with the basics</a>
+			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white">Get started with the basics</a>
 		</div>
 	
 </div>
 
 	@include('_layouts.cta',[
-		'title' => 'Raise your hand if you love paying listing fees',
+		'title' => 'Raise your hand if you love paying listing fees.',
 		'link_text' => 'Sell with Frendo',
 	])
 @endsection

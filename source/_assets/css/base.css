@@ -1,66 +1,10 @@
-@font-face {
-    font-family: 'Gabarito';
-    src: url('../font/Gabarito-Black.woff2') format('woff2'),
-        url('../font/Gabarito-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gabarito';
-    src: url('../font/Gabarito-ExtraBold.woff2') format('woff2'),
-        url('../font/Gabarito-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gabarito';
-    src: url('../font/Gabarito-Bold.woff2') format('woff2'),
-        url('../font/Gabarito-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gabarito';
-    src: url('../font/Gabarito-Regular.woff2') format('woff2'),
-        url('../font/Gabarito-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gabarito';
-    src: url('../font/Gabarito-Medium.woff2') format('woff2'),
-        url('../font/Gabarito-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gabarito';
-    src: url('../font/Gabarito-SemiBold.woff2') format('woff2'),
-        url('../font/Gabarito-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
 
 body {
     font-size: 17px;
 }
 /* light buttons  */
 a {
-    @apply font-semibold;
-    @apply no-underline;
-    @apply text-gray-600;
-    @apply hover:text-blue-600;
+    @apply font-semibold duration-150 no-underline text-blue-500 hover:text-blue-700;
 
 		&.active {
 			/* outline: 1px solid red; */
@@ -73,25 +17,25 @@ a {
 
 @keyframes color-change {
 	0% {
-		color: green;
+		color: blue;
 	}
 	20% {
 		color: cyan;
 	}
 	35% {
-		color: blue;
+		color: green;
 	}
 	50% {
-		color: magenta;
-	}
-	65% {
-		color: red;
-	}
-	95% {
 		color: orange;
 	}
+	65% {
+		color: magenta;
+	}
+	95% {
+		color: red;
+	}
 	100% {
-		color: green;
+		color: blue;
 	}
 }
 
@@ -100,8 +44,8 @@ a {
 @media (prefers-color-scheme: dark) {
 	a {
 			@apply font-normal;
-			@apply text-not-white;
-			@apply hover:text-white;
+			@apply text-blue-400;
+			@apply hover:text-sky-200;
 	}
 }
 
@@ -285,7 +229,7 @@ textarea {
 @media (prefers-color-scheme: dark) {
 	input,
 	textarea {
-			@apply bg-gray-900;
+			@apply bg-neutral-900;
 	}
 
 	::selection {

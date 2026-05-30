@@ -18,7 +18,7 @@
 	
 		<a
 			class="{{ $page->isActive('/custom-web-apps') ? 'active' : '' }}"
-			title="Custom Web Apps"
+			title="Custom Web Apps Services"
 			href="/services/custom-web-apps">
 				Custom Apps
 		</a>
@@ -26,14 +26,14 @@
 	
 		<a
 			class="{{ $page->isActive('/digital-consulting') ? 'active' : '' }}"
-			title="Digital Consulting"
+			title="Digital Consulting Services"
 			href="/services/digital-consulting">
 				Consulting
 		</a>
-
+		
 		<a
 			class="{{ $page->isActive('/contact') ? 'active' : '' }}"
-			title="Digital Consulting"
+			title="Contact Frendo"
 			href="/contact">
 				Contact
 		</a>

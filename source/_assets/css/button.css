@@ -1,24 +1,18 @@
 .btn-special,
 .btn-flashy,
 .btn-not-black {
-	@apply appearance-none inline-block cursor-pointer my-3;
-	background-size: 350% 100% !important;
-	transition: all 350ms ease-in-out;
-
-	&:hover {
-		background-position: 100% 0;
-	}
+	@apply my-3 px-4 py-2 text-lg lg:text-xl lg:px-8 lg:py-4 bg-size-[350%_100%_!important] hover:bg-position-[100%_0] font-semibold duration-350;
+	appearance: none;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 9999rem;
+	min-width: 260px;
 }
 
 .btn-special {
-	background: linear-gradient(to right, mediumblue, blue, cyan, chartreuse, green, green);
+	background: linear-gradient(to right, blue, blue, blue, cyan, chartreuse, green, orange, red, red);
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
-	cursor: pointer;
-	font-weight: 700;
-}
-
-.btn-special:hover {
-	background-position: 100% 0;
 }
 
 .btn-flashy {
@@ -28,26 +22,24 @@
 }
 
 .btn-not-black {
-	color:#0c0c0c;
-	border:1px solid #0c0c0c;
-	background: linear-gradient(to right, transparent, transparent, transparent, white, #0c0c0c, #0c0c0c, #0c0c0c);
+	color:--color-not-black;
+	border:1px solid --color-not-black;
+	background: linear-gradient(to right, transparent, transparent, transparent, white, --color-not-black, --color-not-black, --color-not-black);
 }
 
 .btn-flashy:hover {
 	border-color: black !important;
 	color: white !important;
-	/* text-shadow:-2px 2px 0px rgba(0,0,0,1.0); */
 	box-shadow:-3px 3px 0px rgba(0,0,0,1.0);
-	transform:translateY(-6px)translateX(10px);
+	transform:translateY(-3px)translateX(3px);
 }
 
 .btn-flashy:active {
-	box-shadow:-2px 6px 0px rgba(0,0,0,1.0);
-	transform:translateY(-3px)translateX(8px);
+	box-shadow:-2px 2px 0px rgba(0,0,0,1.0);
+	transform:translateY(-2px)translateX(2px);
 }
 
 .btn-not-black:hover {
-	background-position: 100% 0;
 	color: white;
 }
 
@@ -58,8 +50,7 @@
 	} 
 
 	.btn-flashy {
-		background: linear-gradient(to right, transparent, transparent, transparent, cyan, limegreen,white, white, white);
-		background-size: 350% 100%;
+		background: linear-gradient(to right, transparent, transparent, transparent, cyan, limegreen,orange, orange, orange);
 	}
 
 	.btn-flashy:hover {

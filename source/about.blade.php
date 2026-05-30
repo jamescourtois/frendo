@@ -35,9 +35,9 @@ description: A little bit about the site
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Who is Frendo?</h2>
 		</div>
 		<div class="w-full flex items-start justify-center">
-			<div class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-4 lg:gap-8 bg-gray-100  py-4 px-8">
+			<div class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-4 lg:gap-8 bg-gray-100 dark:bg-neutral-900 py-4 px-8">
 				<div class="overflow-hidden rounded-full size-[120px] border border-not-black">
-					<img class="w-[115%] max-w-[115%] block h-auto" src="{{ vite('source/assets/img/founder.png') }}" alt="James Courtois, founder of Frendo Web Development + Consulting based in St. Louis, MO">
+					<img class="w-[115%] max-w-[115%] block h-auto" src="/assets/img/founder.png" alt="James Courtois, founder of Frendo Web Development" />
 				</div>
 				<div>
 					<h3 class="text-4xl m-0">James Courtois</h3>

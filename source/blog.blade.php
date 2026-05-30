@@ -9,9 +9,9 @@ pagination:
 
 @section('header')
     @include('_layouts.header', [
-			'h1' => 'Blog',
+			'h1' => 'Learning Center',
 			'h2' => 'Knowledge is power.',
-			'desc' => 'Everything you see here is designed to level up your skills and improve how you approach the world wide web.',
+			'desc' => 'Frendo believes that access to knowledge should be free. When you arm yourself with the facts, you are empowered to make the best choices.',
 		])
 @endsection
 

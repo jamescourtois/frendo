@@ -13,7 +13,7 @@ description: Get in touch with us
 @endsection
 
 @section('body')
-<div class="flex flex-col lg:flex-row items-start justify-center gap-8">
+<div class="flex flex-col lg:flex-row items-start justify-center gap-8 mb-16">
 	<div class="w-full lg:w-auto lg:order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Call or text</li>
@@ -24,7 +24,7 @@ description: Get in touch with us
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 	</div>
-	<div class="w-full lg:w-2/3 lg:border-r lg:pr-8">
+	<div class="w-full lg:w-2/3 lg:border-r border-not-black dark:border-not-white dark:border-not-white lg:pr-8">
 		<span class="block text-center kicker">Official Contact Form</span>
 		<form class="form-style" method="POST" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" class="mb-12">
 				<div class="flex flex-wrap mb-6 -mx-3">
@@ -38,7 +38,7 @@ description: Get in touch with us
 										id="contact-name"
 										placeholder="e.g. Guy Fieri"
 										name="name"
-										class="bg-white/85 dark:bg-gray-900 border-cyan-200 dark:border-black outline-hidden inset-shadow-sm block w-full border    mb-2 px-4 py-3"
+										class="bg-white/85 dark:bg-neutral-900 border-not-black dark:border-not-white dark:border-black outline-hidden inset-shadow-sm block w-full border    mb-2 px-4 py-3"
 										required
 								>
 						</div>
@@ -53,7 +53,7 @@ description: Get in touch with us
 										id="contact-email"
 										placeholder="e.g. welcome@flavortown.com"
 										name="email"
-										class="bg-white/85 dark:bg-gray-900 border-cyan-200 dark:border-black outline-hidden inset-shadow-sm block w-full border mb-2 px-4 py-3"
+										class="bg-white/85 dark:bg-neutral-900 border-not-black dark:border-not-white dark:border-black outline-hidden inset-shadow-sm block w-full border mb-2 px-4 py-3"
 										required
 								>
 						</div>
@@ -68,7 +68,7 @@ description: Get in touch with us
 								id="contact-message"
 								rows="4"
 								name="message"
-								class="bg-white/85 dark:bg-gray-900 border-cyan-200 dark:border-black outline-hidden inset-shadow-sm block w-full border appearance-none mb-2 px-4 py-3"
+								class="bg-white/85 dark:bg-neutral-900 border-not-black dark:border-not-white dark:border-black outline-hidden inset-shadow-sm block w-full border appearance-none mb-2 px-4 py-3"
 								placeholder="Share your thoughts here."
 								required
 						></textarea>
@@ -78,7 +78,7 @@ description: Get in touch with us
 						<input
 								type="submit"
 								value="Submit"
-								class="btn-special min-w-[260px] text-xl px-5 py-3 text-white rounded-full font-bold cursor-pointer"
+								class="btn-flashy"
 						>
 				</div>
 		</form>

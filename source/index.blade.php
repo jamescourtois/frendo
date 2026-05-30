@@ -6,7 +6,7 @@
 		@include('_layouts.header', [
 			'h1' => 'Frendo Web Development + Consulting',
 			'h2' => 'It&rsquo;s nice to meet you.',
-			'desc' => 'Welcome to Frendo. The web is a big place and everyone needs help getting around. You have found a web developer who knows the lay of the land.',
+			'desc' => 'The web is a big place and everyone needs help getting around. You found a web developer who knows the lay of the land. Check out the core services below to get started.',
 		])
 
 @endsection
