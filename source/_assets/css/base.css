@@ -223,10 +223,10 @@ li {
 
 ol,
 ul {
-   	@apply my-3;
+   	@apply my-2;
 
     @media (width >= theme(--breakpoint-md)) {
-        @apply my-6;
+        @apply my-4;
     }
 }
 

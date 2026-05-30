@@ -1,9 +1,17 @@
+.btn-special,
+.btn-flashy,
+.btn-not-black {
+	@apply appearance-none inline-block cursor-pointer my-3;
+	background-size: 350% 100% !important;
+	transition: all 350ms ease-in-out;
+
+	&:hover {
+		background-position: 100% 0;
+	}
+}
+
 .btn-special {
-	appearance: none;
-	display: inline-block;
 	background: linear-gradient(to right, mediumblue, blue, cyan, chartreuse, green, green);
-	background-size: 350% 100%;
-	transition: all 250ms ease-in-out;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.55);
 	cursor: pointer;
 	font-weight: 700;
@@ -13,47 +21,19 @@
 	background-position: 100% 0;
 }
 
-.btn-green {
+.btn-flashy {
 	@apply border-2 border-not-black text-not-black;
-	appearance: none;
-	display: inline-block;
 	background: linear-gradient(to right, transparent, transparent, transparent, cyan, blue, red, red, orange);
-	background-size: 350% 100%;
-	transition: all 250ms ease-in-out;
-	cursor: pointer;
 	box-shadow:0px 0px 0px rgba(0,0,0,1.0);
 }
 
 .btn-not-black {
-	appearance: none;
-	display: inline-block;
 	color:#0c0c0c;
-	font-weight: 700;
 	border:1px solid #0c0c0c;
 	background: linear-gradient(to right, transparent, transparent, transparent, white, #0c0c0c, #0c0c0c, #0c0c0c);
-	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
-	background-size: 350% 100%;
-	transition: all 250ms ease-in-out;
-	cursor: pointer;
-	/* box-shadow: 0px 2px 5px rgba(0,0,0,0.55); */
 }
 
-.btn-special-3 {
-	appearance: none;
-	display: inline-block;
-	color:#f54a00;
-	font-weight: 700;
-	border:1px solid #f54a00;
-	background: linear-gradient(to right, transparent, transparent, transparent, yellow, orange, #f54a00);
-	/* background: linear-gradient(to right, forestgreen, darkgreen, green, limegreen, yellowgreen, yellow, orange, darkorange, tomato); */
-	background-size: 350% 100%;
-	transition: all 250ms ease-in-out;
-	cursor: pointer;
-	/* box-shadow: 0px 2px 5px rgba(0,0,0,0.55); */
-}
-
-.btn-green:hover {
-	background-position: 100% 0;
+.btn-flashy:hover {
 	border-color: black !important;
 	color: white !important;
 	/* text-shadow:-2px 2px 0px rgba(0,0,0,1.0); */
@@ -61,7 +41,7 @@
 	transform:translateY(-6px)translateX(10px);
 }
 
-.btn-green:active {
+.btn-flashy:active {
 	box-shadow:-2px 6px 0px rgba(0,0,0,1.0);
 	transform:translateY(-3px)translateX(8px);
 }
@@ -71,28 +51,21 @@
 	color: white;
 }
 
-.btn-special-3:hover {
-	background-position: 100% 0;
-	border-color: transparent;
-	color: white;
-}
-
 @media (prefers-color-scheme: dark) {
-	.btn-green,
-	.btn-special-3,
+	.btn-flashy,
 	.btn-not-black {
-		color: white;
-		border-color: white;
+		@apply text-not-white border-not-white;
 	} 
 
-	.btn-green {
-		background: linear-gradient(to right, transparent, transparent, transparent, lime,white, white, white);
+	.btn-flashy {
+		background: linear-gradient(to right, transparent, transparent, transparent, cyan, limegreen,white, white, white);
 		background-size: 350% 100%;
 	}
 
-	.btn-green:hover {
+	.btn-flashy:hover {
 		background-position: 100% 0;
-		color: #002c22;
+		color: #002c22 !important;
+		box-shadow:-2px 6px 0px rgba(255,255,255,1.0);
 	}	
 }
 

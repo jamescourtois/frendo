@@ -37,7 +37,7 @@ description: Services for website stuff
 						<li>Adding new features and content as needed is built-in, ensuring your site meets all your needs over a long lifecycle.</li>
 					</ul>
 					<p class="">Your new website starts with a simple conversation. Reach out anytime.</p>
-					<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Let's start your new project</a>
+					<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Let's start your new project</a>
 				</div>
 			</div>
 		
@@ -53,7 +53,7 @@ description: Services for website stuff
 						<li>Accessibility audits, performance audits, security audits, and quality assurance.</li>
 					</ul>
 					<p class="">Let's be honest; legacy websites can be a dumpster fire. If you feel the heat, call Frendo for backup.</p>
-					<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get the anwers you need</a>
+					<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get the anwers you need</a>
 				</div>
 			</div>
 
@@ -69,7 +69,7 @@ description: Services for website stuff
 						<li>Pivot when needed.</li>
 					</ul>
 					<p class="">Sorry that your other guy quit.</p>
-					<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get back on track</a>
+					<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get back on track</a>
 				</div>
 			</div>
 		

@@ -8,7 +8,7 @@ description: What it is we say we do here
 
 		@include('_layouts.header', [
 			'h1' => 'Services Overview',
-			'h2' => 'You have a friend in the web business.',
+			'h2' => 'You have a friend in <br class="hidden lg:inline" />the web business.',
 			'desc' => 'We can all agree that the internet did not turn out to be a fad. Having your own space in the digital world is a valuable thing. Whether you are starting a new project, making something better, or just trying to put out fires, you are in the right place.',
 		])
 
@@ -18,7 +18,7 @@ description: What it is we say we do here
 		<div class="text-center mx-auto pt-20 lg:pt-24">
 			<h2 class="kicker">What to Expect</h2>
 		</div>
-		<div class="mx-auto max-w-[800px] flex flex-col pb-20 gap-6 lg:pb-24">
+		<div class="mx-auto max-w-[800px] flex flex-col pb-20 gap-6 lg:pb-24 px-4 lg:px-0">
 			<div>
 				<h3 class="mb-2">Knowledge is free.</h3>
 				<p class="mt-0">If the first question you get asked is "what's your budget," you are not talking to the right person. When you share your passion and it is met with pricepoints and pre-made templates, find a better way. The first step is a conversation that costs nothing.</p>

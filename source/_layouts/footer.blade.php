@@ -1,5 +1,5 @@
 <footer class="pt-8 bg-gray-100 dark:bg-gray-900" role="contentinfo">
-		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4">
+		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4 lg:px-0">
 			
 				<ul class="list-none">
 					<li><div class="flex w-[139px] h-[32px] mb-2">
@@ -23,10 +23,10 @@
 				</ul>
 				<ul class="list-none">
 					<li class="uppercase tracking-widest text-gray-500 text-sm mb-2">Services</li>
-					<li><a href="/websites">Websites</a></li>
-					<li><a href="/ecommerce">E-Commerce</a></li>
-					<li><a href="/custom-web-apps">Custom Web Apps</a></li>
-					<li><a href="/digital-consulting">Digital Consulting</a></li>
+					<li><a href="/services/websites">Websites</a></li>
+					<li><a href="/services/ecommerce">E-Commerce</a></li>
+					<li><a href="/services/custom-web-apps">Custom Web Apps</a></li>
+					<li><a href="/services/digital-consulting">Digital Consulting</a></li>
 				</ul>
 				<ul class="list-none">
 					<li class="uppercase tracking-widest text-gray-500 text-sm mb-2">Friends</li>

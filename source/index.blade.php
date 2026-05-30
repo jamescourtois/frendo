@@ -5,14 +5,14 @@
 
 		@include('_layouts.header', [
 			'h1' => 'Frendo Web Development + Consulting',
-			'h2' => 'Nice to meet you.',
+			'h2' => 'It&rsquo;s nice to meet you.',
 			'desc' => 'Welcome to Frendo. The web is a big place and everyone needs help getting around. You have found a web developer who knows the lay of the land.',
 		])
 
 @endsection
 @section('body-full')
 		@include('_layouts.service-blocks')
-		<div class="flex flex-col container mx-auto lg:my-24 my-20">
+		<div class="flex flex-col container mx-auto lg:my-24 my-12 px-4 lg:px-0">
 			<div class="flex-1 max-w-[800px] mx-auto">
 				<h3>You are in the right place.</h3>
 				<p>Frendo offers <a href="/services">four core services</a> that cover everything you need to own a piece of the internet. Based in St. Louis, MO and founded by a 15 year industry veteran, <a href="/about">you have a friend</a> in the web business you can trust.</p>

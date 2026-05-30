@@ -18,7 +18,7 @@ description: People buy shit online
     'answers' => [
         ['text' => '"I need the most control."', 'id' => 'custom'],
         ['text' => '"I want the easiest experience."', 'id' => 'managed'],
-        ['text' => '"Making it as cheap as possible is all that matters."', 'id' => 'cheap'],
+        ['text' => '"Three words: lowest cost possible."', 'id' => 'cheap'],
     ],
 	])
 @endsection
@@ -34,7 +34,7 @@ description: People buy shit online
 				<li>BigCommerce</li>
 				<li>Bagisto</li>
 			</ul>
-			<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Build a custom storefront</a>
+			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Build a custom storefront</a>
 		</div>
 	
 		<div class="mx-auto group" id="managed">
@@ -48,7 +48,7 @@ description: People buy shit online
 				<li>Store administration training & support</li>
 			</ul>
 			<p>Your new online store is waiting to be switched on. Frendo is ready when you are.</p>
-			<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with Shopify</a>
+			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with Shopify</a>
 		</div>
 
 		<div class="mx-auto group" id="cheap">
@@ -62,7 +62,7 @@ description: People buy shit online
 				<li>You own everything, take it with you and move to a new platform any time.</li>
 			</ul>
 			<p>Sometimes you just need the simplest solution. Frendo makes it happen.</p>
-			<a href="/contact" class="mt-auto btn-green group-hover:border-blue-600 group-hover:text-blue-600 px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with the basics</a>
+			<a href="/contact" class="btn-flashy group-hover:border-blue-600 group-hover:text-blue-600 dark:group-hover:border-white dark:group-hover:text-white px-4 py-2 rounded-full lg:text-2xl lg:px-8 lg:py-4">Get started with the basics</a>
 		</div>
 	
 </div>
