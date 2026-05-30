@@ -1,6 +1,5 @@
 .btn-special,
-.btn-flashy,
-.btn-not-black {
+.btn-flashy{
 	@apply my-3 px-4 py-2 text-lg lg:text-xl lg:px-8 lg:py-4 bg-size-[350%_100%_!important] hover:bg-position-[100%_0] font-semibold duration-350;
 	appearance: none;
 	display: inline-block;
@@ -21,17 +20,12 @@
 	box-shadow:0px 0px 0px rgba(0,0,0,1.0);
 }
 
-.btn-not-black {
-	color:--color-not-black;
-	border:1px solid --color-not-black;
-	background: linear-gradient(to right, transparent, transparent, transparent, white, --color-not-black, --color-not-black, --color-not-black);
-}
-
 .btn-flashy:hover {
 	border-color: black !important;
 	color: white !important;
 	box-shadow:-3px 3px 0px rgba(0,0,0,1.0);
 	transform:translateY(-3px)translateX(3px);
+	text-shadow:-1px 1px 0px rgba(0,0,0,0.25);
 }
 
 .btn-flashy:active {
@@ -44,18 +38,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.btn-flashy,
-	.btn-not-black {
-		@apply text-not-white border-not-white;
-	} 
-
 	.btn-flashy {
-		background: linear-gradient(to right, transparent, transparent, transparent, cyan, limegreen,orange, orange, orange);
+		@apply text-not-white border-not-white;
+		background: linear-gradient(to right, transparent, transparent, transparent, limegreen, cyan,red, red, orange);
 	}
 
 	.btn-flashy:hover {
 		background-position: 100% 0;
-		color: #002c22 !important;
+		border-color: white !important;
+		color: white !important;
 		box-shadow:-2px 6px 0px rgba(255,255,255,1.0);
 	}	
 }

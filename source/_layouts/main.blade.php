@@ -57,7 +57,7 @@
 
         <main role="main" class="flex-auto w-full pt-20">
             @yield('header')
-						<div class="container mx-auto px-4">
+						<div class="container mx-auto px-4 lg:px-0">
 							@yield('body')
 						</div>
 						@yield('body-full')
