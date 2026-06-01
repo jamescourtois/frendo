@@ -5,17 +5,15 @@ description: A little bit about the site
 @extends('_layouts.main')
 
 
-@section('header')
-	@include('_layouts.header', [
-		'h1' => 'Web Development & Consulting <br class="hidden lg:inline" /> based in St. Louis, MO',
-		'h2' => 'The web is for everyone.',
-		'desc' => 'Frendo supports people who make things and wants other people to be able to find them. Break away from the tangle of algorithms, ads, bots and extra fees. Build your online safe space.',
-	])
-
-@endsection
-
 @section('body')
-<div class="mx-auto max-w-[800px] flex flex-col gap-12 my-20">
+
+@include('_layouts.header', [
+	'h1' => 'Web Development & Consulting <br class="hidden lg:inline" /> based in St. Louis, MO',
+	'h2' => 'The web is for everyone.',
+	'desc' => 'Frendo supports people who make things and wants other people to be able to find them. Break away from the tangle of algorithms, ads, bots and extra fees. Build your online safe space.',
+])
+
+<div class="mx-auto max-w-[800px] flex flex-col gap-12 mb-20">
 	<div class="flex flex-col">
 		<div class="text-center">
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Why work with Frendo?</h2>
@@ -26,7 +24,7 @@ description: A little bit about the site
 		</div>
 		<div class="">
 			<h3 class="text-4xl">Put your money where your code is.</h3>
-			<p class="mt-0 mb-4">Working with Frendo means your investment goes directly into the quality of your project. Never pay for layers of managers, emails, meetings, and agency bloat. Frendo is one person at its core, and that's by design. You get a dedicated expert who knows and owns your project from start to finish. Let's find the most efficient path to exactly what you you need.</p>
+			<p class="mt-0 mb-4">Working with Frendo means your investment goes directly into the quality of your project. Never pay for layers of managers, emails, meetings, and agency bloat. Frendo is one person at its core, and that's by design. You get a dedicated expert who knows and owns your project from start to finish.</p>
 		</div>
 	</div>
 	
@@ -49,14 +47,12 @@ description: A little bit about the site
 			</div>
 		</div>
 		<div class="mt-8">
-			<p class="mt-0 mb-4">James is a St. Louis native and the founder of Frendo. Over 15 years he has designed, built, and shipped web projects for agencies and corporations of all sizes. James is a dog person who loves camping, hiking, and upping his home chef skills. When he wants to unplug, you can find him having a day out on the river or shooting a few games of pool.</p>
-			<p>James started Frendo because he believes the internet is too valuable to surrender to the big platforms. If you build a place for people to find you, they will. Give them a path to connect with you and you will make those connections. That should be an option for everyone, no matter where they are in their digital journey.</p>
+			<p class="mt-0 mb-4">James is a St. Louis native and the founder of Frendo. Over 15 years he has designed, built, and shipped web projects for agencies and corporations of all sizes. He knows all the "gotchas" and how to not get got. James is a dog person who loves camping, hiking, and upping his home chef skills. When he wants to unplug, you can find him at a farmers market, thrifting antique cookware, or shooting a few games of pool.</p>
+			<p>James started Frendo because the internet is too valuable to surrender to the big platforms. If you build a place for people to find you, they will. Give them a path to connect with you and you will make those connections. That should be an option for everyone, no matter where they are in their digital journey.</p>
 		</div>
 	</div>
 </div>
-@endsection
 
-@section('body-full')
 @include('_layouts.cta',[
 	'title' => 'Connect with a dedicated expert you can trust.',
 	'link_text' => 'Contact Frendo',

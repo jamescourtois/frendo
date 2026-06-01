@@ -4,15 +4,14 @@ description: Get in touch with us
 ---
 @extends('_layouts.main')
 
-@section('header')
-	@include('_layouts.header', [
-		'h1' => 'Contact Frendo',
-		'h2' => 'Don&rsquo;t be a stranger.',
-		'desc' => 'The web is for everyone. Wherever you are in your journey, Frendo is here to level up your skills for the digital world. The first step is a conversation. Reach out any time.',
-	])
-@endsection
-
 @section('body')
+
+@include('_layouts.header', [
+	'h1' => 'Contact Frendo',
+	'h2' => 'Don&rsquo;t be a stranger.',
+	'desc' => 'The web is for everyone. Wherever you are in your journey, Frendo is here to level up your skills for the digital world. The first step is a conversation. Reach out any time.',
+])
+
 <div class="flex flex-col lg:flex-row items-start justify-center gap-8 mb-16">
 	<div class="w-full lg:w-auto lg:order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 

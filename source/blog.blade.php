@@ -7,16 +7,12 @@ pagination:
 ---
 @extends('_layouts.main')
 
-@section('header')
+@section('body')
     @include('_layouts.header', [
 			'h1' => 'Learning Center',
 			'h2' => 'Knowledge is power.',
 			'desc' => 'Frendo believes that access to knowledge should be free. When you arm yourself with the facts, you are empowered to make the best choices.',
 		])
-@endsection
-
-@section('body')
-
 
     <hr class="border-b my-6">
 
