@@ -51,8 +51,18 @@ description: A little bit about the site
 			<p>James started Frendo because the internet is too valuable to surrender to the big platforms. If you build a place for people to find you, they will. Give them a path to connect with you and you will make those connections. That should be an option for everyone, no matter where they are in their digital journey.</p>
 		</div>
 	</div>
-</div>
 
+	<div class="flex flex-col">
+		<div class="text-center">
+			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">How do I start?</h2>
+		</div>
+		<div class="">
+			<h3 class="text-4xl">A simple conversation is the first step.</h3>
+			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things; photography, writing, design,logic. Let's focus on what you have now and where you want to be. Frendo will get you there. Check out the four core services and let's connect.</p>
+		</div>
+	</div>
+</div>
+@include('_layouts.service-blocks')
 @include('_layouts.cta',[
 	'title' => 'Connect with a dedicated expert you can trust.',
 	'link_text' => 'Contact Frendo',

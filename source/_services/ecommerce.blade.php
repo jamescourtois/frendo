@@ -12,7 +12,7 @@ description: People buy shit online
 	])
 
 	@include('_layouts.prompt', [
-    'question' => 'When it comes to having your own online store, which is more important to you?',
+    'question' => 'When it comes to having your own online store, which matters most?',
     'answers' => [
         ['text' => '"I need the most control."', 'id' => 'custom'],
         ['text' => '"I want the easiest experience."', 'id' => 'managed'],
@@ -37,7 +37,7 @@ description: People buy shit online
 				<ul class="pl-4">
 					<li>WordPress + WooCommerce</li>
 					<li>BigCommerce</li>
-					<li>Bagisto</li>
+					<li>Bagisto powered by Laravel</li>
 				</ul>
 			</x-slot>
 			<x-slot name="button_text">
@@ -53,15 +53,15 @@ description: People buy shit online
 				Managed E-commerce
 			</x-slot>
 			<x-slot name="title_text">
-				Your store, your rules.
+				Great power without great responsiblity.
 			</x-slot>
 			<x-slot name="content">
 				<p>Shopify handles the infrastructure so you can focus on your products. Frendo sets everything up, makes it look like you, and makes sure you know how to use it.</p>
 				<ul class="pl-4">
-					<li>Headless Shopify App Development</li>
 					<li>Shopify theme development</li>
 					<li>Product entry and store set up</li>
 					<li>Store administration training & support</li>
+					<li>Headless Shopify, if you really want to go crazy</li>
 				</ul>
 				<p>Your new online store is waiting to be switched on. Frendo is ready when you are.</p>
 			</x-slot>
