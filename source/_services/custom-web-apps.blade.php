@@ -115,6 +115,8 @@ description: Special sauce
 		</x-content-block>
 	</x-slot>
 </x-content-blocks-wrapper>
+@endsection
+@section('cta')
 	@include('_layouts.cta',[
 		'title' => 'Let&rsquo;s bust out the markers and whiteboard.',
 		'link_text' => 'Build with Frendo',

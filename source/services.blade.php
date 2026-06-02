@@ -21,8 +21,10 @@ description: What it is we say we do here
 				<p class="mt-0">When it's time to make a move, you'll know. In the mean time, arm yourself with the facts. Reflect on what you need to change. Visualize the results you want to see. Frendo will be here when you are ready to start.</p>
 			</x-slot>
 		</x-custom-content-wrap>
-		@include('_layouts.cta',[
-			'title' => 'Big ideas start with small talk',
-			'link_text' => 'Contact Frendo',
-		])
+@endsection
+@section('cta')
+	@include('_layouts.cta',[
+		'title' => 'Big ideas start with small talk',
+		'link_text' => 'Contact Frendo',
+	])
 @endsection

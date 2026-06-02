@@ -114,7 +114,8 @@ description: Ax me summin
 			</x-content-block>
 		</x-slot>
 </x-content-blocks-wrapper>
-
+@endsection
+@section('cta')
 	@include('_layouts.cta',[
 		'title' => 'You don&rsquo;t have to say "asking for a friend."',
 		'link_text' => 'Consult Frendo',

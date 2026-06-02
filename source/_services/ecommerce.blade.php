@@ -97,7 +97,8 @@ description: People buy shit online
 		</x-content-block>
 	</x-slot>
 </x-content-blocks-wrapper>
-
+@endsection
+@section('cta')
 	@include('_layouts.cta',[
 		'title' => 'Raise your hand if you love paying listing fees.',
 		'link_text' => 'Sell with Frendo',

@@ -85,12 +85,13 @@ description: Services for website stuff
 			<x-slot name="content">
 				<p>Building a new web project is like building anything else. Things can go wrong and derail your progress.</p>
 				<ul class="pl-4">
-					<li>Assess where you are</li>
+					<li>Assess where you are.</li>
 					<li>Determine feasible goals.</li>
 					<li>Preserve existing work.</li>
 					<li>Pivot when needed.</li>
+					<li>Get the project across the finish line.</li>
 				</ul>
-				<p class="">Sorry that your other guy quit.</p>
+				<p class="">Sorry things didn't work out with your last dev. Frendo can take it from here.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Get back on track
@@ -98,6 +99,8 @@ description: Services for website stuff
 		</x-content-block>
 	</x-slot>		
 </x-content-blocks-wrapper>
+@endsection
+@section('cta')
 	@include('_layouts.cta',[
 		'title' => 'What do you wish your website could do?',
 		'link_text' => 'Tell Frendo',

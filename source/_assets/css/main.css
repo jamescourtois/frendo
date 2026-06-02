@@ -42,3 +42,74 @@
   }
 }
 
+.colours {
+	@apply absolute top-0 left-0 bg-red-500 -z-1 pointer-events-none;
+	width: 200%;
+	height: 200%;
+	background: linear-gradient(to right, white, yellow, limegreen, cyan,blue, black, blue, magenta, red, orange, white);
+	animation: aneurysm 60s linear infinite;
+}
+
+.colours-2 {
+	@apply absolute bottom-0 right-0 bg-red-500 z-0 pointer-events-none invert;
+	mix-blend-mode: darken;
+	width: 200%;
+	height: 200%;
+	background: linear-gradient(to top, white, yellow, limegreen, cyan,blue, black, blue, magenta, red, orange, white);
+	animation: aneurysm-2 60s linear infinite;
+}
+
+@keyframes aneurysm {
+	0% {
+		top: 0;
+		left: 0;
+	}
+
+	25% {
+		top: -100%;
+		left: 0;
+	}
+
+	50% {
+		top: -100%;
+		left: -100%;
+	}
+
+	75% {
+		top: 0;
+		left: -100%;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+	}
+}
+
+@keyframes aneurysm-2 {
+	0% {
+		bottom: 0;
+		right: 0;
+	}
+
+	25% {
+		bottom: -100%;
+		right: 0;
+	}
+
+	50% {
+		bottom: -100%;
+		right: -100%;
+	}
+
+	75% {
+		bottom: 0;
+		right: -100%;
+	}
+
+	100% {
+		bottom: 0;
+		right: 0;
+	}
+}
+

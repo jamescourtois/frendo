@@ -63,8 +63,10 @@ description: A little bit about the site
 	</div>
 </div>
 @include('_layouts.service-blocks')
-@include('_layouts.cta',[
-	'title' => 'Connect with a dedicated expert you can trust.',
-	'link_text' => 'Contact Frendo',
-])
+@endsection
+@section('cta')
+	@include('_layouts.cta',[
+		'title' => 'Connect with a dedicated expert you can trust.',
+		'link_text' => 'Contact Frendo',
+	])
 @endsection
