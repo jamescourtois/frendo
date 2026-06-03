@@ -19,7 +19,7 @@ description: Ax me summin
 		['text' => '"I inherited a site, what do I do?"', 'id' => 'takeover'],
 		['text' => '"I want my own dev team."', 'id' => 'team'],
 		['text' => '"I have an idea, how do I build it?"', 'id' => 'strategy'],
-		['text' => '"I need to learn how to manage my site"', 'id' => 'train'],
+		['text' => '"How do I manage my site myself?"', 'id' => 'train'],
 		['text' => '"My mom said my website is ugly."', 'id' => 'design'],
     ],
 	])

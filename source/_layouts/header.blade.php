@@ -1,4 +1,4 @@
-<div class="group flex flex-col items-center justify-center text-center py-12 lg:py-20 px-4">
+<div x-in-view class="group flex flex-col items-center justify-center text-center py-12 lg:py-20 px-4">
 	
 		<div class="flex flex-col gap-2">
 			<h1 class="kicker m-0 group-hover:font-semibold duration-150 group-hover:text-orange-500 dark:group-hover:text-white">

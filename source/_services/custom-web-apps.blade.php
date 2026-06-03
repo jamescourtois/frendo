@@ -7,7 +7,7 @@ description: Special sauce
 @section('body')
 	@include('_layouts.header', [
 		'h1' => 'Custom Web App Services',
-		'h2' => 'Original thinking requires custom logic.',
+		'h2' => 'Original thinkings requires original code.',
 		'desc' => 'Millions of apps exist, but there are still gaps that no existing service can fill. When you need to span that divide, Frendo is here to build your bridge.',
 	])
 

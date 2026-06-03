@@ -33,7 +33,7 @@
     </head>
 
     <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-700 dark:bg-neutral-950 dark:text-not-white flex flex-col justify-between min-h-screen leading-normal font-sans">
-			<header class="group hover:shadow-lg duration-300 bg-white/50 dark:bg-black/50 fixed z-[99] w-full flex items-center backdrop-blur-md h-20" role="banner">
+			<header class="group duration-300 bg-white/50 dark:bg-black/50 fixed z-[99] w-full flex items-center backdrop-blur-md h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-0">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
@@ -54,7 +54,7 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full pt-20 shadow-lg relative z-[2]">
+        <main role="main" class="flex-auto w-full pt-20 relative z-[2]">
 						@yield('body')
         </main>
 				@yield('cta')

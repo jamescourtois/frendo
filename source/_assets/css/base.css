@@ -8,34 +8,65 @@ a {
 
 		&.active {
 			/* outline: 1px solid red; */
-			animation: 30s color-change infinite ease;
+			animation: 20s color-change-light infinite ease;
 			text-decoration: underline;
 			text-decoration-thickness: 1px;
 			text-underline-offset: 6px;
 		}
 }
 
-@keyframes color-change {
+@keyframes color-change-light {
 	0% {
 		color: blue;
+		border-color: blue;
 	}
 	20% {
-		color: cyan;
-	}
-	35% {
 		color: green;
+		border-color: green;
 	}
 	50% {
 		color: orange;
+		border-color: orange;
 	}
-	65% {
+	80% {
 		color: magenta;
+		border-color: magenta;
 	}
-	95% {
+	90% {
 		color: red;
+		border-color: red;
 	}
 	100% {
 		color: blue;
+		border-color: blue;
+	}
+}
+
+
+@keyframes color-change-dark {
+	0% {
+		color: cyan;
+		border-color: cyan;
+	}
+	25% {
+		color: limegreen;
+		border-color: limegreen;
+	}
+	50% {
+		color: yellow;
+		border-color: yellow;
+	}
+	65% {
+		color: orange;
+		border-color: orange;
+	}
+	95% {
+		color: magenta;
+		border-color: magenta;
+	}
+	100% {
+		color: cyan;
+		border-color: cyan;
 	}
 }
 
@@ -46,6 +77,11 @@ a {
 			@apply font-normal;
 			@apply text-blue-400;
 			@apply hover:text-sky-200;
+
+			&.active {
+			/* outline: 1px solid red; */
+			animation: 20s color-change-dark infinite ease;
+		}
 	}
 }
 

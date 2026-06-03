@@ -15,4 +15,24 @@ document.addEventListener('alpine:init', () => {
         }
     })
 })
+
+Alpine.directive('in-view', (el, binding, { cleanup }) => {
+  if (!window.matchMedia('(hover: none)').matches) return;
+
+  const check = () => {
+    const { top, bottom } = el.getBoundingClientRect();
+    el.classList.toggle('in-view', top < window.innerHeight - 80 && bottom > 80);
+  };
+
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check, { passive: true });
+  check();
+
+  cleanup(() => {
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+  });
+});
+
 Alpine.start();
+
