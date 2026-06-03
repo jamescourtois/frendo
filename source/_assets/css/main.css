@@ -42,42 +42,40 @@
   }
 }
 
-.colours {
+.colours-horizontal {
 	@apply absolute top-0 left-0 bg-red-500 -z-1 pointer-events-none;
-	width: 200%;
-	height: 200%;
-	background: linear-gradient(to right, white, yellow, limegreen, cyan,blue, black, blue, magenta, red, orange, white);
-	animation: aneurysm 60s linear infinite;
+	width: 300%;
+	height: 100%;
+	background: linear-gradient(to right, white, yellow, limegreen, cyan,blue, magenta, red, orange, white);
+	animation: horizontal 60s ease infinite;
 }
 
-.colours-2 {
+.colours-vertical {
 	@apply absolute bottom-0 right-0 bg-red-500 z-0 pointer-events-none invert;
-	mix-blend-mode: darken;
-	width: 200%;
-	height: 200%;
-	background: linear-gradient(to top, white, yellow, limegreen, cyan,blue, black, blue, magenta, red, orange, white);
-	animation: aneurysm-2 60s linear infinite;
+	width: 100%;
+	height: 300%;
+	background: linear-gradient(to top, black, orange, red, magenta, blue, cyan, limegreen, yellow, black);
+	animation: vertical 60s ease infinite;
 }
 
-@keyframes aneurysm {
+
+.tone-vertical {
+	@apply absolute bottom-0 right-0 bg-red-500 z-0 pointer-events-none invert;
+	width: 100%;
+	height: 300%;
+	background: linear-gradient(to top, black, white, red, green, blue, white, black);
+	animation: vertical 45s linear infinite;
+}
+
+@keyframes horizontal {
 	0% {
 		top: 0;
 		left: 0;
 	}
 
-	25% {
-		top: -100%;
-		left: 0;
-	}
-
 	50% {
-		top: -100%;
-		left: -100%;
-	}
-
-	75% {
-		top: 0;
-		left: -100%;
+		top: 0%;
+		left: -200%;
 	}
 
 	100% {
@@ -86,25 +84,15 @@
 	}
 }
 
-@keyframes aneurysm-2 {
+@keyframes vertical {
 	0% {
 		bottom: 0;
 		right: 0;
 	}
 
-	25% {
-		bottom: -100%;
-		right: 0;
-	}
-
 	50% {
-		bottom: -100%;
-		right: -100%;
-	}
-
-	75% {
-		bottom: 0;
-		right: -100%;
+		bottom: -200%;
+		right: 0;
 	}
 
 	100% {
