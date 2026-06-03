@@ -46,6 +46,7 @@
 	.btn-flashy {
 		@apply text-not-white border-not-white;
 		background: linear-gradient(to right, transparent, transparent, transparent, limegreen, cyan,red, red, orange);
+		box-shadow:0px 0px 0px rgba(255,255,255,1.0);
 	}
 
 	.btn-flashy:hover {
