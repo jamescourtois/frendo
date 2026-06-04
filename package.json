@@ -1,21 +1,24 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "prod": "npx vite build && cp CNAME ./build_production/CNAME",
-        "deploy": "surge /Users/jamescourtois/Sites/frendo/build_production"
-    },
-    "devDependencies": {
-        "@tailwindcss/vite": "^4.1.8",
-        "@tighten/jigsaw-vite-plugin": "^1.0.0",
-        "alpinejs": "^3.14.1",
-        "fuse.js": "^6.4.6",
-        "tailwindcss": "^4.1.0",
-        "vite": "^6.2.1"
-    },
-    "dependencies": {
-        "@alpinejs/persist": "^3.15.8"
-    }
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prod": "npx vite build && cp CNAME ./build_production/CNAME",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.40.0",
+    "@tailwindcss/vite": "^4.1.8",
+    "@tighten/jigsaw-vite-plugin": "^1.0.0",
+    "alpinejs": "^3.14.1",
+    "fuse.js": "^6.4.6",
+    "tailwindcss": "^4.1.0",
+    "vite": "^6.2.1",
+    "wrangler": "^4.98.0"
+  },
+  "dependencies": {
+    "@alpinejs/persist": "^3.15.8"
+  }
 }
