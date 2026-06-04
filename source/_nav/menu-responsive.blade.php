@@ -54,7 +54,7 @@
 				title="Blog"
 				href="/blog"
 				class="block p-4 text-2xl pl-8 no-underline dark:text-white border-l-8 border-transparent {{ $page->isActive('/blog') ? 'active' : '' }}"
-				>Blog</a>
+				>Learn</a>
 			</li>
 			<li class="border-b-1 border-b-neutral-300 dark:border-b-neutral-800">
 				<a
