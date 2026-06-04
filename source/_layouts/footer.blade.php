@@ -42,7 +42,7 @@
 						<span class="text-lg font-light inline-block translate-y-[5px]">&copy;</span> Frendo Web Development {{ date('Y') }}. All Rights Reserved.
 				</li>
 				<li>
-					<span class="inline-block text-xs leading-[1rem]">Form secured by <a href="https://form-data.com">form-data.com</a> and all data is deleted after 90 days.</span>
+					<span class="inline-block text-xs leading-[1rem]">Forms secured by <a href="https://form-data.com">form-data.com</a>. No data ever shared or sold. All all data is deleted after 90 days.</span>
 				</li>
 		</ul>
 </footer>

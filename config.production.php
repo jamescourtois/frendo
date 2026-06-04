@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://frendo.surge.sh',
+    'baseUrl' => 'https://frendo.dev',
     'production' => true,
 ];
