@@ -56,22 +56,25 @@
 
 .gradient-1,
 .backfill-1 {
-	animation: 12s expand-1 ease-out;
+	animation: 20s expand-1 ease-out;
+	animation-delay: 2s;
 }
 
 .gradient-2,
 .backfill-2 {
-	animation: 12s expand-2 ease-out;
+	animation: 20s expand-2 ease-out;
+	animation-delay: 2s;
 }
 
 .gradient-3,
 .backfill-3 {
-	animation: 12s expand-3 ease-out;
+	animation: 20s expand-3 ease-out;
+	animation-delay: 2s;
 }
 
 .shield-cover {
-	animation: 12s reveal-1 ease-in;
-	/* background: transparent !important; */
+	animation: 20s reveal-1 ease-in;
+	animation-delay: 2s;
 	width: 125%;
 	height: 125%;
 	top: -15%;
@@ -83,8 +86,8 @@
 }
 
 .shield-cover-2 {
-	animation: 12s reveal-2 ease-in;
-	/* background: red !important; */
+	animation: 20s reveal-2 ease-in;
+	animation-delay: 2s;
 	width: 82%;
 	height: 82%;
 	pointer-events: none;
@@ -94,29 +97,24 @@
 }
 
 .text-wrapper {
-	animation: 12s fade-text ease-out;
+	animation: 20s fade-text ease-out;
+	animation-delay: 2s;
 }
 
-#intro {
-	animation: 12s fade-intro ease-out;
+.intro-wrapper {
+	opacity: 0;
+	animation: 20s delay-all linear;
 }
 
-.animate-f {
-	animation: 12s slide-up ease-out;
-}
-
-@keyframes slide-up {
-	0% {
-		margin-top: 0;
+@keyframes delay-all {
+	10%{
+		opacity: 0;
 	}
-	15% {
-		margin-top: 0;
+	11%{
+		opacity: 1;
 	}
-	18% {
-		margin-top: -138px;
-	}
-	100% {
-		margin-top: -138px;
+	100%{
+		opacity: 1;
 	}
 }
 
@@ -129,21 +127,6 @@
 	}
 	19%{
 		opacity: 1;
-	}
-}
-
-@keyframes fade-intro {
-	0% {
-		opacity: 1;
-	}
-	42% {
-		opacity: 1;
-	}
-	45% {	
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
 	}
 }
 

@@ -31,5 +31,4 @@ description: Let's keep in touch
 			<li class="mb-2"><a href="/blog">Check out the blog</a></li>
 		</ul>
 	</div>
-
 @endsection

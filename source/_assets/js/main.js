@@ -6,16 +6,6 @@ import persist from '@alpinejs/persist';
 window.Alpine = Alpine;
 Alpine.plugin(persist);
 
-// Move the store registration into the 'alpine:init' listener
-document.addEventListener('alpine:init', () => {
-    Alpine.store('theme', {
-        showIntro: Alpine.$persist(true).as('has_not_seen_intro'),
-        closeIntro() {
-            this.showIntro = false;
-        }
-    })
-})
-
 Alpine.directive('in-view', (el, binding, { cleanup }) => {
   if (!window.matchMedia('(hover: none)').matches) return;
 
