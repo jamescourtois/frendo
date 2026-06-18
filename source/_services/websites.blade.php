@@ -7,7 +7,7 @@ description: Services for website stuff
 @section('body')
 	@include('_layouts.header', [
 		'h1' => 'Website Services',
-		'h2' => 'Build a home for your online presence.',
+		'h2' => 'Be the source of your story.',
 		'desc' => 'Your website is a doorstep for the world with a light that is always on. When people stop by for a visit, give them a comfortable place to spend time with you.',
 	])
 

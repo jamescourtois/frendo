@@ -1,5 +1,5 @@
-<div x-in-view class="flex items-center justify-center text-center py-28 lg:py-20 px-4">
-		<div class="group flex flex-col gap-2">
+<div class="flex items-center justify-center text-center py-28 lg:py-20 px-4">
+		<div x-in-view class="group flex flex-col gap-2 in-view">
 			<h1 class="kicker m-0 group-hover:font-semibold duration-150 group-hover:text-orange-500 dark:group-hover:text-white">
 				{!! $h1 ?? $h1 !!}
 			</h1>

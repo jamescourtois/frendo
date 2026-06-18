@@ -11,7 +11,7 @@ Alpine.directive('in-view', (el, binding, { cleanup }) => {
 
   const check = () => {
     const { top, bottom } = el.getBoundingClientRect();
-    el.classList.toggle('in-view', top < window.innerHeight - 400 && bottom > 300);
+    el.classList.toggle('in-view', top < window.innerHeight - 600 && bottom > 200);
   };
 
   window.addEventListener('scroll', check, { passive: true });
