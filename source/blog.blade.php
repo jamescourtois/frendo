@@ -8,11 +8,17 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-    @include('_layouts.header', [
-			'h1' => 'Learning Center',
-			'h2' => 'Knowledge is power.',
-			'desc' => 'Frendo believes that access to knowledge should be free. When you arm yourself with the facts, you are empowered to make the best choices.',
-		])
+	<x-header>
+		<x-slot name="h1">
+			Learning Center
+		</x-slot>
+		<x-slot name="h2">
+			Knowledge is power.
+		</x-slot>
+		<x-slot name="desc">
+			Frendo believes that access to knowledge should be free. When you arm yourself with the facts, you are empowered to make the best choices.
+		</x-slot>
+	</x-header>
 
     <hr class="border-b my-6">
 
@@ -52,3 +58,11 @@ pagination:
         </nav>
     @endif
 @stop
+
+@push('scripts')
+<script>
+  window.addEventListener('scroll', () => {
+    Alpine.store('visitor').from = 'blog'
+  }, { once: true })
+</script>
+@endpush

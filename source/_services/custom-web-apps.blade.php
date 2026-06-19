@@ -5,29 +5,28 @@ description: Special sauce
 @extends('_layouts.main')
 
 @section('body')
-	@include('_layouts.header', [
-		'h1' => 'Custom Web App Services',
-		'h2' => 'Original thinkings requires original code.',
-		'desc' => 'Millions of apps exist, but there are still gaps that no existing service can fill. When you need to span that divide, Frendo is here to build your bridge.',
-	])
+	<x-header>
+		<x-slot name="h1">
+			Custom Web App Services
+		</x-slot>
+		<x-slot name="h2">
+			Build for you.
+		</x-slot>
+		<x-slot name="desc">
+			We have millions of apps but there are still gaps no existing services fill. When you need to span that divide, let Frendo build your bridge.
+		</x-slot>
+	</x-header>
 
-	@include('_layouts.prompt', [
-    'question' => 'What can I do with my own custom web app?',
-    'answers' => [
-			['text' => 'Build a space for community.', 'id' => 'community'],
-			['text' => 'Create your own tools.', 'id' => 'productivity'],
-			['text' => 'Stop doing repetitive work.', 'id' => 'automation'],
-			['text' => 'Make apps talk to each other.', 'id' => 'integration'],
-			['text' => 'Turn your idea into a real product.', 'id' => 'innovation'],
-    ],
-	])
+	<x-prompt question="What can I do with my own custom web app?">
+		<x-prompt-option id="community">"Build a space for community."</x-prompt-option>
+		<x-prompt-option id="productivity">"Create tools and automations."</x-prompt-option>
+		<x-prompt-option id="integration">"Make apps talk to each other."</x-prompt-option>
+		<x-prompt-option id="innovation">"Turn your idea into a real product."</x-prompt-option>
+	</x-prompt>
 
 <x-content-blocks-wrapper>
-	<x-slot name="blocks">
-		<x-content-block>
-			<x-slot name="id">
-				community
-			</x-slot>
+	
+		<x-content-block id="community">
 			<x-slot name="kicker_text">
 				Community
 			</x-slot>
@@ -42,46 +41,22 @@ description: Special sauce
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block>
-			<x-slot name="id">
-				productivity
-			</x-slot>
+		<x-content-block id="productivity">
 			<x-slot name="kicker_text">
 				Productivity
 			</x-slot>
 			<x-slot name="title_text">
-				See the forest for the trees.
+				Stop doing repetitive work.
 			</x-slot>
 			<x-slot name="content">
-				<p>Sometimes the spreadsheet is not enough and the software that exists was built for someone else's problem. A custom tool built around your workflow gives you exactly the visibility you need — track progress, surface patterns, and keep tabs on the things that are otherwise hard to see. Built for how you actually work, not how someone else thought you might.</p>
+				<p>If you do it the same way every time, a custom app can do it for you. If you are tired of working around the limits of your existing tools, build your own.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Let's talk metrics
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block>
-			<x-slot name="id">
-				automation
-			</x-slot>
-			<x-slot name="kicker_text">
-				Automation
-			</x-slot>
-			<x-slot name="title_text">
-				Let machines do the boring part.
-			</x-slot>
-			<x-slot name="content">
-				<p>If you do it the same way every time, a custom app can do it for you. Refresh data on a schedule, populate dashboards automatically, fire off email alerts when something needs your attention. Connect your tools so information flows where it needs to go without you in the middle of every transaction. You focus on the work that actually needs a human.</p>
-			</x-slot>
-			<x-slot name="button_text">
-				Let's document patterns
-			</x-slot>
-		</x-content-block>
-
-		<x-content-block>
-			<x-slot name="id">
-				integration
-			</x-slot>
+		<x-content-block id="integration">
 			<x-slot name="kicker_text">
 				Integration
 			</x-slot>
@@ -89,17 +64,14 @@ description: Special sauce
 				Make apps talk to each other.
 			</x-slot>
 			<x-slot name="content">
-				<p>When two tools you depend on refuse to talk to each other, the gap becomes your problem. If you are copy-pasting between tabs, there is a better way. A custom app bridges the gap so information flows from one source of truth automatically.</p>
+				<p>When two services you depend on don't talk to each other, that gap is your problem. Don't copy/paste between tabs. Let information flow from one source of truth.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Let's draw up a diagram
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block>
-			<x-slot name="id">
-				innovation
-			</x-slot>
+		<x-content-block id="innovation">
 			<x-slot name="kicker_text">
 				Innovation
 			</x-slot>
@@ -113,7 +85,7 @@ description: Special sauce
 				Share your vision
 			</x-slot>
 		</x-content-block>
-	</x-slot>
+	
 </x-content-blocks-wrapper>
 @endsection
 @section('cta')
@@ -122,3 +94,11 @@ description: Special sauce
 		'link_text' => 'Build with Frendo',
 	])
 @endsection
+
+@push('scripts')
+<script>
+  window.addEventListener('scroll', () => {
+    Alpine.store('visitor').from = 'custom-web-apps'
+  }, { once: true })
+</script>
+@endpush

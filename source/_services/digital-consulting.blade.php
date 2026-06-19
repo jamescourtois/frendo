@@ -6,28 +6,30 @@ description: Ax me summin
 
 @section('body')
 
-	@include('_layouts.header', [
-		'h1' => 'Digital Consulting Services',
-		'h2' => 'It&rsquo;s okay to ask for help.',
-		'desc' => 'In the web world, it is a rite of passage to encounter a problem that stops you dead in your tracks. The good news is Frendo has already been there.',
-	])
+	<x-header>
+		<x-slot name="h1">
+			Digital Consulting Services
+		</x-slot>
+		<x-slot name="h2">
+			See the path.
+		</x-slot>
+		<x-slot name="desc">
+			Encountering a problem that stops you dead in your tracks is a rite of passage in the web world. The good news is Frendo has already been there.
+		</x-slot>
+	</x-header>
 
-	@include('_layouts.prompt', [
-    'question' => 'Which of these sounds the most like you?',
-    'answers' => [
-		['text' => '"My website needs a LOT of work."', 'id' => 'rebuild'],
-		['text' => '"I inherited a site, what do I do?"', 'id' => 'takeover'],
-		['text' => '"I want my own dev team."', 'id' => 'team'],
-		['text' => '"I have an idea, how do I build it?"', 'id' => 'strategy'],
-		['text' => '"How do I manage my site myself?"', 'id' => 'train'],
-		['text' => '"My mom said my website is ugly."', 'id' => 'design'],
-    ],
-	])
+	<x-prompt question="Which of these sounds the most like you?">
+		<x-prompt-option id="rebuild">"My website needs a LOT of work."</x-prompt-option>
+		<x-prompt-option id="takeover">"I inherited a site, what do I do?"</x-prompt-option>
+		<x-prompt-option id="team">"I want my own dev team."</x-prompt-option>
+		<x-prompt-option id="strategy">"I have an idea, how do I build it?"</x-prompt-option>
+		<x-prompt-option id="train">"How do I manage my site myself?"</x-prompt-option>
+		<x-prompt-option id="design">"My mom said my website is ugly."</x-prompt-option>
+	</x-prompt>
 
 	<x-content-blocks-wrapper>
-		<x-slot name="blocks">
-			<x-content-block>
-				<x-slot name="id">rebuild</x-slot>
+		
+			<x-content-block id="rebuild">
 				<x-slot name="kicker_text">Rebuilds</x-slot>
 				<x-slot name="title_text">Get a fresh start.</x-slot>
 				<x-slot name="content">
@@ -37,10 +39,7 @@ description: Ax me summin
 					Start planning
 				</x-slot>
 			</x-content-block>
-			<x-content-block>
-				<x-slot name="id">
-					takeover
-				</x-slot>
+			<x-content-block id="takeover">
 				<x-slot name="kicker_text">
 					Takeovers
 				</x-slot>
@@ -52,10 +51,7 @@ description: Ax me summin
 					Let's look under the hood
 				</x-slot>
 			</x-content-block>
-			<x-content-block>
-				<x-slot name="id">
-					team
-				</x-slot>
+			<x-content-block id="team">
 				<x-slot name="kicker_text">
 					Team Building
 				</x-slot>
@@ -67,10 +63,7 @@ description: Ax me summin
 					Design your new team
 				</x-slot>
 			</x-content-block>
-			<x-content-block>
-				<x-slot name="id">
-					strategy
-				</x-slot>
+			<x-content-block id="strategy">
 				<x-slot name="kicker_text">
 					Strategy
 				</x-slot>
@@ -82,10 +75,7 @@ description: Ax me summin
 					Share your vision
 				</x-slot>
 			</x-content-block>
-			<x-content-block>
-				<x-slot name="id">
-					train
-				</x-slot>
+			<x-content-block id="train">
 				<x-slot name="kicker_text">
 					Training
 				</x-slot>
@@ -97,10 +87,7 @@ description: Ax me summin
 					Book a session
 				</x-slot>
 			</x-content-block>
-			<x-content-block>
-				<x-slot name="id">
-					design
-				</x-slot>
+			<x-content-block id="design">
 				<x-slot name="kicker_text">
 					Redesign
 				</x-slot>
@@ -112,7 +99,7 @@ description: Ax me summin
 					Start your redesign
 				</x-slot>
 			</x-content-block>
-		</x-slot>
+		
 </x-content-blocks-wrapper>
 @endsection
 @section('cta')
@@ -121,3 +108,10 @@ description: Ax me summin
 		'link_text' => 'Consult Frendo',
 	])
 @endsection
+@push('scripts')
+<script>
+  window.addEventListener('scroll', () => {
+    Alpine.store('visitor').from = 'digital-consulting'
+  }, { once: true })
+</script>
+@endpush

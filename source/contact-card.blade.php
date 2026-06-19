@@ -28,7 +28,7 @@ description: Let's keep in touch
 			<li class="kicker mb-3">Get Acquainted</li>
 			<li class="mb-2"><a href="/services">View a full list of services</a></li>
 			<li class="mb-2"><a href="/about">Learn more about Frendo</a></li>
-			<li class="mb-2"><a href="/blog">Check out the blog</a></li>
+			<li class="mb-2"><a href="/blog">Learn more about the web</a></li>
 		</ul>
 	</div>
 @endsection

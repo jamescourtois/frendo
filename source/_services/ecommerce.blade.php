@@ -5,27 +5,29 @@ description: People buy shit online
 @extends('_layouts.main')
 
 @section('body')
-	@include('_layouts.header', [
-		'h1' => 'E-commerce Services',
-		'h2' => 'It&rsquo;s your product, keep more of every sale.',
-		'desc' => 'The big platforms might be easy to use, but they take big bites out of your revenue. Building your own storefront cuts down the fees, but might not feel feasible. Frendo builds online stores that don&rsquo;t overwhelm your to-do list or budget.',
-	])
 
-	@include('_layouts.prompt', [
-    'question' => 'When it comes to having your own online store, which matters most?',
-    'answers' => [
-        ['text' => '"I need the most control."', 'id' => 'custom'],
-        ['text' => '"I want the easiest experience."', 'id' => 'managed'],
-        ['text' => '"Three words: lowest cost possible."', 'id' => 'cheap'],
-    ],
-	])
+	<x-header>
+		<x-slot name="h1">
+			E-commerce Services
+		</x-slot>
+		<x-slot name="h2">
+			Keep more of each sale.
+		</x-slot>
+		<x-slot name="desc">
+			The big platforms take big bites out of your revenue. Owning your storefront cuts down the fees. Frendo builds online stores and Shopify themes that don&rsquo;t overwhelm your to-do list or budget.
+		</x-slot>
+	</x-header>
+
+	<x-prompt question="When it comes to having your own online store, which matters most?">
+		<x-prompt-option id="custom">"I need the most control."</x-prompt-option>
+		<x-prompt-option id="managed">"I want the easiest experience."</x-prompt-option>
+		<x-prompt-option id="cheap">"Three words: lowest cost possible."</x-prompt-option>
+	</x-prompt>
+
 
 <x-content-blocks-wrapper>
-	<x-slot name="blocks">
-		<x-content-block>
-			<x-slot name="id">
-				custom
-			</x-slot>
+	
+		<x-content-block id="custom">
 			<x-slot name="kicker_text">
 				Custom E-commerce
 			</x-slot>
@@ -45,10 +47,7 @@ description: People buy shit online
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block>
-			<x-slot name="id">
-				managed
-			</x-slot>
+		<x-content-block id="managed">
 			<x-slot name="kicker_text">
 				Managed E-commerce
 			</x-slot>
@@ -70,10 +69,7 @@ description: People buy shit online
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block>
-			<x-slot name="id">
-				cheap
-			</x-slot>
+		<x-content-block id="cheap">
 			<x-slot name="kicker_text">
 				Maximum Cost Efficiency
 			</x-slot>
@@ -95,7 +91,7 @@ description: People buy shit online
 				Spin up your new storefront
 			</x-slot>
 		</x-content-block>
-	</x-slot>
+	
 </x-content-blocks-wrapper>
 @endsection
 @section('cta')
@@ -104,3 +100,11 @@ description: People buy shit online
 		'link_text' => 'Sell with Frendo',
 	])
 @endsection
+
+@push('scripts')
+<script>
+  window.addEventListener('scroll', () => {
+    Alpine.store('visitor').from = 'ecommerce'
+  }, { once: true })
+</script>
+@endpush

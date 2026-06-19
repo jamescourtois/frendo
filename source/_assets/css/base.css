@@ -264,7 +264,7 @@ textarea {
 @media (prefers-color-scheme: dark) {
 	input,
 	textarea {
-			@apply bg-neutral-900;
+			@apply bg-transparent;
 	}
 
 	::selection {

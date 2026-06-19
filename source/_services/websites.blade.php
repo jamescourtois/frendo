@@ -5,27 +5,28 @@ description: Services for website stuff
 @extends('_layouts.main')
 
 @section('body')
-	@include('_layouts.header', [
-		'h1' => 'Website Services',
-		'h2' => 'Be the source of your story.',
-		'desc' => 'Your website is a doorstep for the world with a light that is always on. When people stop by for a visit, give them a comfortable place to spend time with you.',
-	])
+	<x-header>
+		<x-slot name="h1">
+			Website Services
+		</x-slot>
+		<x-slot name="h2">
+			Be the source.
+		</x-slot>
+		<x-slot name="desc">
+			Your website is a doorstep for the world with a light that's always on. Make it a place people visit first and trust the most. Be a destination, not a traveler.
+		</x-slot>
+	</x-header>
 
-	@include('_layouts.prompt', [
-    'question' => 'Are you starting something new or do you need help with what you have?',
-    'answers' => [
-        ['text' => '"I am starting from scratch."', 'id' => 'new'],
-        ['text' => '"Something is wrong with my website."', 'id' => 'existing'],
-        ['text' => '"I am started a new site, but I&rsquo;m stuck."', 'id' => 'ongoing'],
-    ],
-	])
+	<x-prompt question="Are you building something new or do you need help with a problem?">
+		<x-prompt-option id="redesign">"I want to redesign my site."</x-prompt-option>
+			<x-prompt-option id="new">"I am starting from scratch."</x-prompt-option>
+			<x-prompt-option id="support">"My website needs work."</x-prompt-option>
+			<x-prompt-option id="ongoing">"I started a new site, but I'm stuck."</x-prompt-option>
+	</x-prompt>
 
 <x-content-blocks-wrapper>
-	<x-slot name="blocks">
-		<x-content-block>
-			<x-slot name="id">
-				new
-			</x-slot>
+	
+		<x-content-block id="new">
 			<x-slot name="kicker_text">
 				New Websites
 			</x-slot>
@@ -47,10 +48,7 @@ description: Services for website stuff
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block>
-			<x-slot name="id">
-				existing
-			</x-slot>
+		<x-content-block id="support">
 			<x-slot name="kicker_text">
 				Existing Websites
 			</x-slot>
@@ -72,10 +70,7 @@ description: Services for website stuff
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block>
-			<x-slot name="id">
-				ongoing
-			</x-slot>
+		<x-content-block id="ongoing">
 			<x-slot name="kicker_text">
 				Ongoing Projects
 			</x-slot>
@@ -97,7 +92,26 @@ description: Services for website stuff
 				Get back on track
 			</x-slot>
 		</x-content-block>
-	</x-slot>		
+
+		<x-content-block id="redesign">
+			<x-slot name="kicker_text">
+				Redesign
+			</x-slot>
+			<x-slot name="title_text">
+				Apply what you've already learned.
+			</x-slot>
+			<x-slot name="content">
+				<p>Every time you make a recipe it gets better. Every time you rebuild your website, leverage your experience and make it even better.</p>
+				<ul class="pl-4">
+					<li>bullets.</li>
+				</ul>
+				<p class="">Closer.</p>
+			</x-slot>
+			<x-slot name="button_text">
+				CTA
+			</x-slot>
+		</x-content-block>
+	
 </x-content-blocks-wrapper>
 @endsection
 @section('cta')
@@ -106,3 +120,11 @@ description: Services for website stuff
 		'link_text' => 'Tell Frendo',
 	])
 @endsection
+
+@push('scripts')
+<script>
+  window.addEventListener('scroll', () => {
+    Alpine.store('visitor').from = 'websites'
+  }, { once: true })
+</script>
+@endpush

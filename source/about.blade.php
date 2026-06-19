@@ -7,13 +7,19 @@ description: A little bit about the site
 
 @section('body')
 
-@include('_layouts.header', [
-	'h1' => 'Web Development & Consulting <br class="hidden lg:inline" /> in St. Louis, MO',
-	'h2' => 'The web is for everyone.',
-	'desc' => 'Frendo supports people who make things and wants other people to be able to find them. Break away from the tangle of algorithms, ads, bots and extra fees. Build your online safe space.',
-])
+	<x-header>
+		<x-slot name="h1">
+			Web Development & Consulting <br class="hidden lg:inline" /> in St. Louis, MO
+		</x-slot>
+		<x-slot name="h2">
+			The web is for everyone.
+		</x-slot>
+		<x-slot name="desc">
+			Frendo supports people who make things and wants other people to be able to find them. Break away from the tangle of algorithms, ads, bots and extra fees. Build your online safe space.
+		</x-slot>
+	</x-header>
 
-<div class="mx-auto max-w-[800px] flex flex-col gap-12 mb-20 px-4 lg:px-0">
+<div id="about" class="mx-auto max-w-[800px] flex flex-col gap-12 mb-20 px-4 lg:px-0">
 	<div class="flex flex-col">
 		<div class="text-center">
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Why work with Frendo?</h2>
@@ -70,3 +76,11 @@ description: A little bit about the site
 		'link_text' => 'Contact Frendo',
 	])
 @endsection
+
+@push('scripts')
+<script>
+  window.addEventListener('scroll', () => {
+    Alpine.store('visitor').from = 'about'
+  }, { once: true })
+</script>
+@endpush

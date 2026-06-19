@@ -44,60 +44,47 @@
 
 .colours-horizontal {
 	@apply absolute top-0 left-0 bg-red-500 -z-1 pointer-events-none;
-	width: 300%;
+	width: 400%;
 	height: 100%;
-	background: linear-gradient(to right, white, yellow, limegreen, cyan,blue, magenta, red, orange, white);
-	animation: horizontal 30s ease infinite;
+	/* display: none; */
+	background: linear-gradient(to right, black, yellow, limegreen, cyan,blue, magenta, red, orange, black);
+	animation: horizontal 30s linear infinite;
 }
 
 .colours-vertical {
 	@apply absolute bottom-0 right-0 bg-red-500 z-0 pointer-events-none invert;
+	/* display: none; */
 	width: 100%;
-	height: 300%;
+	height: 200%;
 	background: linear-gradient(to top, black, orange, red, magenta, blue, cyan, limegreen, yellow, black);
-	animation: vertical 30s ease infinite;
-}
-
-
-.tone-vertical {
-	@apply absolute bottom-0 right-0 bg-red-500 z-0 pointer-events-none invert;
-	width: 100%;
-	height: 300%;
-	background: linear-gradient(to top, black, white, red, green, blue, white, black);
-	animation: vertical 45s linear infinite;
+	animation: vertical 30s linear infinite;
 }
 
 @keyframes horizontal {
-	0% {
-		top: 0;
-		left: 0;
+	100% {
+		transform: translate(0,0);
 	}
 
 	50% {
-		top: 0%;
-		left: -200%;
+		transform: translate(-50%,0);
 	}
 
 	100% {
-		top: 0;
-		left: 0;
+		transform: translate(0,0);
 	}
 }
 
 @keyframes vertical {
 	0% {
-		bottom: 0;
-		right: 0;
+		transform: translate(0,0);
 	}
 
 	50% {
-		bottom: -200%;
-		right: 0;
+		transform: translate(0,50%);
 	}
 
 	100% {
-		bottom: 0;
-		right: 0;
+		transform: translate(0,0);
 	}
 }
 

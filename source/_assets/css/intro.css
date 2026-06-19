@@ -56,61 +56,63 @@
 
 .gradient-1,
 .backfill-1 {
-	animation: 20s expand-1 ease-out;
-	animation-delay: 2s;
+	animation: 15s expand-1 ease-out;
+	width: 180px;
+	height: 60px;
+	animation-delay: 1s;
 }
 
 .gradient-2,
 .backfill-2 {
-	animation: 20s expand-2 ease-out;
-	animation-delay: 2s;
+	animation: 15s expand-2 ease-out;
+	width: 60px;
+	height: 180px;
+	animation-delay: 1s;
 }
 
 .gradient-3,
 .backfill-3 {
-	animation: 20s expand-3 ease-out;
-	animation-delay: 2s;
+	animation: 15s expand-3 ease-out;
+	width: 120px;
+	height: 120px;
+	animation-delay: 1s;
 }
-
-.shield-cover {
-	animation: 20s reveal-1 ease-in;
-	animation-delay: 2s;
-	width: 125%;
-	height: 125%;
-	top: -15%;
-	left: -15%;
-	transform: rotate(45deg);
-	pointer-events: none;
+.shield-cover,
+.shield-cover-2 {
+	background: black;
+	position: absolute;
+	top:0;
+	left:0;
 	z-index:-1;
-	opacity: 0;
+	animation-delay: 1s;
+}
+.shield-cover {
+	animation: 15s reveal-1 ease-in;
+	width: 110%;
+	height: 135%;
 }
 
 .shield-cover-2 {
-	animation: 20s reveal-2 ease-in;
-	animation-delay: 2s;
+	animation: 15s reveal-2 ease-in;
 	width: 82%;
 	height: 82%;
-	pointer-events: none;
-	transform: rotate(45deg);
-	z-index:-1;
-	opacity: 0;
 }
 
 .text-wrapper {
-	animation: 20s fade-text ease-out;
-	animation-delay: 2s;
+	animation: 15s fade-text ease-out;
+	animation-delay: 1s;
 }
 
 .intro-wrapper {
 	opacity: 0;
-	animation: 20s delay-all linear;
+	animation: 15s delay-all linear;
 }
 
 @keyframes delay-all {
-	10%{
+	7%{
 		opacity: 0;
 	}
-	11%{
+	8%{
 		opacity: 1;
 	}
 	100%{
@@ -132,140 +134,88 @@
 
 
 @keyframes expand-1 {
-	0% {
-		width: 0px;
-		height: 4px;
-	}
+    0% {
+        transform: scaleX(0) scaleY(0.067);
+        transform-origin: left top;
+    }
 
-	2% {
-		width: 180px;
-		height: 4px;
-	}
+    2% {
+        transform: scaleX(1) scaleY(0.067);
+        transform-origin: left top;
+    }
 
-	5% {
-		width: 180px;
-		height: 60px;
-	}
-	100% {
-		width: 180px;
-		height: 60px;
-	}
+    5% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: left top;
+    }
+
+    100% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: left top;
+    }
 }
 
 @keyframes expand-2 {
-	0% {
-		width: 4px;
-		height: 0px;
-	}
+    0%, 3% {
+        transform: scaleX(0.022) scaleY(0);
+        transform-origin: left top;
+    }
 
-	3% {
-		width: 4px;
-		height: 0px;
-	}
+    5% {
+        transform: scaleX(0.022) scaleY(1);
+        transform-origin: left top;
+    }
 
-	5% {
-		width: 4px;
-		height: 180px;
-	}
-
-	8% {
-		width: 60px;
-		height: 180px;
-	}
-	100% {
-		width: 60px;
-		height: 180px;
-	}
+    8%, 100% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: left top;
+    }
 }
 
 @keyframes expand-3 {
-	0% {
-		width: 0px;
-		height: 4px;
-		top: 90px;
-	}
+    0%, 6% {
+        transform: scaleX(0) scaleY(0.033);
+        transform-origin: left 75%;
+    }
 
-	6% {
-		width: 0px;
-		height: 4px;
-		top: 90px;
-	}
+    8% {
+        transform: scaleX(1) scaleY(0.033);
+        transform-origin: left 75%;
+    }
 
-	8% {
-		width: 120px;
-		height: 4px;
-		top: 90px;
-	}
-
-	10% {
-		width: 120px;
-		height: 120px;
-		top: 0px;
-	}
-	100% {
-		width: 120px;
-		height: 120px;
-		top: 0px;
-	}
+    10%, 100% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: left 75%;
+    }
 }
 
 @keyframes reveal-1 {
-	0% {
-		opacity: 1;
-		top: -15%;
-		left: -15%;
-	}
-	8% {
-		opacity: 1;
-		top: -15%;
-		left: -15%;
-	}
-	12% {
-		opacity: 1;
-		top: 52%;
-		left: 52%;
-	}
-	13% {
-		opacity: 0;
-		top: 52%;
-		left: 52%;
-	}
-	100% {
-		opacity: 0;
-		top: 52%;
-		left: 52%;
-	}
+    0%, 12% {
+        transform: translate(-15%, -25%) rotate(45deg);
+    }
+
+    19% {
+        transform: translate(55%, 37%) rotate(45deg);
+    }
+
+    20%, 100% {
+        transform: translate(55%, 37%) rotate(45deg);
+    }
 }
 
 @keyframes reveal-2 {
-	0% {
-		opacity: 1;
-		left: 33.333%;
-		top: 33.333%;
-		height: 81%;
-	}
-	12% {
-		opacity: 1;
-		left: 33.333%;
-		top: 33.333%;
-		height: 81%;
-	}
-	14% {
-		opacity: 1;
-		left: 25%;
-		top: 75%;
-		height: 0;
-	}
-	15% {
-		left: 25%;
-		top: 75%;
-		height: 0;
-		opacity: 0;
-	}
-	100% {
-		left: 25%;
-		top: 75%;
-		height: 0;
-		opacity: 0;
-	}
+    0%, 17% {
+        transform: translate(48%,48%) scale(1);
+        transform-origin: right bottom;
+    }
+
+    18% {
+        transform: translate(48%,48%) scale(1);
+        transform-origin: right bottom;
+    }
+
+    24%, 100% {
+        transform: translate(48%,48%) scale(0);
+        transform-origin: right bottom;
+    }
 }

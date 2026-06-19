@@ -1,4 +1,4 @@
-<div x-in-view class="mx-auto group hover:text-blue-900 dark:hover:text-gray-100 duration-250 hover:bg-cyan-200 dark:hover:bg-neutral-900 px-8 py-12 md:p-20" id="{{ $id }}">
+<div x-in-view class="w-full mx-auto group hover:text-blue-900 dark:hover:text-gray-100 duration-250 hover:bg-cyan-200 dark:hover:bg-neutral-900 px-8 py-12 md:p-20" id="{{ $id }}">
 	<h3 class="kicker group-hover:font-bold group-hover:text-blue-700 group-[&.in-view]:text-blue-700 dark:group-hover:text-white duration-250">{{ $kicker_text }}</h3>
 	<h4 class="text-4xl lg:text-5xl leading-tighter mt-0 mb-4 font-bold group-hover:font-extrabold group-hover:text-blue-700 group-[&.in-view]:text-blue-700 dark:group-hover:text-blue-500 duration-250">{{ $title_text }}</h4>
 	<div>		

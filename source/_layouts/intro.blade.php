@@ -1,4 +1,4 @@
-<div x-cloak id="intro" x-init="setTimeout(() => $el.classList.add('opacity-0'), 10000)" class="intro fixed inset-0 z-[999] bg-black pointer-events-none duration-300">
+<div x-cloak id="intro" x-init="if (playIntro) { setTimeout(() => { $el.classList.add('opacity-0'); playIntro = false }, 5000) } else { $el.classList.add('opacity-0') }" class="intro fixed inset-0 z-[999] bg-black pointer-events-none duration-300">
 	<div class="intro-wrapper absolute inset-0">
 		<div class="absolute w-[300px] h-[300px] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-75%]">
 			<div class="absolute top-[60px] left-[60px]">
@@ -21,8 +21,8 @@
 					d="M202.962,-0l46.786,47.168l-0,53.738l-148.481,148.292l-53.409,0l-47.858,-49.003l0,-153.16l48.279,-47.035l154.683,-0Zm-153.056,4l-45.906,44.723l-0,149.844l45.542,46.633l50.069,-0l146.136,-145.951l-0,-50.432l-44.452,-44.816l-151.39,0Z"
 					style="fill:#fff;" />
 			</svg>
-			<div class="shield-cover absolute bg-black"></div>
-			<div class="shield-cover-2 absolute bg-black"></div>
+			<div class="shield-cover"></div>
+			<div class="shield-cover-2"></div>
 			
 			<div class="text-wrapper absolute top-full left-0 w-full">
 				<div class="font-extrabold text-[6rem] leading-[6.5rem] text-white text-center w-full">Frendo</div>

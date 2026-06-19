@@ -6,13 +6,19 @@ description: Get in touch with us
 
 @section('body')
 
-@include('_layouts.header', [
-	'h1' => 'Contact Frendo',
-	'h2' => 'Don&rsquo;t be a stranger.',
-	'desc' => 'The web is for everyone. Wherever you are in your journey, Frendo is here to level up your skills for the digital world. The first step is a conversation. Reach out any time.',
-])
+	<x-header>
+		<x-slot name="h1">
+			Contact Frendo
+		</x-slot>
+		<x-slot name="h2">
+			Don&rsquo;t be a stranger.
+		</x-slot>
+		<x-slot name="desc">
+			The web is for everyone. Wherever you are in your journey, Frendo is here to level up your skills for the digital world. The first step is a conversation. Reach out any time.
+		</x-slot>
+	</x-header>
 
-<div class="flex flex-col lg:flex-row items-start justify-center gap-8 mb-16">
+<div class="flex flex-col lg:flex-row items-start justify-center gap-8 mb-16 max-w-[1024px] mx-auto">
 	<div class="w-full lg:w-auto lg:order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Call or text</li>
@@ -23,13 +29,13 @@ description: Get in touch with us
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 	</div>
-	<div class="w-full lg:w-2/3 lg:border-r border-not-black dark:border-not-white dark:border-not-white lg:pr-8">
+	<div class="w-full lg:w-2/3 lg:border-r border-not-black dark:border-not-white dark:border-not-white px-4 lg:px-0 lg:pr-8">
 		<span class="block text-center kicker">Official Contact Form</span>
-		<form class="form-style" method="POST" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" class="mb-12">
+		<form x-data="{preference:'both'}"  id="contact-form" class="form-style" method="POST" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" class="mb-12">
 				<div class="flex flex-wrap mb-6 -mx-3">
 						<div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
 								<label class="block mb-2 font-semibold" for="contact-name">
-										Name&ast;
+										Your Name&ast;
 								</label>
 	
 								<input
@@ -37,12 +43,26 @@ description: Get in touch with us
 										id="contact-name"
 										placeholder="e.g. Guy Fieri"
 										name="name"
-										class="bg-white/85 dark:bg-neutral-900 border-not-black dark:border-not-white dark:border-black outline-hidden inset-shadow-sm block w-full border    mb-2 px-4 py-3"
+										class="border-not-black dark:border-not-white outline-hidden block w-full border mb-2 px-4 py-3"
 										required
 								>
 						</div>
+						<div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
+							<legend class="block mb-2 font-semibold">How do you want to be contacted?*</legend>
+							<div class="flex gap-1">
+								<label class="border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'email' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
+										<input type="radio" class="appearance-none" name="contact_preference" x-model="preference" value="email"> Email
+								</label>
+								<label class="border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'phone' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
+										<input type="radio" class="appearance-none" name="contact_preference" x-model="preference" value="phone"> Phone
+								</label>
+									<label class="border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'both' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
+										<input type="radio" class="appearance-none" name="contact_preference" x-model="preference" value="both"> Both
+								</label>
+							</div>
+					</div>
 	
-						<div class="w-full px-3 md:w-1/2">
+						<div x-show="preference != 'phone'" class="w-full px-3 md:w-1/2">
 								<label class="block font-semibold mb-2" for="contact-email">
 										Email Address&ast;
 								</label>
@@ -52,8 +72,23 @@ description: Get in touch with us
 										id="contact-email"
 										placeholder="e.g. welcome@flavortown.com"
 										name="email"
-										class="bg-white/85 dark:bg-neutral-900 border-not-black dark:border-not-white dark:border-black outline-hidden inset-shadow-sm block w-full border mb-2 px-4 py-3"
-										required
+										class="border-not-black dark:border-not-white outline-hidden block w-full border mb-2 px-4 py-3"
+										:required="preference != 'phone'"
+								>
+						</div>
+
+						<div x-show="preference != 'email'" class="w-full px-3 md:w-1/2">
+								<label class="block font-semibold mb-2" for="contact-phone">
+										Phone Number&ast;
+								</label>
+	
+								<input
+										type="tel"
+										id="contact-phone"
+										placeholder="e.g. (555) 867-5309"
+										name="phone"
+										class="border-not-black dark:border-not-white outline-hidden block w-full border mb-2 px-4 py-3"
+										:required="preference != 'email'"
 								>
 						</div>
 				</div>
@@ -67,7 +102,7 @@ description: Get in touch with us
 								id="contact-message"
 								rows="4"
 								name="message"
-								class="bg-white/85 dark:bg-neutral-900 border-not-black dark:border-not-white dark:border-black outline-hidden inset-shadow-sm block w-full border appearance-none mb-2 px-4 py-3"
+								class="border-not-black dark:border-not-white outline-hidden block w-full border appearance-none mb-2 px-4 py-3"
 								placeholder="Share your thoughts here."
 								required
 						></textarea>

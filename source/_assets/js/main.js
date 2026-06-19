@@ -6,6 +6,11 @@ import persist from '@alpinejs/persist';
 window.Alpine = Alpine;
 Alpine.plugin(persist);
 
+Alpine.store('visitor', {
+  firstVisitDate: Alpine.$persist(null).as('firstVisitDate'),
+	from: Alpine.$persist('home').as('from')
+})
+
 Alpine.directive('in-view', (el, binding, { cleanup }) => {
   if (!window.matchMedia('(hover: none)').matches) return;
 
@@ -23,6 +28,15 @@ Alpine.directive('in-view', (el, binding, { cleanup }) => {
     window.removeEventListener('resize', check);
   });
 });
+
+if(!Alpine.store('visitor').firstVisitDate){
+	document.addEventListener('click', (e) => {
+		const link = e.target.closest('a')
+		if (link && link.href && !link.href.startsWith('#')) {
+			Alpine.store('visitor').firstVisitDate = new Date().toDateString()
+		}
+	}, { once: true })
+}
 
 Alpine.start();
 
