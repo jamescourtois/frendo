@@ -32,14 +32,14 @@
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
-    <body x-cloak x-data="{ navOpen: false,  playIntro: $persist(false).as('playIntro') }" class="bg-white text-gray-700 dark:bg-neutral-950 dark:text-not-white flex flex-col justify-between min-h-screen leading-normal font-sans">
+    <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-700 dark:bg-neutral-950 dark:text-not-white flex flex-col justify-between min-h-screen leading-normal font-sans">
 			<header class="group duration-300 bg-white/40 dark:bg-black/30 fixed z-[99] w-full flex items-center backdrop-blur-sm h-20" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-0">
                 <div class="flex items-center">
-                    <a @click="playIntro = true" href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <div class="flex w-[123px] h-[30px] lg:group-hover:scale-120 duration-150">
-													@include('_layouts.logo')
-												</div>
+                    <a @click="$store.visitor.playIntro = true" href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
+                        
+												@include('_layouts.logo')
+												
                         <span class="sr-only">{{ $page->siteName }}</span>
                     </a>
                 </div>

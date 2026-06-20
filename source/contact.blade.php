@@ -12,15 +12,13 @@ description: Get in touch with us
 		</x-slot>
 		<x-slot name="h2">
 			<span x-show="$store.visitor.from == 'home' || $store.visitor.from == 'about'">Don&rsquo;t be a stranger.</span>
-			<span x-show="$store.visitor.from != 'home' && $store.visitor.from != 'about'">Are ya ready kids.</span>
+			<span x-show="$store.visitor.from != 'home' && $store.visitor.from != 'about'">You have fallen for my trap.</span>
 		</x-slot>
-		<x-slot name="desc">
-			The web is for everyone. Wherever you are in your journey, Frendo is here to level up your skills for the digital world. The first step is a conversation. Reach out any time.
-		</x-slot>
+		
 	</x-header>
 
 <div class="flex flex-col lg:flex-row items-start justify-center gap-8 mb-16 max-w-[1024px] mx-auto">
-	<div class="w-full lg:w-auto lg:order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
+	<div class="w-full lg:w-auto order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Call or text</li>
 			<li class="mb-2"><a href="tel:+13146687244">(314) 668-7244</a></li>
@@ -36,7 +34,7 @@ description: Get in touch with us
 				<div class="flex flex-wrap mb-6 -mx-3">
 						<div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
 								<label class="block mb-2 font-semibold" for="contact-name">
-										Your Name&ast;
+										Your preferred name&ast;
 								</label>
 	
 								<input
@@ -62,11 +60,12 @@ description: Get in touch with us
 										<input type="radio" class="sr-only" name="contact_preference" x-model="preference" value="both"> Both
 								</label>
 							</div>
+							<span class="block text-sm text-neutral-500 mt-2 md:hidden">Your data is never shared or sold and is deleted after 90 days.</span>
 					</div>
 	
 						<div x-show="preference != 'phone'" class="w-full px-3 md:w-1/2">
 								<label class="block font-semibold mb-2" for="contact-email">
-										Email Address&ast;
+										Email address&ast;
 								</label>
 	
 								<input
@@ -81,7 +80,7 @@ description: Get in touch with us
 
 						<div x-show="preference != 'email'" class="w-full px-3 md:w-1/2">
 								<label class="block font-semibold mb-2" for="contact-phone">
-										Phone Number&ast;
+										Phone number&ast;
 								</label>
 	
 								<input
@@ -101,7 +100,7 @@ description: Get in touch with us
 						<select @change="$store.visitor.interest = $event.target.value, $store.visitor.from = $event.target.value" class="appearance-none block w-full h-[51px] px-4 border border-black dark:border-white" name="interest" id="interest">
 							<option value="hello">Just saying hello</option>
 							<option value="websites" :selected="$store.visitor.interest.includes('websites')">Websites</option>
-							<option value="ecommmerce" :selected="$store.visitor.interest.includes('ecommerce')">E-Commerce</option>
+							<option value="ecommerce" :selected="$store.visitor.interest.includes('ecommerce')">E-Commerce</option>
 							<option value="custom-web-apps" :selected="$store.visitor.interest.includes('custom-web-apps')">Custom Web Apps</option>
 							<option value="digital-consulting" :selected="$store.visitor.interest.includes('digital-consulting')">Digital Consulting</option>
 							<option value="special">Something Special</option>
@@ -122,6 +121,7 @@ description: Get in touch with us
 								required
 								:placeholder="$store.visitor.prefill"
 							></textarea>
+							<span class="md:block text-sm text-neutral-500 mb-2 hidden">Frendo never shares or sells your data. All data is deleted after 90 days.</span>
 				</div>
 	
 				<div class="flex justify-center w-full">
@@ -135,3 +135,10 @@ description: Get in touch with us
 	</div>
 </div>
 @stop
+@push('scripts')
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('contact-name').focus();
+  });
+</script>
+@endpush

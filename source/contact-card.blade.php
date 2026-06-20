@@ -5,7 +5,7 @@ description: Let's keep in touch
 @extends('_layouts.main')
 
 @section('body')
-	<div x-data="{clicked:false}" class="flex flex-col items-center justify-center text-center mb-12">
+	<div x-data="{clicked:false}" x-init="$store.visitor.playIntro = true" class="flex flex-col items-center justify-center text-center mb-12">
 			<h1 class="kicker">Contact Card</h1>
 			<h2 class="mt-3 leading-[2.8rem] text-5xl mb-5">Let's keep in touch.</h2>
 			

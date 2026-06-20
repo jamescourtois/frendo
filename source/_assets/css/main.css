@@ -12,7 +12,7 @@
 @import './hamburgers.css' layer(components);
 @import './button.css' layer(components);
 @import './toggle.css' layer(components);
-@import './intro.css' layer(components);
+@import './logo.css' layer(components);
 
 @layer base {
   :root {
