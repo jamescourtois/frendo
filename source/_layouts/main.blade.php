@@ -37,7 +37,7 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-0">
                 <div class="flex items-center">
                     <a @click="playIntro = true" href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <div class="flex w-[103px] h-[24px] lg:group-hover:scale-120 duration-150">
+                        <div class="flex w-[123px] h-[30px] lg:group-hover:scale-120 duration-150">
 													@include('_layouts.logo')
 												</div>
                         <span class="sr-only">{{ $page->siteName }}</span>

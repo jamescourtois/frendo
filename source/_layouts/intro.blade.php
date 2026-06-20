@@ -1,40 +1,12 @@
-<div x-cloak id="intro" x-init="if (playIntro) { setTimeout(() => { $el.classList.add('opacity-0'); playIntro = false }, 5000) } else { $el.classList.add('opacity-0') }" class="intro fixed inset-0 z-[999] bg-black pointer-events-none duration-300">
-	<div class="intro-wrapper absolute inset-0">
-		<div class="absolute w-[300px] h-[300px] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-75%]">
-			<div class="absolute top-[60px] left-[60px]">
-				<div class="absolute gradient-1"></div>
-				<div class="absolute gradient-2"></div>
-				<div class="absolute gradient-3"></div>
-				<div class="absolute backfill-1"></div>
-				<div class="absolute backfill-2"></div>
-				<div class="absolute backfill-3"></div>
-			</div>
-			<svg
-				class="absolute top-0 left-0 shield z-[-1]" 
-				width="100%"
-				height="100%" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
-				style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-				<path
-					d="M49.906,4l151.39,-0l44.452,44.816l0,50.432l-146.136,145.951l-50.069,0l-45.542,-46.633l0,-149.844l45.906,-44.723Z" />
-				<path
-					d="M202.962,-0l46.786,47.168l-0,53.738l-148.481,148.292l-53.409,0l-47.858,-49.003l0,-153.16l48.279,-47.035l154.683,-0Zm-153.056,4l-45.906,44.723l-0,149.844l45.542,46.633l50.069,-0l146.136,-145.951l-0,-50.432l-44.452,-44.816l-151.39,0Z"
-					style="fill:#fff;" />
-			</svg>
-			<div class="shield-cover"></div>
-			<div class="shield-cover-2"></div>
-			
-			<div class="text-wrapper absolute top-full left-0 w-full">
-				<div class="font-extrabold text-[6rem] leading-[6.5rem] text-white text-center w-full">Frendo</div>
-				<div class="text-[0.925rem] tracking-widest uppercase text-white text-center mb-1 w-full">Web Development & Consulting</div>
-				<div class="text-[0.625rem]  tracking-widest uppercase text-white text-center w-full flex items-center justify-center gap-1">
-					
-					<svg class="fill-not-black dark:fill-white size-[0.75rem] inline-block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-						<path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
-					</svg>
-					St. Louis, MO
-				</div>
-			</div>
+<div x-cloak id="intro" x-init="if (playIntro) { setTimeout(() => { $el.classList.add('opacity-0'); playIntro = false }, 3500) } else { $el.classList.add('opacity-0') }" class="intro fixed inset-0 z-[999] bg-white dark:bg-black pointer-events-none duration-500 flex flex-col items-center justify-center">
+	
+		<div class="wrap relative w-[300px] h-[300px]">
+			<div class="gradient-1"></div>
+			<div class="gradient-2"></div>
+			<div class="gradient-3"></div>
+			<div class="backfill-1"></div>
+			<div class="backfill-2"></div>
+			<div class="backfill-3"></div>
 		</div>
-	</div>
+	
 </div>
