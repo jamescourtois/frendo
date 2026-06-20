@@ -108,7 +108,7 @@ description: Get in touch with us
 					</div>
 				</div>
 	
-				<div class="w-full mb-12">
+				<div class="w-full mb-8">
 						<label class="block font-semibold mb-2" for="contact-message">
 								Message&ast;
 						</label>

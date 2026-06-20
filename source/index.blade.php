@@ -10,7 +10,8 @@
 				<span x-data="{ headline: '' }" x-init="headline = !$store.visitor.firstVisitDate || $store.visitor.firstVisitDate === new Date().toDateString() ? 'It&rsquo;s nice to meet you.' : 'Nice to see you again.'" x-text="headline"></span>
 			</x-slot>
 			<x-slot name="desc">
-				The web is a big place and everyone needs help getting around. You found a web developer who knows the lay of the land. Familiarize yourself with the core services below and let&rsquo;s get started.
+				<span x-data="{ desc: '' }" x-init="desc = !$store.visitor.firstVisitDate || $store.visitor.firstVisitDate === new Date().toDateString() ? 'The web is a big place and everyone needs help getting around. You found a web developer who knows the lay of the land. Familiarize yourself with the core services below and let&rsquo;s get started.' : 'Are you ready to pick up where you left off? This page is was what you were checking out last time.'" x-text="desc"></span>
+				
 			</x-slot>
 		</x-header>
 		@include('_layouts.service-blocks')

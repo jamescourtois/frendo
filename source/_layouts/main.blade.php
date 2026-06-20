@@ -38,7 +38,7 @@
                 <div class="flex items-center">
                     <a @click="$store.visitor.playIntro = true" href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         
-												@include('_layouts.logo')
+												<div class="group-hover:scale-120 duration-150">@include('_layouts.logo')</div>
 												
                         <span class="sr-only">{{ $page->siteName }}</span>
                     </a>

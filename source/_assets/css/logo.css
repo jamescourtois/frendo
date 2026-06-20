@@ -89,10 +89,15 @@
 	>* {
 		animation-delay: 500ms;
 	}
+	.logotype {
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-delay: 650ms;
+	}
 }
 
 .rgb-fade {
-	animation: 1.5s rgb-fade linear;
+	animation: 1s rgb-fade linear;
 }
 
 @media (prefers-color-scheme: dark){
@@ -111,22 +116,22 @@
 @keyframes rgb-fade {
 	0%, 70%{
 		color: transparent;
-		filter: blur(3px);
-		opacity:1;
+		filter: blur(10px);
+		opacity:0;
 	}
 	75%{
 		color: red;
-		filter: blur(3px);
-		opacity:1;
+		filter: blur(7px);
+		opacity:0.5;
 	}
 	80%{
 		color: green;
-		filter: blur(2px);
-		opacity:1;
+		filter: blur(4px);
+		opacity:0.75;
 	}
 	85%{
 		color: blue;
-		filter: blur(1px);
+		filter: blur(3px);
 		opacity:1;
 	}
 	100%{

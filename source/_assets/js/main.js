@@ -21,7 +21,7 @@ Alpine.store('visitor', {
 			'websites-support': 'I need help with my website...',
 			'websites-ongoing': 'I started a new site but I am stuck...',
 			'websites-cta': 'I want to own a piece of the web...',
-			'ecommerce': 'How do I build my own online store...',
+			'ecommerce': 'I want to build my own online store but where do I start...',
 			'ecommerce-custom': 'I want an online store that is unique for my product...',
 			'ecommerce-managed': 'I want my own Shopify storefront but I need help...',
 			'ecommerce-cheap': 'I want to sell online but I do not want to pay what these platforms charge...',

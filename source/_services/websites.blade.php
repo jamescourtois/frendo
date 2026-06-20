@@ -20,7 +20,7 @@ description: Services for website stuff
 	<x-prompt question="Are you building something new or do you need help with a problem?">
 		<x-prompt-option id="new">"I am starting from scratch."</x-prompt-option>
 		<x-prompt-option id="redesign">"I want to redesign my site."</x-prompt-option>
-			<x-prompt-option id="support">"My website needs work."</x-prompt-option>
+			<x-prompt-option id="support">"Something is definitely wrong."</x-prompt-option>
 			<x-prompt-option id="ongoing">"I started a new site, but I'm stuck."</x-prompt-option>
 	</x-prompt>
 
