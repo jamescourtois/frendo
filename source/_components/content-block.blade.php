@@ -3,6 +3,6 @@
 	<h4 class="text-4xl lg:text-5xl leading-tighter mt-0 mb-4 font-bold group-hover:font-extrabold group-hover:text-blue-700 group-[&.in-view]:text-blue-700 dark:group-hover:text-blue-500 duration-250">{{ $title_text }}</h4>
 	<div>		
 		{!! $content !!}
-		<a href="/contact" class="btn-flashy group-hover:border-blue-700 group-hover:text-blue-700 group-[&.in-view]:text-blue-700 group-[&.in-view]:border-blue-700 dark:group-hover:border-blue-500 dark:group-hover:text-blue-500 mb-0">{{ $button_text }}</a>
+		<a href="/contact" @click="$store.visitor.from = $store.visitor.from + '-{{ $id }}'" class="btn-flashy group-hover:border-blue-700 group-hover:text-blue-700 group-[&.in-view]:text-blue-700 group-[&.in-view]:border-blue-700 dark:group-hover:border-blue-500 dark:group-hover:text-blue-500 mb-0">{{ $button_text }}</a>
 	</div>
 </div>

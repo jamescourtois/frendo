@@ -7,7 +7,6 @@ a {
     @apply font-normal duration-150 no-underline text-blue-500 hover:text-blue-700;
 
 		&.active {
-			/* outline: 1px solid red; */
 			animation: 20s color-change-light infinite ease;
 			text-decoration: underline;
 			text-decoration-thickness: 1px;
@@ -79,7 +78,6 @@ a {
 			@apply hover:text-sky-200;
 
 			&.active {
-			/* outline: 1px solid red; */
 			animation: 20s color-change-dark infinite ease;
 		}
 	}
@@ -248,12 +246,6 @@ pre {
 }
 
 [x-cloak] { display: none !important; }
-
-.form-style {
- * {
-	/* outline: 1px solid red; */
- }
-}
 
 input,
 textarea {

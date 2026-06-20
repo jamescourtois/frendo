@@ -21,7 +21,7 @@
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     --shadow-search: 0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08);
-  }
+	}
 
   *,
   ::after,
@@ -30,6 +30,16 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
+
+	:focus {
+		outline: 1px solid transparent;
+		outline-offset:2px;
+	}
+
+	:focus-visible {
+		outline-color: var(--color-blue-500);
+	}
+	
 
   body {
     font-family: var(--font-sans);

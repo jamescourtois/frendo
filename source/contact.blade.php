@@ -11,7 +11,8 @@ description: Get in touch with us
 			Contact Frendo
 		</x-slot>
 		<x-slot name="h2">
-			Don&rsquo;t be a stranger.
+			<span x-show="$store.visitor.from == 'home' || $store.visitor.from == 'about'">Don&rsquo;t be a stranger.</span>
+			<span x-show="$store.visitor.from != 'home' && $store.visitor.from != 'about'">Are ya ready kids.</span>
 		</x-slot>
 		<x-slot name="desc">
 			The web is for everyone. Wherever you are in your journey, Frendo is here to level up your skills for the digital world. The first step is a conversation. Reach out any time.
@@ -43,21 +44,22 @@ description: Get in touch with us
 										id="contact-name"
 										placeholder="e.g. Guy Fieri"
 										name="name"
-										class="border-not-black dark:border-not-white outline-hidden block w-full border mb-2 px-4 py-3"
+										class="border-not-black dark:border-not-white block w-full border mb-2 px-4 py-3"
 										required
+										autofocus
 								>
 						</div>
 						<div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
 							<legend class="block mb-2 font-semibold">How do you want to be contacted?*</legend>
 							<div class="flex gap-1">
-								<label class="border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'email' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
-										<input type="radio" class="appearance-none" name="contact_preference" x-model="preference" value="email"> Email
+								<label class="focus-within:outline outline-blue-500 outline-offset-2 border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'email' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
+										<input type="radio" class="sr-only" name="contact_preference" x-model="preference" value="email"> Email
 								</label>
-								<label class="border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'phone' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
-										<input type="radio" class="appearance-none" name="contact_preference" x-model="preference" value="phone"> Phone
+								<label class="focus-within:outline outline-blue-500 outline-offset-2  border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'phone' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
+										<input type="radio" class="sr-only" name="contact_preference" x-model="preference" value="phone"> Phone
 								</label>
-									<label class="border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'both' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
-										<input type="radio" class="appearance-none" name="contact_preference" x-model="preference" value="both"> Both
+									<label class="focus-within:outline outline-blue-500 outline-offset-2  border cursor-pointer border-black dark:border-white inline-flex items-center justify-center flex-1 h-[51px]" :class="preference === 'both' ? 'bg-black text-white dark:bg-white dark:text-black' : ''">
+										<input type="radio" class="sr-only" name="contact_preference" x-model="preference" value="both"> Both
 								</label>
 							</div>
 					</div>
@@ -72,7 +74,7 @@ description: Get in touch with us
 										id="contact-email"
 										placeholder="e.g. welcome@flavortown.com"
 										name="email"
-										class="border-not-black dark:border-not-white outline-hidden block w-full border mb-2 px-4 py-3"
+										class="border-not-black dark:border-not-white block w-full border mb-2 px-4 py-3"
 										:required="preference != 'phone'"
 								>
 						</div>
@@ -87,10 +89,24 @@ description: Get in touch with us
 										id="contact-phone"
 										placeholder="e.g. (555) 867-5309"
 										name="phone"
-										class="border-not-black dark:border-not-white outline-hidden block w-full border mb-2 px-4 py-3"
+										class="border-not-black dark:border-not-white block w-full border mb-2 px-4 py-3"
 										:required="preference != 'email'"
 								>
 						</div>
+				</div>
+
+				<div class="w-full mb-4">
+					<label for="interest" class="block font-semibold mb-2">What would you like to talk about?</label>
+					<div class="relative after:pointer-events-none after:size-4 after:rotate-45 after:block after:absolute after:top-1/2 after:right-4 after:border-r-2 after:translate-y-[-75%] after:border-black after:dark:border-white after:border-b-2">
+						<select @change="$store.visitor.interest = $event.target.value, $store.visitor.from = $event.target.value" class="appearance-none block w-full h-[51px] px-4 border border-black dark:border-white" name="interest" id="interest">
+							<option value="hello">Just saying hello</option>
+							<option value="websites" :selected="$store.visitor.interest.includes('websites')">Websites</option>
+							<option value="ecommmerce" :selected="$store.visitor.interest.includes('ecommerce')">E-Commerce</option>
+							<option value="custom-web-apps" :selected="$store.visitor.interest.includes('custom-web-apps')">Custom Web Apps</option>
+							<option value="digital-consulting" :selected="$store.visitor.interest.includes('digital-consulting')">Digital Consulting</option>
+							<option value="special">Something Special</option>
+						</select>
+					</div>
 				</div>
 	
 				<div class="w-full mb-12">
@@ -102,10 +118,10 @@ description: Get in touch with us
 								id="contact-message"
 								rows="4"
 								name="message"
-								class="border-not-black dark:border-not-white outline-hidden block w-full border appearance-none mb-2 px-4 py-3"
-								placeholder="Share your thoughts here."
+								class="border-not-black dark:border-not-white block w-full border appearance-none mb-2 px-4 py-3"
 								required
-						></textarea>
+								:placeholder="$store.visitor.prefill"
+							></textarea>
 				</div>
 	
 				<div class="flex justify-center w-full">

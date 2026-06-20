@@ -18,10 +18,10 @@ description: Special sauce
 	</x-header>
 
 	<x-prompt question="What can I do with my own custom web app?">
-		<x-prompt-option id="community">"Build a space for community."</x-prompt-option>
-		<x-prompt-option id="productivity">"Create tools and automations."</x-prompt-option>
-		<x-prompt-option id="integration">"Make apps talk to each other."</x-prompt-option>
-		<x-prompt-option id="innovation">"Turn your idea into a real product."</x-prompt-option>
+		<x-prompt-option id="community">Build a space for community.</x-prompt-option>
+		<x-prompt-option id="productivity">Create tools and automations.</x-prompt-option>
+		<x-prompt-option id="integration">Make apps talk to each other.</x-prompt-option>
+		<x-prompt-option id="innovation">Turn your idea into a real product.</x-prompt-option>
 	</x-prompt>
 
 <x-content-blocks-wrapper>
@@ -31,10 +31,10 @@ description: Special sauce
 				Community
 			</x-slot>
 			<x-slot name="title_text">
-				Your space, your people, your rules.
+				Your space, your rules.
 			</x-slot>
 			<x-slot name="content">
-				<p>Whether your community is hyperlocal or hyper-niche, a custom app gives your people a protected place to gather on your terms. No algorithms, no uninvited guests, no surprises. Just the people who belong there and the conversations worth having.</p>
+				<p>Whether your community is hyperlocal or hyper-niche, a custom app is a protected place to gather on your terms. No shadowy algorithms, no AI slop, no uninvited guests.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Lay the foundation
@@ -99,6 +99,7 @@ description: Special sauce
 <script>
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'custom-web-apps'
+    Alpine.store('visitor').interest = 'custom-web-apps'
   }, { once: true })
 </script>
 @endpush

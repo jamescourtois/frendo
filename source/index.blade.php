@@ -31,3 +31,11 @@
 		'link_text' => 'Contact Frendo',
 	])
 @endsection
+
+@push('scripts')
+<script>
+  window.addEventListener('scroll', () => {
+    Alpine.store('visitor').from = 'home'
+  }, { once: true })
+</script>
+@endpush

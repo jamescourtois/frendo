@@ -18,8 +18,8 @@ description: Services for website stuff
 	</x-header>
 
 	<x-prompt question="Are you building something new or do you need help with a problem?">
+		<x-prompt-option id="new">"I am starting from scratch."</x-prompt-option>
 		<x-prompt-option id="redesign">"I want to redesign my site."</x-prompt-option>
-			<x-prompt-option id="new">"I am starting from scratch."</x-prompt-option>
 			<x-prompt-option id="support">"My website needs work."</x-prompt-option>
 			<x-prompt-option id="ongoing">"I started a new site, but I'm stuck."</x-prompt-option>
 	</x-prompt>
@@ -48,9 +48,28 @@ description: Services for website stuff
 			</x-slot>
 		</x-content-block>
 
+		<x-content-block id="redesign">
+			<x-slot name="kicker_text">
+				Redesign
+			</x-slot>
+			<x-slot name="title_text">
+				Apply what you've already learned.
+			</x-slot>
+			<x-slot name="content">
+				<p>Every time you make a recipe it gets better. Every time you rebuild your website, leverage your experience and make it even better.</p>
+				<ul class="pl-4">
+					<li>bullets.</li>
+				</ul>
+				<p class="">Closer.</p>
+			</x-slot>
+			<x-slot name="button_text">
+				CTA
+			</x-slot>
+		</x-content-block>
+
 		<x-content-block id="support">
 			<x-slot name="kicker_text">
-				Existing Websites
+				Website Support
 			</x-slot>
 			<x-slot name="title_text">
 				There is always a way.
@@ -93,24 +112,7 @@ description: Services for website stuff
 			</x-slot>
 		</x-content-block>
 
-		<x-content-block id="redesign">
-			<x-slot name="kicker_text">
-				Redesign
-			</x-slot>
-			<x-slot name="title_text">
-				Apply what you've already learned.
-			</x-slot>
-			<x-slot name="content">
-				<p>Every time you make a recipe it gets better. Every time you rebuild your website, leverage your experience and make it even better.</p>
-				<ul class="pl-4">
-					<li>bullets.</li>
-				</ul>
-				<p class="">Closer.</p>
-			</x-slot>
-			<x-slot name="button_text">
-				CTA
-			</x-slot>
-		</x-content-block>
+		
 	
 </x-content-blocks-wrapper>
 @endsection
@@ -125,6 +127,7 @@ description: Services for website stuff
 <script>
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'websites'
+    Alpine.store('visitor').interest = 'websites'
   }, { once: true })
 </script>
 @endpush

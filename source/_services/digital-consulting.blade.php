@@ -18,7 +18,7 @@ description: Ax me summin
 		</x-slot>
 	</x-header>
 
-	<x-prompt question="Which of these sounds the most like you?">
+	<x-prompt question="Which of these sounds most like you?">
 		<x-prompt-option id="rebuild">"My website needs a LOT of work."</x-prompt-option>
 		<x-prompt-option id="takeover">"I inherited a site, what do I do?"</x-prompt-option>
 		<x-prompt-option id="team">"I want my own dev team."</x-prompt-option>
@@ -45,7 +45,7 @@ description: Ax me summin
 				</x-slot>
 				<x-slot name="title_text">The answer is always "it depends."</x-slot>
 				<x-slot name="content">
-					<p>There are many ways to build websites, and some are better than others. Frendo understands the technology that powers your new site and what it is capable of.</p>
+					<p>There are many ways to build websites, and some are better than others. Frendo understands the tech that powers your site and how to do the most with what you have.</p>
 				</x-slot>
 				<x-slot name="button_text">
 					Let's look under the hood
@@ -55,9 +55,9 @@ description: Ax me summin
 				<x-slot name="kicker_text">
 					Team Building
 				</x-slot>
-				<x-slot name="title_text">Build the right team the right way.</x-slot>
+				<x-slot name="title_text">Build a team with vision.</x-slot>
 				<x-slot name="content">
-					<p>Managing developers is a skill set of its own. If you are ready to bring development in-house but are not sure how to structure it, Frendo helps you design the team, define the roles, and put the workflows in place before the first person is hired. So when your team shows up, they have something to work within</p>
+					<p>Managing developers is a skill set of its own. If you are ready to bring development in-house, Frendo helps you design the team, define the roles, and put the workflows in place.</p>
 				</x-slot>
 				<x-slot name="button_text">
 					Design your new team
@@ -112,6 +112,7 @@ description: Ax me summin
 <script>
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'digital-consulting'
+    Alpine.store('visitor').interest = 'digital-consulting'
   }, { once: true })
 </script>
 @endpush

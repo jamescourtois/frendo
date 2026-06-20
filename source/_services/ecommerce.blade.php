@@ -105,6 +105,7 @@ description: People buy shit online
 <script>
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'ecommerce'
+    Alpine.store('visitor').interest = 'ecommerce'
   }, { once: true })
 </script>
 @endpush
