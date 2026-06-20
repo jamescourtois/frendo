@@ -72,6 +72,16 @@
 	height: 66.66666%;
 }
 
+.logotype {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 6.2rem;
+	font-weight: 900;
+	transform: translate(134px, 41px);
+}
+
+
 .wrap {
 	opacity: 0;
 	animation: reveal 5s ease-out;
@@ -100,24 +110,29 @@
 
 @keyframes rgb-fade {
 	0%, 70%{
-		color: white;
+		color: transparent;
 		filter: blur(3px);
+		opacity:1;
 	}
 	75%{
 		color: red;
 		filter: blur(3px);
+		opacity:1;
 	}
 	80%{
 		color: green;
 		filter: blur(2px);
+		opacity:1;
 	}
 	85%{
 		color: blue;
 		filter: blur(1px);
+		opacity:1;
 	}
 	100%{
-		color: black;
+		color: currentColor;
 		filter: blur(0px);
+		opacity:1;
 	}
 }
 
