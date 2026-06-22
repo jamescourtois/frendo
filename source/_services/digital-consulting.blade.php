@@ -113,6 +113,7 @@ description: Ax me summin
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'digital-consulting'
     Alpine.store('visitor').interest = 'digital-consulting'
+		Alpine.store('visitor').cta = 'You don\'t have to say "asking for a friend."'
   }, { once: true })
 </script>
 @endpush

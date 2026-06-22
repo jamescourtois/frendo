@@ -81,7 +81,6 @@ description: A little bit about the site
 <script>
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'about'
-		Alpine.store('visitor').interest = 'about'
   }, { once: true })
 </script>
 @endpush

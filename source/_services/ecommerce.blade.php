@@ -112,7 +112,7 @@ description: People buy shit online
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'Raise your hand if you love paying listing fees.',
+		'title' => 'Sell with Frendo',
 		'link_text' => 'Sell with Frendo',
 	])
 @endsection
@@ -122,6 +122,7 @@ description: People buy shit online
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'ecommerce'
     Alpine.store('visitor').interest = 'ecommerce'
+		Alpine.store('visitor').cta = 'Sell with Frendo'
   }, { once: true })
 </script>
 @endpush
