@@ -17,10 +17,10 @@ a {
 
 @keyframes color-change-light {
 	0% {
-		color: currentColor;
-		border-color: currentColor;
+		color: blue;
+		border-color: blue;
 	}
-	15% {
+	5% {
 		color: green;
 		border-color: green;
 	}
@@ -49,8 +49,8 @@ a {
 
 @keyframes color-change-dark {
 	0% {
-		color: currentColor;
-		border-color: currentColor;
+		color: cyan;
+		border-color: cyan;
 	}
 	25% {
 		color: limegreen;
