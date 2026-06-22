@@ -14,26 +14,31 @@ a {
 		}
 }
 
+
 @keyframes color-change-light {
 	0% {
-		color: blue;
-		border-color: blue;
+		color: currentColor;
+		border-color: currentColor;
 	}
-	20% {
+	15% {
 		color: green;
 		border-color: green;
 	}
-	50% {
-		color: orange;
-		border-color: orange;
+	30% {
+		color: orangered;
+		border-color: orangered;
 	}
-	80% {
+	40% {
 		color: magenta;
 		border-color: magenta;
 	}
-	90% {
+	60% {
 		color: red;
 		border-color: red;
+	}
+	80% {
+		color: purple;
+		border-color: purple;
 	}
 	100% {
 		color: blue;
@@ -44,8 +49,8 @@ a {
 
 @keyframes color-change-dark {
 	0% {
-		color: cyan;
-		border-color: cyan;
+		color: currentColor;
+		border-color: currentColor;
 	}
 	25% {
 		color: limegreen;

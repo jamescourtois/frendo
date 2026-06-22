@@ -7,6 +7,22 @@
 	--leading-tightest: 1;
 }
 
+@utility color-change-reverse {
+		
+    animation: 10s color-change-dark infinite ease;
+		@media (prefers-color-scheme: dark) {
+			animation: 10s color-change-light infinite ease;
+		}
+}
+
+@utility color-change {
+	
+    animation: 10s color-change-light infinite ease;
+			@media (prefers-color-scheme: dark) {
+			animation: 10s color-change-dark infinite ease;
+		}
+}
+
 @import './base.css' layer(components);
 @import './blog.css' layer(components);
 @import './hamburgers.css' layer(components);

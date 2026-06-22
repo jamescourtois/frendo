@@ -11,8 +11,9 @@ description: Get in touch with us
 			Contact Frendo
 		</x-slot>
 		<x-slot name="h2">
-			<span x-show="$store.visitor.from == 'home' || $store.visitor.from == 'about'">Don&rsquo;t be a stranger.</span>
-			<span x-show="$store.visitor.from != 'home' && $store.visitor.from != 'about'">You have fallen for my trap.</span>
+			<span x-show="$store.visitor.from == 'home' || $store.visitor.from == 'about' && !$store.visitor.cta">Don&rsquo;t be a stranger.</span>
+			<span x-show="$store.visitor.from != 'home' && $store.visitor.from != 'about' && !$store.visitor.cta">You are a tricky one.</span>
+			<span x-show="$store.visitor.cta != null && $store.visitor.cta != ''" x-text="$store.visitor.cta + '.'"></span>
 		</x-slot>
 		
 	</x-header>

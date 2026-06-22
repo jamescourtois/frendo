@@ -18,10 +18,11 @@ description: People buy shit online
 		</x-slot>
 	</x-header>
 
-	<x-prompt question="When it comes to having your own online store, which matters most?">
-		<x-prompt-option id="custom">"I need the most control."</x-prompt-option>
-		<x-prompt-option id="managed">"I want the easiest experience."</x-prompt-option>
-		<x-prompt-option id="cheap">"Three words: lowest cost possible."</x-prompt-option>
+	<x-prompt question="When it comes to your online storefront, which sounds most like you?">
+		<x-prompt-option id="custom">"I want a store I fully control."</x-prompt-option>
+		<x-prompt-option id="managed">"I want the easiest way to sell online."</x-prompt-option>
+		<x-prompt-option id="compliance">"My online store is giving me a headache."</x-prompt-option>
+		<x-prompt-option id="cheap">"I need the cheapest possible online store."</x-prompt-option>
 	</x-prompt>
 
 
@@ -66,6 +67,21 @@ description: People buy shit online
 			</x-slot>
 			<x-slot name="button_text">
 				Get started with Shopify
+			</x-slot>
+		</x-content-block>
+
+			<x-content-block id="compliance">
+			<x-slot name="kicker_text">
+				Compliance
+			</x-slot>
+			<x-slot name="title_text">
+				Make it work for everyone.
+			</x-slot>
+			<x-slot name="content">
+				<p>There are ways to get tripped up legally when you are selling online. ADA compliance, tax collection, and other compliance issues can sneak up on you. Frendo knows how to make your site check all the boxes.</p>
+			</x-slot>
+			<x-slot name="button_text">
+				Make my store for everyone
 			</x-slot>
 		</x-content-block>
 

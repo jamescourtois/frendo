@@ -30,7 +30,9 @@
 }
 
  @media (width >= theme(--breakpoint-lg)) {
-			.btn-flashy:hover {
+			.btn-flashy:hover,
+			.btn-flashy:active,
+			.btn-flashy:focus {
 				color: white !important;
 			}
 	}
