@@ -10,7 +10,7 @@ description: What it is we say we do here
 			Services Overview
 		</x-slot>
 		<x-slot name="h2">
-			You have a friend in <br class"hidden lg:inline" />the web business.
+			The web is for everyone.
 		</x-slot>
 		<x-slot name="desc">
 			We can all agree that the internet did not turn out to be a fad. Having your own space in the digital world is a valuable thing. Whether you are starting a new project, making something better, or just trying to put out fires, you are in the right place.

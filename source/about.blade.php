@@ -12,7 +12,7 @@ description: A little bit about the site
 			Web Development & Consulting <br class="hidden lg:inline" /> in St. Louis, MO
 		</x-slot>
 		<x-slot name="h2">
-			The web is for everyone.
+			You have a friend in <br class"hidden lg:inline" />the web business.
 		</x-slot>
 		<x-slot name="desc">
 			Frendo supports people who make things and wants other people to be able to find them. Break away from the tangle of algorithms, ads, bots and extra fees. Build your online safe space.
@@ -39,8 +39,8 @@ description: A little bit about the site
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Who is Frendo?</h2>
 		</div>
 		<div class="w-full flex items-start justify-center">
-			<div class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-4 lg:gap-8 bg-gray-100 dark:bg-neutral-900 py-4 px-8">
-				<div class="overflow-hidden rounded-full size-[120px] border border-not-black">
+			<div class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-4 lg:gap-8 bg-gray-100 dark:bg-neutral-900 py-4 px-8 lg:px-16 lg:py-8">
+				<div class="overflow-hidden rounded-full size-[120px] lg:size-[150px] border border-not-black">
 					<img class="w-[115%] max-w-[115%] block h-auto" src="/assets/img/founder.png" alt="James Courtois, founder of Frendo Web Development" />
 				</div>
 				<div>
@@ -53,8 +53,8 @@ description: A little bit about the site
 			</div>
 		</div>
 		<div class="mt-8">
-			<p class="mt-0 mb-4">James is a St. Louis native and the founder of Frendo. Over 15 years he has designed, built, and shipped web projects for agencies and corporations of all sizes. He knows all the "gotchas" and how to not get got. James is a dog person who loves camping, hiking, and upping his home chef skills. When he wants to unplug, you can find him at a farmers market, thrifting antique cookware, or shooting a few games of pool.</p>
-			<p>James started Frendo because the internet is too valuable to surrender to the big platforms. If you build a place for people to find you, they will. Give them a path to connect with you and you will make those connections. That should be an option for everyone, no matter where they are in their digital journey.</p>
+			<p class="mt-0 mb-4">James Courtois is a St. Louis native and web development expert with over 15 years of experience in the creative + web space. He has designed, built, and deployed major web projects for agencies and corporations big and small. With an equal dedication to aesthetic and efficieny, James maximizes web experiences for both humans and machines.</p>
+			<p>James started Frendo because the internet is too valuable to give up control to the big platforms. If you build a place for people to find you, they will. Give them a path to connect with you and you will make those connections. That should be available to everyone, no matter where they are in their digital journey. Let's build a better web together.</p>
 		</div>
 	</div>
 
@@ -64,7 +64,7 @@ description: A little bit about the site
 		</div>
 		<div class="">
 			<h3 class="text-4xl">A simple conversation is the first step.</h3>
-			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things; photography, writing, design,logic. Let's focus on what you have now and where you want to be. Frendo will get you there. Check out the four core services and let's connect.</p>
+			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things; photography, writing, design,logic. Let's focus on what you have now and where you want to be. Frendo will get you there. Check out the four core services get get started. When you are ready, <a href="/contact">let's connect</a>.</p>
 		</div>
 	</div>
 </div>

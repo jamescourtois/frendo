@@ -54,7 +54,7 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full pt-20 relative z-[2] lg:mb-12">
+        <main role="main" class="flex-auto w-full pt-20 relative z-[2]">
 						@yield('body')
         </main>
 				@yield('cta')

@@ -11,7 +11,6 @@ Alpine.store('visitor', {
 	from: Alpine.$persist('hello').as('from'),
 	interest: Alpine.$persist(null).as('interest'),
 	playIntro: Alpine.$persist(false).as('playIntro'),
-	lastUrl: Alpine.$persist(null).as('lastUrl'),
 	cta: Alpine.$persist(null).as('cta'),
 	prefills: {
 			'home-cta': 'I want to know more about Frendo and how we can work together...',

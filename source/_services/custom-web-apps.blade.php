@@ -100,7 +100,7 @@ description: Special sauce
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'custom-web-apps'
     Alpine.store('visitor').interest = 'custom-web-apps'
-		Alpine.store('visitor').cta = 'Let&rsquo;s bust out the markers and whiteboard.'
+		Alpine.store('visitor').cta = 'Let\'s bust out the markers and whiteboard.'
   }, { once: true })
 </script>
 @endpush
