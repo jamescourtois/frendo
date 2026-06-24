@@ -2,11 +2,11 @@
 		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4 lg:px-0">
 			
 				<ul class="list-none">
-					<li><div class="flex w-[139px] h-[32px] mb-2">
+					<li><div class="flex mb-4">
 					@include('_layouts.logo')
 				</div></li>
-					<li>Web Development + Consulting</li>
-					<li>
+					<li class="rgb-fade">Web Development + Consulting</li>
+					<li class="rgb-fade">
 						<svg class="fill-current size-[0.75rem] translate-y-[-1px] inline-block" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
 							<path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
 						</svg>

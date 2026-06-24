@@ -122,7 +122,7 @@ description: People buy shit online
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'ecommerce'
     Alpine.store('visitor').interest = 'ecommerce'
-		Alpine.store('visitor').cta = 'Sell with Frendo'
+		Alpine.store('visitor').cta = null
   }, { once: true })
 </script>
 @endpush

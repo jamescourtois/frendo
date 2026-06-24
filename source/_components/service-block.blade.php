@@ -4,8 +4,8 @@
 			<h2 class="mt-0 mb-2 lg:text-5xl group-hover:color-change-reverse group-[&.in-view]:color-change-reverse" style="animation-delay:350ms;">{{$title}}</h2>
 			<p class="mt-0 mb-6">{{$desc}}</p>
 		</div>
-		<button class="inline-block font-semibold px-8 py-4 border-2 blur-[15px] group-hover:blur-none group-[&.in-view]:blur-none rounded-full border-inherit opacity-0 group-hover:opacity-100 group-[&.in-view]:opacity-100 group-hover:color-change-reverse group-[&.in-view]:color-change-reverse group-hover:duration-700 group-[&.in-view]:duration-700" style="animation-delay:350ms;">{{$cta}}</button>
-		<a href="/services/websites" class="opacity-0 absolute inset-0 block z-[99]">{{$button}}</a>
+		<button class="inline-block font-semibold px-8 py-4 border-2 blur-[15px] group-hover:blur-none group-[&.in-view]:blur-none rounded-full border-inherit opacity-0 group-hover:opacity-100 group-[&.in-view]:opacity-100 group-hover:color-change-reverse group-[&.in-view]:color-change-reverse group-hover:duration-700 group-[&.in-view]:duration-700" style="animation-delay:350ms;">{{$button}}</button>
+		<a href="/services/websites" class="opacity-0 absolute inset-0 block z-[99]">{{$cta}}</a>
 	</div>
 	<div class="bubble transition-transform opacity-0 group-hover:opacity-100 group-[&.in-view]:opacity-100 size-[300%] rounded-full absolute top-full left-full group-hover:translate-[-50%] group-[&.in-view]:translate-[-50%] z-[0] bg-red-500 duration-900 mix-blend-multiply dark:mix-blend-plus-lighter"></div>
 	<div class="bubble transition-transform opacity-0 group-hover:opacity-100 group-[&.in-view]:opacity-100 size-[300%] rounded-full absolute bottom-full right-full group-hover:translate-[50%] group-[&.in-view]:translate-[50%] z-[0] bg-blue-500 duration-900 mix-blend-multiply dark:mix-blend-plus-lighter"></div>

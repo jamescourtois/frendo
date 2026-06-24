@@ -128,7 +128,7 @@ description: Services for website stuff
   window.addEventListener('scroll', () => {
     Alpine.store('visitor').from = 'websites'
     Alpine.store('visitor').interest = 'websites'
-    Alpine.store('visitor').cta = 'What do you wish your website could do?'
+    Alpine.store('visitor').cta = null
   }, { once: true })
 </script>
 @endpush

@@ -15,66 +15,6 @@ a {
 }
 
 
-@keyframes color-change-light {
-	0% {
-		color: blue;
-		border-color: blue;
-	}
-	5% {
-		color: green;
-		border-color: green;
-	}
-	30% {
-		color: orangered;
-		border-color: orangered;
-	}
-	40% {
-		color: magenta;
-		border-color: magenta;
-	}
-	60% {
-		color: red;
-		border-color: red;
-	}
-	80% {
-		color: purple;
-		border-color: purple;
-	}
-	100% {
-		color: blue;
-		border-color: blue;
-	}
-}
-
-
-@keyframes color-change-dark {
-	0% {
-		color: cyan;
-		border-color: cyan;
-	}
-	25% {
-		color: limegreen;
-		border-color: limegreen;
-	}
-	50% {
-		color: yellow;
-		border-color: yellow;
-	}
-	65% {
-		color: orange;
-		border-color: orange;
-	}
-	95% {
-		color: magenta;
-		border-color: magenta;
-	}
-	100% {
-		color: cyan;
-		border-color: cyan;
-	}
-}
-
-
  /* dark buttons  */
 @media (prefers-color-scheme: dark) {
 	a {
