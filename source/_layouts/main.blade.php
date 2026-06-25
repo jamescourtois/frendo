@@ -14,7 +14,7 @@
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
-        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="./favicon.svg" type="image/svg+xml">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
         @if ($page->production)
@@ -26,15 +26,14 @@
 						 @viteRefresh()
         @endif
 				
-        <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
-				<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" rel="preconnect" rel="preload" href="{{ vite('source/_assets/css/main.css') }}">
 				
         <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
     </head>
 
     <body x-cloak x-data="{ navOpen: false }" class="bg-white text-gray-700 dark:bg-neutral-950 dark:text-not-white flex flex-col justify-between min-h-screen leading-normal font-sans">
 			<header class="group duration-300 bg-white/40 dark:bg-black/30 fixed z-[99] w-full flex items-center backdrop-blur-sm h-20" role="banner">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-0">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 xl:px-0">
                 <div class="flex items-center">
                     <a @click="$store.visitor.playIntro = true" href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         

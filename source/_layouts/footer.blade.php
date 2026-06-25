@@ -1,5 +1,5 @@
 <footer class="pt-8 bg-gray-200 dark:bg-neutral-800" role="contentinfo">
-		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4 lg:px-0">
+		<div class="container mx-auto flex flex-col lg:flex-row justify-between items-start px-4 xl:px-0">
 			
 				<ul class="list-none">
 					<li><div class="flex mb-4">

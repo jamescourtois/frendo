@@ -29,7 +29,7 @@ description: Get in touch with us
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 	</div>
-	<div class="w-full lg:w-2/3 lg:border-r border-not-black dark:border-not-white dark:border-not-white px-4 lg:px-0 lg:pr-8">
+	<div class="w-full lg:w-2/3 lg:border-r border-not-black dark:border-not-white dark:border-not-white px-4 xl:px-0 lg:pr-8">
 		<span class="block text-center kicker">Official Contact Form</span>
 		<form x-data="{preference:'both'}"  id="contact-form" class="form-style" method="POST" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" class="mb-12">
 				<div class="flex flex-wrap mb-6 -mx-3">
