@@ -14,9 +14,6 @@ description: A little bit about the site
 		<x-slot name="h2">
 			You have a friend in <br class"hidden lg:inline" />the web business.
 		</x-slot>
-		<x-slot name="desc">
-			Break away from the tangle of algorithms, sponsored content, bots and trolls. Stop renting a spot on someone else's platform and build your own place to be you.
-		</x-slot>
 	</x-header>
 
 <div id="about" class="mx-auto max-w-[800px] flex flex-col gap-12 mb-20 px-4 xl:px-0">
@@ -30,7 +27,7 @@ description: A little bit about the site
 		</div>
 		<div class="">
 			<h3 class="text-4xl">Put your money where your code is.</h3>
-			<p class="mt-0 mb-4">Working with Frendo means your investment goes directly into the quality of your project. Never pay for layers of managers, emails, meetings, and agency bloat. Frendo is one person at its core, and that's by design. You get a web expert who knows and owns your project from start to finish.</p>
+			<p class="mt-0 mb-4">Working with Frendo means your investment goes directly into the quality of your project. Never pay for layers of managers, meetings and agency bloat. Frendo is one person, and that's by design. You get a web expert who knows and owns your project from start to finish.</p>
 		</div>
 	</div>
 	
@@ -53,8 +50,8 @@ description: A little bit about the site
 			</div>
 		</div>
 		<div class="mt-8">
-			<p class="mt-0 mb-4"><a href="https://jamescourtois.dev" target="_blank">James</a> is a St. Louis native and web expert with over 15 years of experience in the creative + web space. He has designed, built, and deployed projects for agencies and corporations of all sizes. With an equal dedication to aesthetic and efficieny, James builds web projects for both humans and machines.</p>
-			<p>James started Frendo because the internet is too valuable to surrender to the big platforms. Build your own place for people to find you and they will. Create a path for connecting and you will make connections. That should be available to everyone wherever they are in their digital journey. Let's build a better web together.</p>
+			<p class="mt-0 mb-4">James is a St. Louis native and web expert with over 15 years of experience in the creative + web space. He has designed, built, and deployed projects for agencies and corporations of all sizes. With an equal dedication to aesthetic and efficiency, James builds web projects for both humans and machines.</p>
+			<p>James started Frendo because the internet is too valuable to surrender to the big platforms. Build your own place for people to find you and they will. Create a path for connecting and you will make connections. That should be available to everyone wherever they are starting from. Let's make the web a place we want to be.</p>
 		</div>
 	</div>
 
@@ -64,7 +61,7 @@ description: A little bit about the site
 		</div>
 		<div class="">
 			<h3 class="text-4xl">A simple conversation is the first step.</h3>
-			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things; photography, writing, design, logic. Let's focus on what you have now and where you want to be. Frendo will get you there. Check out the core services below to get started. When you are ready, <a href="/contact">let's connect</a>.</p>
+			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things: photography, writing, design, logic. Let's focus on what you have now and where you want to be. Let Frendo show you the path forward. When you are ready, <a href="/contact">let's connect</a>.</p>
 		</div>
 	</div>
 </div>

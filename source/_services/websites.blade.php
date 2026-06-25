@@ -20,8 +20,8 @@ description: Services for website stuff
 	<x-prompt question="When it comes to your website, which sounds most like you?">
 		<x-prompt-option id="ongoing">"I started a new site, but I'm stuck."</x-prompt-option>
 		<x-prompt-option id="support">"My website is having issues."</x-prompt-option>
-		<x-prompt-option id="updates">"I need to update my website."</x-prompt-option>
-		<x-prompt-option id="redesign">"My website is getting old."</x-prompt-option>
+		<x-prompt-option id="updates">"I need to add stuff to my website."</x-prompt-option>
+		<x-prompt-option id="redesign">"My mom said my website is ugly."</x-prompt-option>
 		<x-prompt-option id="new">"I am starting from scratch."</x-prompt-option>
 	</x-prompt>
 
@@ -65,10 +65,10 @@ description: Services for website stuff
 				Teach your website new tricks.
 			</x-slot>
 			<x-slot name="content">
-				<p>One great thing about websites is they can grow with you. Frendo understands the tech that powers your website and the best way to expand on how your site is built now. You don't have to build a whole new site, let's explore what is possible with your current system.</p>
+				<p>One great thing about websites is they can grow with you. Frendo understands the tech that powers your website and the best way to update and expand on how your site is built. You don't have to struggle with the back end or build a whole new site. Let's nail down what's possible with your current system.</p>
 			</x-slot>
 			<x-slot name="button_text">
-				See what's possible
+				Make the right changes
 			</x-slot>
 		</x-content-block>
 
@@ -77,10 +77,10 @@ description: Services for website stuff
 				Redesign / Rebuild
 			</x-slot>
 			<x-slot name="title_text">
-				Apply what you've already learned.
+				Apply what you've learned.
 			</x-slot>
 			<x-slot name="content">
-				<p>Your first website taught you a lot. Now you know your audience better and your brand is sharper. Rebuilding your site allows you to evolve and launch with fresh perspective. Frendo makes sure your next site reflects all the growth you've already accomplished.</p>
+				<p>Your first website taught you a lot. Now you know your audience better and your brand is sharper. Rebuilding your site allows you to evolve and launch a with fresh perspective. Frendo makes sure your next site reflects all the growth you've already accomplished.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Build the next version

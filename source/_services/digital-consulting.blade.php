@@ -19,86 +19,103 @@ description: Ax me summin
 	</x-header>
 
 	<x-prompt question="Which of these sounds most like you?">
-		<x-prompt-option id="rebuild">"My website needs a LOT of work."</x-prompt-option>
-		<x-prompt-option id="takeover">"I inherited a site, what do I do?"</x-prompt-option>
-		<x-prompt-option id="team">"I want my own dev team."</x-prompt-option>
-		<x-prompt-option id="strategy">"I have an idea, how do I build it?"</x-prompt-option>
-		<x-prompt-option id="train">"How do I manage my site myself?"</x-prompt-option>
-		<x-prompt-option id="design">"My mom said my website is ugly."</x-prompt-option>
+		
+		<x-prompt-option id="admin">"I need someone to manage my site for me."</x-prompt-option>
+		
+		<x-prompt-option id="strategy">"I have a great site, what should I do next?"</x-prompt-option>
+		
+		<x-prompt-option id="takeovers">"I inherited a site, what do I do with it?"</x-prompt-option>
+		
+		<x-prompt-option id="train">"How do I manage my site by myself?"</x-prompt-option>
+		
+		<x-prompt-option id="audit">"Is my website doing what it is supposed to?"</x-prompt-option>
+		
+		<x-prompt-option id="novice">"I have absolutely no idea where to begin."</x-prompt-option>
+	
 	</x-prompt>
 
 	<x-content-blocks-wrapper>
 		
-			<x-content-block id="rebuild">
-				<x-slot name="kicker_text">Rebuilds</x-slot>
-				<x-slot name="title_text">Get a fresh start.</x-slot>
-				<x-slot name="content">
-					<p>At a certain point, patching things up costs more than starting fresh. Frendo handles the full transition from your old site to the new, making sure nothing is lost in the process.</p>
-				</x-slot>
-				<x-slot name="button_text">
-					Start planning
-				</x-slot>
-			</x-content-block>
-			<x-content-block id="takeover">
+			<x-content-block id="admin">
 				<x-slot name="kicker_text">
-					Takeovers
+					Admin Outsourcing
 				</x-slot>
-				<x-slot name="title_text">The answer is always "it depends."</x-slot>
+				<x-slot name="title_text">You already have a job.</x-slot>
 				<x-slot name="content">
-					<p>There are many ways to build websites, and some are better than others. Frendo understands the tech that powers your site and how to do the most with what you have.</p>
+					<p>There are only so many hours in the day and web updates are easy to leave on the back burner. Frendo is a web expert you can trust to admin your site. Get back all the time you would have spent worrying about content updates or expired plugins.</p>
 				</x-slot>
 				<x-slot name="button_text">
-					Let's look under the hood
+					Free up your time
 				</x-slot>
 			</x-content-block>
-			<x-content-block id="team">
-				<x-slot name="kicker_text">
-					Team Building
-				</x-slot>
-				<x-slot name="title_text">Build a team with vision.</x-slot>
-				<x-slot name="content">
-					<p>Managing developers is a skill set of its own. If you are ready to bring development in-house, Frendo helps you design the team, define the roles, and put the workflows in place.</p>
-				</x-slot>
-				<x-slot name="button_text">
-					Design your new team
-				</x-slot>
-			</x-content-block>
+
 			<x-content-block id="strategy">
 				<x-slot name="kicker_text">
-					Strategy
+					Digital Strategy
 				</x-slot>
-				<x-slot name="title_text">Clarity without commitment.</x-slot>
+				<x-slot name="title_text">Don't stop now.</x-slot>
 				<x-slot name="content">
-					<p>Knowing is half the battle. Making the investment in your new idea will require the right technology to carry you through years of growth. Frendo gets you there the smartest way possible.</p>
+					<p>A great website is the start, not the finish line. Now that you are gaining traction with your audience, it's time to decide what comes next. Keep iterating on what is working. Make small tweaks and measure their impact. Partner with Frendo and we'll keep up the pace.</p>
 				</x-slot>
 				<x-slot name="button_text">
-					Share your vision
+					Keep going
 				</x-slot>
 			</x-content-block>
+
+			<x-content-block id="takeovers">
+				<x-slot name="kicker_text">
+					Site Takeovers
+				</x-slot>
+				<x-slot name="title_text">Momma said websites are like a box of chocolates.</x-slot>
+				<x-slot name="content">
+					<p>Taking over a website built by someone else can leave a weird taste. You never know exactly what you have until you take a bite. Let Frendo taste test your new-to-you website and let you know if it has nuts.</p>
+				</x-slot>
+				<x-slot name="button_text">
+					Let's tear it open
+				</x-slot>
+			</x-content-block>
+
+
 			<x-content-block id="train">
 				<x-slot name="kicker_text">
-					Training
+					CMS & Admin Training
 				</x-slot>
-				<x-slot name="title_text">Be the master of your domain.</x-slot>
+				<x-slot name="title_text">If you can use social media, you can admin a site.</x-slot>
 				<x-slot name="content">
 					<p>Understanding how your website works puts you in control. Frendo walks you through everything at your pace with no judgment, no rushing, and all the answers you need.</p>
 				</x-slot>
 				<x-slot name="button_text">
-					Book a session
+					Let's write a lesson plan
 				</x-slot>
 			</x-content-block>
-			<x-content-block id="design">
+
+			<x-content-block id="audit">
 				<x-slot name="kicker_text">
-					Redesign
+					Site Audits
 				</x-slot>
-				<x-slot name="title_text">Your mom is just trying to help.</x-slot>
+				<x-slot name="title_text">Pull back the curtain.</x-slot>
 				<x-slot name="content">
-					<p>First impressions matter. Frendo refreshes the design and layout without touching what is under the hood. It's your site but with a better first impression. Mom will be proud.</p>
+					<p>Does your SEO actually show up in results? Can screen readers make sense of your layout? Are your requests failing silently in the background? Let Frendo take a look backstage so you can keep your show on the road.</p>
 				</x-slot>
 				<x-slot name="button_text">
-					Start your redesign
+					Run a full report
 				</x-slot>
 			</x-content-block>
+
+
+			<x-content-block id="novice">
+				<x-slot name="kicker_text">
+					Guidance
+				</x-slot>
+				<x-slot name="title_text">Start with the "why."</x-slot>
+				<x-slot name="content">
+					<p>Websites are both something we use daily and something almost undefinable. A website can be anything, built any way, on any size screen, loaded any time of day. Before you write a single line of code, let's work backwards from your end goal.</p>
+				</x-slot>
+				<x-slot name="button_text">
+					Let's talk it out
+				</x-slot>
+			</x-content-block>
+			
 		
 </x-content-blocks-wrapper>
 @endsection

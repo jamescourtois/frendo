@@ -18,11 +18,11 @@ description: People buy shit online
 		</x-slot>
 	</x-header>
 
-	<x-prompt question="When it comes to your online storefront, which sounds most like you?">
+	<x-prompt question="When it comes to selling online, which sounds most like you?">
 		<x-prompt-option id="custom">"I want a store I fully control."</x-prompt-option>
 		<x-prompt-option id="managed">"I want the easiest way to sell online."</x-prompt-option>
-		<x-prompt-option id="compliance">"My online store is giving me a headache."</x-prompt-option>
-		<x-prompt-option id="cheap">"I need the cheapest possible online store."</x-prompt-option>
+		<x-prompt-option id="compliance">"My store needs to be legally compliant."</x-prompt-option>
+		<x-prompt-option id="cheap">"I want the lowest startup cost."</x-prompt-option>
 	</x-prompt>
 
 
@@ -36,15 +36,10 @@ description: People buy shit online
 				Your store, your rules.
 			</x-slot>
 			<x-slot name="content">
-				<p>Adapt your e-commerce site to your needs, not the other way around. Make no compromises and build a custom storefront that integrates with the tools you already use. Cut out your subscription costs and your fees boil down to hosting, credit card processing, and shipping. Frendo helps you leverage the best platform tailored to your product, including:</p>
-				<ul class="pl-4">
-					<li>WordPress + WooCommerce</li>
-					<li>BigCommerce</li>
-					<li>Bagisto powered by Laravel</li>
-				</ul>
+				<p>Adapt your store to your needs, not the other way around. Make no compromises with a storefront tailored for your product that integrates with the tools you already use. Frendo builds modern online stores on the best platform for you. Maximize the experience and minimize selling fees.</p>
 			</x-slot>
 			<x-slot name="button_text">
-				Build a custom storefront
+				Build your custom storefront
 			</x-slot>
 		</x-content-block>
 
@@ -53,17 +48,10 @@ description: People buy shit online
 				Managed E-commerce
 			</x-slot>
 			<x-slot name="title_text">
-				Great power without great responsiblity.
+				Great power without great responsibility.
 			</x-slot>
 			<x-slot name="content">
-				<p>Shopify handles the infrastructure so you can focus on your products. Frendo sets everything up, makes it look like you, and makes sure you know how to use it.</p>
-				<ul class="pl-4">
-					<li>Shopify theme development</li>
-					<li>Product entry and store set up</li>
-					<li>Store administration training & support</li>
-					<li>Headless Shopify, if you really want to go crazy</li>
-				</ul>
-				<p>Your new online store is waiting to be switched on. Frendo is ready when you are.</p>
+				<p>Shopify handles the infrastructure so you can focus on sales. Frendo sets everything up, makes it look like you, loads your products, and makes sure you actually know how to manage your online store. If you get stuck on something, you know a web expert ready to help.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Get started with Shopify
@@ -78,10 +66,10 @@ description: People buy shit online
 				Make it work for everyone.
 			</x-slot>
 			<x-slot name="content">
-				<p>There are ways to get tripped up legally when you are selling online. ADA compliance, tax collection, and other compliance issues can sneak up on you. Frendo knows how to make your site check all the boxes.</p>
+				<p>Selling online comes with legal responsibilities most people don't think about until something goes wrong. ADA accessibility, tax collection, GDPR, and consumer privacy laws can all sneak up on you. Frendo makes sure your store is covered before it becomes a problem.</p>
 			</x-slot>
 			<x-slot name="button_text">
-				Make my store for everyone
+				Make sure you're covered
 			</x-slot>
 		</x-content-block>
 
@@ -93,15 +81,7 @@ description: People buy shit online
 				Margins are the name of the game.
 			</x-slot>
 			<x-slot name="content">
-				<p>Every dollar you don't spend is a dollar you earn. Not everyone needs a totally unique design with flashy animations. A good product stands on its own.</p>
-				<ul class="pl-4">
-					<li>Leverage open-source e-commerce tools with built-in customer flows.</li>
-					<li>Get affordable hosting that matches your bandwidth needs.</li>
-					<li>Eliminate subscription and per-transaction fees entirely.</li>
-					<li>You own everything, take it with you and move to a new platform any time.</li>
-					<li>Start small and build on what you have later</li>
-				</ul>
-				<p>Sometimes you just need the simplest solution. Frendo makes it happen.</p>
+				<p>Every dollar you don't spend is a dollar you earn. A good product doesn't need a fancy custom theme or flashy scroll animations. Frendo sets you up with open source tools on affordable hosting with no subscription fees and no per-transaction cuts. Start small, own everything, and build it up as you go.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Spin up your new storefront
