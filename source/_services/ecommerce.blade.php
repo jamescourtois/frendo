@@ -1,6 +1,6 @@
 ---
 title: E-Commerce
-description: People buy shit online
+description: Sell with Frendo.
 ---
 @extends('_layouts.main')
 
@@ -92,7 +92,7 @@ description: People buy shit online
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'Sell with Frendo',
+		'title' => 'Own your online store, not vice versa.',
 		'link_text' => 'Sell with Frendo',
 	])
 @endsection

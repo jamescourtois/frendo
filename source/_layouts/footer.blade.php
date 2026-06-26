@@ -17,7 +17,7 @@
 					<li class="uppercase tracking-widest text-gray-500 text-sm mb-2">Info</li>
 					<li><a href="/about">About Frendo</a></li>
 					<li><a href="/services">Services Overview</a></li>
-					<li><a href="/blog">Learning Center</a></li>
+					<li><a href="/blog">Field Notes</a></li>
 					<li><a href="/contact">Contact Frendo</a></li>
 					<li class="md:hidden"><a href="/contact-card">Add Frendo as a Contact</a></li>
 				</ul>

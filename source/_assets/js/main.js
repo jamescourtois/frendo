@@ -39,6 +39,7 @@ Alpine.store('visitor', {
 			'digital-consulting-strategy': 'If you were me what would you do...',
 			'digital-consulting-redesign': 'My website works okay but the design is outdated...',
 			'special': 'You could never have predicted what I am about to say...',
+			'blog-link': 'I have a question...',
 			'hello': 'Allow me to introduce myself...',
 	},
 	get prefill() {

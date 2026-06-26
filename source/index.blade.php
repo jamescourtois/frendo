@@ -26,7 +26,7 @@
 			<x-slot name="content">
 				<h3>You are in the right place.</h3>
 				<p>Frendo offers <a href="/services">four core services</a> that include everything you need to build your own home on the web. That includes a blazing fast tech stack and 15 years of experience in branding, design and full stack web development.</p>
-				<h3>Own your digital home.</h3>
+				<h3>Own your home online.</h3>
 				<p>These days it can feel like the big platforms own the entire web. Thankfully that is just not true. The digital world always has new territory for you to stake your claim. <a href="/about">Frendo has the experience</a> to make sure you thrive online.</p>
 				<h3>Start with what you have.</h3>
 				<p>You don't need to have a budget or an official request for proposal. The first step is always a simple conversation. Share your story, arm yourself with facts, reflect on your needs. You'll know when it's time to make a move. <a href="/contact">Reach out</a> when you're ready.</p>
@@ -35,7 +35,7 @@
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'Let&rsquo;s build a better web together.',
+		'title' => 'Build the web you want to see.',
 		'link_text' => 'Contact Frendo',
 	])
 @endsection

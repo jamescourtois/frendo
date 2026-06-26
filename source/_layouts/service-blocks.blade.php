@@ -11,7 +11,7 @@
 	</x-service-block>
 		<x-service-block title="Custom Web Apps" url="custom-web-apps" cta="Evolve with Frendo" button="Custom Web Apps Services">
 		<x-slot name="desc">
-			When there is no tool right for the job, build your own. A custom app just might be the missing link in your chain. 
+			When there is no tool right for the job, build your own. A custom app just might be the missing link. 
 		</x-slot>
 	</x-service-block>
 		<x-service-block title="Digital Consulting" url="digital-consulting" cta="Consult with Frendo" button="Digital Consulting Services">

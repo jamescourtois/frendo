@@ -1,34 +1,37 @@
 ---
-title: Blog
-description: The list of blog posts for the site
+title: Field Notes
+description: Learn more about the modern web from the perspective of an ethical indie web specialist.
 pagination:
     collection: posts
-    perPage: 4
+    perPage: 8
 ---
 @extends('_layouts.main')
 
 @section('body')
 	<x-header>
 		<x-slot name="h1">
-			Learning Center
+			Field Notes
 		</x-slot>
 		<x-slot name="h2">
 			Knowledge is power.
 		</x-slot>
 		<x-slot name="desc">
-			Frendo believes that access to knowledge should be free. When you arm yourself with the facts, you are empowered to make the best choices.
+			Frendo believes knowledge should be free. When you are armed with the facts, you are empowered to make the best choices. Check out the articles below to learn more about the modern web. If you don't see what you are looking for, <a @click="$store.visitor.cta = 'Fire away.'" href="/contact">ask questions here</a>.
 		</x-slot>
 	</x-header>
 
-    <hr class="border-b my-6">
-
-    @foreach ($pagination->items as $post)
-        @include('_components.post-preview-inline')
-
-        @if ($post != $pagination->items->last())
-            <hr class="border-b my-6">
-        @endif
-    @endforeach
+    <div class="mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-1 py-1 bg-not-black dark:bg-not-white">
+			@foreach ($pagination->items as $post)
+					<div class="col-span-1 bg-not-white dark:bg-not-black">
+						@include('_components.post-preview-inline')
+					</div>
+			@endforeach
+			@if( $pagination->pages->count() % 2 == 1)
+				<div class="col-span-1 bg-not-white dark:bg-not-black hidden lg:block">
+					<span class="sr-only">There is an odd number of posts.</span>
+				</div>
+			@endif
+		</div>
 
     @if ($pagination->pages->count() > 1)
         <nav class="flex text-base my-8">
@@ -57,12 +60,14 @@ pagination:
             @endif
         </nav>
     @endif
+		
 @stop
 
 @push('scripts')
 <script>
-  window.addEventListener('scroll', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     Alpine.store('visitor').from = 'blog'
+    Alpine.store('visitor').cta = null
   }, { once: true })
 </script>
 @endpush

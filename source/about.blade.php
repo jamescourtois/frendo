@@ -1,6 +1,6 @@
 ---
 title: About
-description: A little bit about the site
+description: A little bit about Frendo
 ---
 @extends('_layouts.main')
 
@@ -22,7 +22,7 @@ description: A little bit about the site
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Why work with Frendo?</h2>
 		</div>
 		<div class="">
-			<h3 class="text-4xl">Create a digital home you actually own.</h3>
+			<h3 class="text-4xl">Build a home online you actually own.</h3>
 			<p class="mt-0 mb-4"><span class="font-bold">Do you truly own your website?</span> If you pay a subscription for an all-in-one service, the answer is likely no. You are renting the code, data and content like a fancy loft apartment. When it's time to move your site to a new home, that means starting all over. As your needs evolve and prices change, this can lead to big headaches down the road. Building with Frendo means you maintain full ownership of your code, content and data. Move anytime and take it all with you.</p>
 		</div>
 		<div class="">
@@ -60,8 +60,8 @@ description: A little bit about the site
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">How do I start?</h2>
 		</div>
 		<div class="">
-			<h3 class="text-4xl">A simple conversation is the first step.</h3>
-			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things: photography, writing, design, logic. Let's focus on what you have now and where you want to be. Let Frendo show you the path forward. When you are ready, <a href="/contact">let's connect</a>.</p>
+			<h3 class="text-4xl">A simple conversation is always the first step.</h3>
+			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things: photography, writing, design, logic. Let's focus on what you have and where you want to be. Frendo shows you the path forward. When you are ready, <a href="/contact">let's connect</a>.</p>
 		</div>
 	</div>
 </div>

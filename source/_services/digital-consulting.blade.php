@@ -1,6 +1,6 @@
 ---
 title: Digital Consulting
-description: Ax me summin
+description: Ask Frendo.
 ---
 @extends('_layouts.main')
 
@@ -38,7 +38,7 @@ description: Ax me summin
 		
 			<x-content-block id="admin">
 				<x-slot name="kicker_text">
-					Admin Outsourcing
+					Admin
 				</x-slot>
 				<x-slot name="title_text">You already have a job.</x-slot>
 				<x-slot name="content">
@@ -66,7 +66,7 @@ description: Ax me summin
 				<x-slot name="kicker_text">
 					Site Takeovers
 				</x-slot>
-				<x-slot name="title_text">Momma said websites are like a box of chocolates.</x-slot>
+				<x-slot name="title_text">Legacy websites are like a box of chocolates.</x-slot>
 				<x-slot name="content">
 					<p>Taking over a website built by someone else can leave a weird taste. You never know exactly what you have until you take a bite. Let Frendo taste test your new-to-you website and let you know if it has nuts.</p>
 				</x-slot>

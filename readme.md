@@ -59,7 +59,7 @@ section: content
 title: Getting Started
 date: 2022-08-02
 description: Getting started with the Jigsaw blog starter template
-cover_image: /assets/img/post-cover-image-2.png
+
 featured: true
 ---
 ```

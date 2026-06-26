@@ -1,6 +1,6 @@
 ---
 title: Websites Services
-description: Services for website stuff
+description: Build with Frendo.
 ---
 @extends('_layouts.main')
 
@@ -95,7 +95,7 @@ description: Services for website stuff
 				It's all blue skies from here.
 			</x-slot>
 			<x-slot name="content">
-				<p>Starting from scratch is actually the best place to be. No baggage, no old legacy code laying around, all open runway. Let Frendo build and launch a site that grows with you. Don't rent your website from a platform that holds your content and data hostage. Build a world class website you fully own.</p>
+				<p>Starting from scratch is actually the best place to be. No legacy code or bloated database laying around, just all open runway. Build with Frendo and launch a site that grows with you. Don't rent from a platform that holds your code and data hostage. Own your home online.</p>
 			</x-slot>
 			<x-slot name="button_text">
 				Build for the future
@@ -108,7 +108,7 @@ description: Services for website stuff
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'What do you wish your website could do?',
+		'title' => 'What do you wish everyone knew about you?',
 		'link_text' => 'Tell Frendo',
 	])
 @endsection

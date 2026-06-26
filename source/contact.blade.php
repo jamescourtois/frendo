@@ -11,8 +11,8 @@ description: Get in touch with us
 			Contact Frendo
 		</x-slot>
 		<x-slot name="h2">
-			<span x-show="($store.visitor.from == 'home' || $store.visitor.from == 'about') && !$store.visitor.cta">Don&rsquo;t be a stranger.</span>
-			<span x-show="$store.visitor.from != 'home' && $store.visitor.from != 'about' && !$store.visitor.cta">The first step is a simple conversation.</span>
+			<span x-show="['home','about'].includes($store.visitor.from) && !$store.visitor.cta">Don&rsquo;t be a stranger.</span>
+			<span x-show="!['home','about'].includes($store.visitor.from) && !$store.visitor.cta">The first step is a simple conversation.</span>
 			<span x-show="$store.visitor.cta != null && $store.visitor.cta != ''" x-text="$store.visitor.cta"></span>
 		</x-slot>
 		
@@ -22,7 +22,7 @@ description: Get in touch with us
 	<div class="w-full lg:w-auto order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Call or text</li>
-			<li class="mb-2"><a href="tel:+13146687244">(314) 668-7244</a></li>
+			<li class="mb-2"><a href="tel:+13146687244">(636) 267 2552</a></li>
 		</ul>
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Send a note</li>

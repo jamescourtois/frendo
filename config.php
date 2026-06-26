@@ -6,14 +6,14 @@ return [
     'baseUrl' => 'http://frendo.test',
     'production' => false,
     'siteName' => 'Frendo Web Development',
-    'siteDescription' => 'Web development & digital services based in St. Louis, MO.',
+    'siteDescription' => 'Web Development & Digital Consulting based in St. Louis, MO.',
     'siteAuthor' => 'James Courtois',
 
     // collections
     'collections' => [
         'posts' => [
             'author' => 'James Courtois', // Default author, if not provided in a post
-            'sort' => '-date',
+            'sort' => ['-order','-date'],
             'path' => 'blog/{filename}',
         ],
 				'services' => [

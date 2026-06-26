@@ -1,6 +1,6 @@
 ---
 title: Custom Web Apps
-description: Special sauce
+description: Innovate with Frendo.
 ---
 @extends('_layouts.main')
 
@@ -31,13 +31,13 @@ description: Special sauce
 				Productivity
 			</x-slot>
 			<x-slot name="title_text">
-				Stop doing repetitive work.
+				Let machines do the boring part.
 			</x-slot>
 			<x-slot name="content">
 				<p>If you do it the same way every time, a custom app can do it for you. If you are tired of working around the limits of your existing tools, build your own. Focus on the work humans do best.</p>
 			</x-slot>
 			<x-slot name="button_text">
-				Stop copy/pasting everything.
+				Stop copy/pasting everything
 			</x-slot>
 		</x-content-block>
 
@@ -91,7 +91,7 @@ description: Special sauce
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'Let&rsquo;s bust out the markers and whiteboard.',
+		'title' => 'Build the web you want to see.',
 		'link_text' => 'Build with Frendo',
 	])
 @endsection
