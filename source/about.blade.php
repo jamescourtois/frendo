@@ -18,9 +18,7 @@ description: A little bit about Frendo
 
 <div id="about" class="mx-auto max-w-[800px] flex flex-col gap-12 mb-20 px-4 xl:px-0">
 	<div class="flex flex-col">
-		<div class="text-center">
-			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Why work with Frendo?</h2>
-		</div>
+		<h2 class="sr-only">Why work with Frendo?</h2>
 		<div class="">
 			<h3 class="text-4xl leading-tighter">Build a home online you actually own.</h3>
 			<p class="mt-0 mb-4"><span class="font-bold">Do you truly own your website?</span> If you pay a subscription for an all-in-one service, the answer is likely no. You are renting the code, data and content like a fancy loft apartment. When it's time to move your site to a new home, that means starting all over. As your needs evolve and prices change, this can lead to big headaches down the road. Building with Frendo means you maintain full ownership of your code, content and data. Move anytime and take it all with you.</p>
@@ -32,9 +30,7 @@ description: A little bit about Frendo
 	</div>
 	
 	<div class="flex flex-col">
-		<div class="text-center">
-			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Who is Frendo?</h2>
-		</div>
+		<h2 class="sr-only">Who is Frendo?</h2>
 		<div class="w-full flex items-start justify-center">
 			<div class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-4 lg:gap-8 bg-gray-100 dark:bg-neutral-800 py-4 px-8 lg:px-16 lg:py-8">
 				<div class="overflow-hidden rounded-full size-[120px] lg:size-[150px] border border-not-black">
@@ -51,14 +47,12 @@ description: A little bit about Frendo
 		</div>
 		<div class="mt-8">
 			<p class="mt-0 mb-4">James is a St. Louis native and web expert with over 15 years of experience in the creative + web space. He has designed, built, and deployed projects for agencies and corporations of all sizes. With an equal dedication to aesthetic and efficiency, James builds web projects for both humans and machines.</p>
-			<p>James started Frendo because the internet is too valuable to surrender to the big platforms. Build your own place for people to find you and they will. Create a path for connecting and you will make connections. That should be available to everyone wherever they are starting from. Let's make the web a place we want to be.</p>
+			<p>James started Frendo because the internet is too valuable to surrender to the big platforms. Build your own place for people to find you and they will. Create a path for connecting and you will make connections. That should be available to everyone at any level of technical expertise. Let's make the web for us.</p>
 		</div>
 	</div>
 
 	<div class="flex flex-col">
-		<div class="text-center">
-			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">How do I start?</h2>
-		</div>
+		<h2 class="sr-only">How do I start?</h2>
 		<div class="">
 			<h3 class="text-4xl leading-tighter">A simple conversation is always the first step.</h3>
 			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things: photography, writing, design, logic. Let's focus on what you have and where you want to be. Frendo shows you the path forward. When you are ready, <a href="/contact">let's connect</a>.</p>

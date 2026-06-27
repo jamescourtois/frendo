@@ -6,20 +6,26 @@ description: Let's keep in touch
 
 @section('body')
 	<div x-data="{clicked:false}" x-init="$store.visitor.playIntro = true" class="flex flex-col items-center justify-center text-center px-4 mb-12">
-			<h1 class="kicker">Contact Card</h1>
-			<h2 class="mt-3 leading-[2.8rem] text-5xl mb-5">Let's keep in touch.</h2>
-			
+			<x-header>
+				<x-slot name="h1">
+					Contact Card
+				</x-slot>
+				<x-slot name="h2">
+					Let's keep in touch.
+				</x-slot>
+			</x-header>		
+
 			<a href="{{ $page->baseUrl . '/frendo.vcf' }}"
 				download="frendo.vcf"
 				type="text/vcard"
 				target="_self"
 				@click="clicked = true"
-				x-text="clicked ? 'Frendo.vcf Saved!' : 'Add Frendo as a Contact'"
+				x-text="clicked ? 'Frendo.vcf Saved!' : 'Download Contact Card'"
 				class="min-w-[260px] mt-4 mb-2 text-xl px-5 py-3 btn-special text-white rounded-full font-bold cursor-pointer">
 		</a>
 		<span x-text="clicked ? 'Check your downloads folder and open the contact card.' : 'Save the Frendo.vcf contact card to your device.'" class="text-xs text-gray-500"></span>
 			
-		<ul class="list-none text-3xl font-bold mt-8 p-8">
+		<ul class="list-none text-3xl font-bold pp-8">
 			<li><a href="tel:+16362672552">(636) 267-2552</a></li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>

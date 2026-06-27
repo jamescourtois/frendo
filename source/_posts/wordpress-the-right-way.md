@@ -8,4 +8,4 @@ description: WordPress turned 23 this year but it's still relevant for the moder
 categories: [wordpress, websites]
 ---
 
-Wordpress turned 23 this year. Can a web framework that is old enough to drink still be relevant in 2026? The answer is obviously yes.
+This article is coming soon!

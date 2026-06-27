@@ -8,7 +8,7 @@
     @if ($page->cover_image)
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
-		<a href="/blog" class="inline-block pl-4 relative before:block before:absolute before:translate-x-[-13px] before:translate-y-[7px] before:size-[10px] before:border-l-2 before:border-b-2 before:rotate-45 before:border-current">All Posts</a>
+		<a href="/blog" class="inline-block pl-4 relative">&LeftArrow; Back to All Articles</a>
     <h1 class="leading-none mb-2">{{ $page->title }}</h1>
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)

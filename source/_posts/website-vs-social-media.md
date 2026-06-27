@@ -8,4 +8,4 @@ description: Publishing your own content means not dealing with the bots, noise 
 categories: [websites]
 ---
 
-Facebook Business Pages are great as long as you only want to reach Facebook users. Instagram is great as long as you are ok with have 3 seconds to make your impression. X formerly known as Twitter is actually not great, avoid that one. TikTok is great as long as you like to learn choreography. Owning your own site means you don't have to deal with any of that crap.
+This article is coming soon!
