@@ -12,7 +12,7 @@ description: Get in touch with us
 		</x-slot>
 		<x-slot name="h2">
 			<span x-show="['home','about'].includes($store.visitor.from) && !$store.visitor.cta">Don&rsquo;t be a stranger.</span>
-			<span x-show="!['home','about'].includes($store.visitor.from) && !$store.visitor.cta">The first step is a simple conversation.</span>
+			<span x-show="!['home','about'].includes($store.visitor.from) && !$store.visitor.cta">What's on your mind?</span>
 			<span x-show="$store.visitor.cta != null && $store.visitor.cta != ''" x-text="$store.visitor.cta"></span>
 		</x-slot>
 		
@@ -22,14 +22,14 @@ description: Get in touch with us
 	<div class="w-full lg:w-auto order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Call or text</li>
-			<li class="mb-2"><a href="tel:+16362672552">(636) 267 2552</a></li>
+			<li class="mb-2"><a href="tel:+16362672552">(636) 267-2552</a></li>
 		</ul>
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Send a note</li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 	</div>
-	<div class="w-full lg:w-2/3 lg:border-r border-not-black dark:border-not-white dark:border-not-white px-4 xl:px-0 lg:pr-8">
+	<div class="w-full lg:w-2/3 lg:border-r border-not-black dark:border-not-white dark:border-not-white px-4 xl:pl-0 lg:pr-8">
 		<span class="block text-center kicker">Official Contact Form</span>
 		<form x-data="{preference:'both'}"  id="contact-form" class="form-style" method="POST" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" class="mb-12">
 				<div class="flex flex-wrap mb-6 -mx-3">

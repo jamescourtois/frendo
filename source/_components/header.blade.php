@@ -10,6 +10,7 @@
 							if (!el) el = document.querySelector('#about')
 							if (!el) el = document.querySelector('#service-blocks')
 							if (!el) el = document.querySelector('#contact-form')
+							if (!el) el = document.querySelector('#blog-wrapper')
 							if (!el) return
 							const top = el.getBoundingClientRect().top + window.scrollY - 100
 							window.scrollTo({ top, behavior: 'smooth' })
