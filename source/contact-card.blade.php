@@ -5,7 +5,7 @@ description: Let's keep in touch
 @extends('_layouts.main')
 
 @section('body')
-	<div x-data="{clicked:false}" x-init="$store.visitor.playIntro = true" class="flex flex-col items-center justify-center text-center mb-12">
+	<div x-data="{clicked:false}" x-init="$store.visitor.playIntro = true" class="flex flex-col items-center justify-center text-center px-4 mb-12">
 			<h1 class="kicker">Contact Card</h1>
 			<h2 class="mt-3 leading-[2.8rem] text-5xl mb-5">Let's keep in touch.</h2>
 			
@@ -20,7 +20,7 @@ description: Let's keep in touch
 		<span x-text="clicked ? 'Check your downloads folder and open the contact card.' : 'Save the Frendo.vcf contact card to your device.'" class="text-xs text-gray-500"></span>
 			
 		<ul class="list-none text-3xl font-bold mt-8 p-8">
-			<li><a href="tel:+13146687244">(636) 267 2552</a></li>
+			<li><a href="tel:+16362672552">(636) 267-2552</a></li>
 			<li><a href="mailto:james@frendo.dev">james@frendo.dev</a></li>
 		</ul>
 

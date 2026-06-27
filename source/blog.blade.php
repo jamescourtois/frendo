@@ -20,14 +20,14 @@ pagination:
 		</x-slot>
 	</x-header>
 
-    <div class="mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-1 py-1 bg-not-black dark:bg-not-white">
+    <div class="mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-1 py-1 bg-not-black dark:bg-white">
 			@foreach ($pagination->items as $post)
-					<div class="col-span-1 bg-not-white dark:bg-not-black">
+					<div class="col-span-1 bg-white dark:bg-not-black">
 						@include('_components.post-preview-inline')
 					</div>
 			@endforeach
 			@if( $pagination->pages->count() % 2 == 1)
-				<div class="col-span-1 bg-not-white dark:bg-not-black hidden lg:block">
+				<div class="col-span-1 bg-white dark:bg-not-black hidden lg:block">
 					<span class="sr-only">There is an odd number of posts.</span>
 				</div>
 			@endif

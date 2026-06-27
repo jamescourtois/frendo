@@ -1,7 +1,7 @@
 <nav
 	x-cloak
 	:class="navOpen ? 'block left-0 opacity-100' : 'left-[100vw] opacity-0 pointer-events-none'" 
-	class="w-full bg-white/50 dark:bg-black/50 h-[100dvh] overflow-scroll inset-0 duration-150 ease-out overscroll-contain flex justify-center flex-wrap pt-28 pb-8 backdrop-blur-md fixed z-[98]">
+	class="w-full bg-white/50 dark:bg-black/50 h-[100dvh] overflow-scroll inset-0 duration-150 ease-out overscroll-contain flex justify-center flex-wrap pt-24 pb-8 backdrop-blur-md fixed z-[98]">
     <ul class="list-none w-full text-left flex flex-col m-0 p-0 " :class="navOpen ? 'opacity-100 duration-400' : 'opacity-0'">
 			<li class="border-b-1 border-b-neutral-300 dark:border-b-neutral-800">
 				<a
@@ -54,7 +54,7 @@
 				title="Blog"
 				href="/blog"
 				class="block p-4 text-2xl pl-8 no-underline dark:text-white border-l-8 border-transparent {{ $page->isActive('/blog') ? 'active' : '' }}"
-				>Learn</a>
+				>Field Notes</a>
 			</li>
 			<li class="border-b-1 border-b-neutral-300 dark:border-b-neutral-800">
 				<a

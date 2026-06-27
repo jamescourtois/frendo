@@ -22,7 +22,7 @@ description: Get in touch with us
 	<div class="w-full lg:w-auto order-2 flex flex-wrap justify-around items-start lg:flex-col lg:gap-8 lg:justify-between">
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Call or text</li>
-			<li class="mb-2"><a href="tel:+13146687244">(636) 267 2552</a></li>
+			<li class="mb-2"><a href="tel:+16362672552">(636) 267 2552</a></li>
 		</ul>
 		<ul class="list-none text-center lg:text-left m-0 text-xl"> 
 			<li class="kicker">Send a note</li>

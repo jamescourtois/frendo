@@ -22,11 +22,11 @@ description: A little bit about Frendo
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">Why work with Frendo?</h2>
 		</div>
 		<div class="">
-			<h3 class="text-4xl">Build a home online you actually own.</h3>
+			<h3 class="text-4xl leading-tighter">Build a home online you actually own.</h3>
 			<p class="mt-0 mb-4"><span class="font-bold">Do you truly own your website?</span> If you pay a subscription for an all-in-one service, the answer is likely no. You are renting the code, data and content like a fancy loft apartment. When it's time to move your site to a new home, that means starting all over. As your needs evolve and prices change, this can lead to big headaches down the road. Building with Frendo means you maintain full ownership of your code, content and data. Move anytime and take it all with you.</p>
 		</div>
 		<div class="">
-			<h3 class="text-4xl">Put your money where your code is.</h3>
+			<h3 class="text-4xl leading-tighter">Put your money where your code is.</h3>
 			<p class="mt-0 mb-4">Working with Frendo means your investment goes directly into the quality of your project. Never pay for layers of managers, meetings and agency bloat. Frendo is one person, and that's by design. You get a web expert who knows and owns your project from start to finish.</p>
 		</div>
 	</div>
@@ -60,7 +60,7 @@ description: A little bit about Frendo
 			<h2 class="uppercase mb-6 text-xs tracking-widest m-0">How do I start?</h2>
 		</div>
 		<div class="">
-			<h3 class="text-4xl">A simple conversation is always the first step.</h3>
+			<h3 class="text-4xl leading-tighter">A simple conversation is always the first step.</h3>
 			<p class="mt-0 mb-4">You don't need all the details now. A website is a combination of many things: photography, writing, design, logic. Let's focus on what you have and where you want to be. Frendo shows you the path forward. When you are ready, <a href="/contact">let's connect</a>.</p>
 		</div>
 	</div>

@@ -35,7 +35,7 @@
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'Build the web you want to see.',
+		'title' => 'Use your web powers for good.',
 		'link_text' => 'Contact Frendo',
 	])
 @endsection
