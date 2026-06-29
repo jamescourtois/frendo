@@ -1,5 +1,5 @@
-<div x-in-view class="group w-full relative z-1 hover:text-white [&.in-view]:text-white bg-gray-100 group dark:bg-neutral-900 flex px-4 xl:px-8 text-center items-center justify-center flex-col py-16 lg:py-24 overflow-hidden min-h-[100dvh] px-4">
-	<h2 class="text-[4.5rem] pointer-events-none lg:text-[10rem] blend-mode-difference relative z-[10] xl:text-[11rem] leading-tighter lg:leading-tightest font-extrabold">{!! $title !!}</h2>
+<div x-in-view class="group w-full relative z-1 hover:text-white [&.in-view]:text-white bg-gray-100 group dark:bg-neutral-900 flex px-4 md:px-8 xl:px-16 text-center items-center justify-center flex-col py-16 lg:py-24 overflow-hidden min-h-[100dvh] px-4">
+	<h2 class="text-[4.5rem] pointer-events-none lg:text-[10rem] blend-mode-difference relative z-[10] xl:text-[12rem] leading-tighter lg:leading-tightest font-extrabold">{!! $title !!}</h2>
 	<a href="/contact" @click="$store.visitor.from = $store.visitor.from + '-cta',$store.visitor.cta = $event.target.previousElementSibling.innerText" class="relative z-[10] min-w-[260px] mt-10 btn-flashy duration-350 text-2xl lg:text-4xl group-hover:border-white group-hover:text-white group-[&.in-view]:border-white group-[&.in-view]:text-white">{{ $link_text}}</a>
 	<div class="gradient-vertical mix-blend-darken opacity-0 group-hover:opacity-100 duration-500 group-[&.in-view]:opacity-100"></div>
 	<div class="gradient-horizontal opacity-0 group-hover:opacity-100 duration-500 group-[&.in-view]:opacity-100"></div>

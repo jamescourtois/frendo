@@ -17,7 +17,7 @@ description: Innovate with Frendo.
 		</x-slot>
 	</x-header>
 
-	<x-prompt question="What can I do with my own custom web app?">
+	<x-prompt question="&ldquo;What can I do with my own custom web app?&rdquo;">
 		<x-prompt-option id="productivity">Automate work you do repetitively.</x-prompt-option>
 		<x-prompt-option id="integration">Make the tools you use talk to each other.</x-prompt-option>
 		<x-prompt-option id="innovation">Turn your idea into a real product.</x-prompt-option>
