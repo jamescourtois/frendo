@@ -28,7 +28,7 @@ description: Ask Frendo.
 		
 		<x-prompt-option id="train">"How do I manage my site by myself?"</x-prompt-option>
 		
-		<x-prompt-option id="audit">"Is my website doing what it is supposed to?"</x-prompt-option>
+		<x-prompt-option id="audits">"Is my website doing what it is supposed to?"</x-prompt-option>
 		
 		<x-prompt-option id="novice">"I have absolutely no idea where to begin."</x-prompt-option>
 	
@@ -89,7 +89,7 @@ description: Ask Frendo.
 				</x-slot>
 			</x-content-block>
 
-			<x-content-block id="audit">
+			<x-content-block id="audits">
 				<x-slot name="kicker_text">
 					Site Audits
 				</x-slot>
@@ -121,7 +121,7 @@ description: Ask Frendo.
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'You don&rsquo;t have to say "asking for a friend."',
+		'title' => 'Knowing is half the battle.',
 		'link_text' => 'Consult Frendo',
 	])
 @endsection

@@ -43,7 +43,7 @@
 						<span class="text-lg font-light inline-block translate-y-[5px]">&copy;</span> Frendo Web Development {{ date('Y') }}. All Rights Reserved.
 				</li>
 				<li>
-					<span class="inline-block text-xs leading-[1rem]">Frendo does not use cookies. Form secured by <a href="https://form-data.com">form-data.com</a> All data never is shared or sold and deleted after 90 days.</span>
+					<span class="inline-block text-xs leading-[1rem]">Frendo does not use cookies. Form secured by <a href="https://form-data.com">form-data.com</a>. All data never is shared or sold and deleted after 90 days.</span>
 				</li>
 		</ul>
 </footer>

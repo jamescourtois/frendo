@@ -92,7 +92,7 @@ description: Innovate with Frendo.
 @section('cta')
 	@include('_layouts.cta',[
 		'title' => 'Build the web you want to see.',
-		'link_text' => 'Build with Frendo',
+		'link_text' => 'Evolve with Frendo',
 	])
 @endsection
 

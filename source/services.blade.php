@@ -31,7 +31,7 @@ description: What it is we say we do here
 @endsection
 @section('cta')
 	@include('_layouts.cta',[
-		'title' => 'The first step is always a conversation.',
+		'title' => 'You don&rsquo;t have to say "asking for a friend."',
 		'link_text' => 'Contact Frendo',
 	])
 @endsection
