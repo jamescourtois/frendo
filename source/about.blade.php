@@ -16,7 +16,7 @@ description: A little bit about Frendo
 		</x-slot>
 	</x-header>
 
-<div id="about" class="mx-auto max-w-[800px] flex flex-col gap-12 mb-20 px-4 xl:px-0">
+<div id="about" class="mx-auto max-w-[900px] flex flex-col gap-12 mb-20 px-4 xl:px-0">
 	<div class="flex flex-col">
 		<h2 class="sr-only">Why work with Frendo?</h2>
 		<div class="">

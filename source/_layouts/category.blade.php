@@ -1,12 +1,12 @@
 @extends('_layouts.main')
 
 @section('body')
-		<x-header>
+		<x-header reverse="true">
 			<x-slot name="h1">
 				Field Notes
 			</x-slot>
 			<x-slot name="h2">
-				{{$page->title}}
+				Category: {{$page->title}}
 			</x-slot>
 			<x-slot name="desc">
 				<a href="/blog">&LeftArrow; Back to All Articles</a>

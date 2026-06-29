@@ -6,26 +6,26 @@
 
 @section('body')
 		<div class="container mx-auto">
-					<div class="flex w-full text-center flex-col items-center justify-center py-8 lg:py-12">
-						<a href="/blog" class="inline-block pl-4 relative">&LeftArrow; Back to All Articles</a>
-						<h1 class="leading-none mb-2">{{ $page->title }}</h1>
-						<p>{{ $page->description }}</p>
-						<ul class="flex gap-1 list-none">
-							@if ($page->categories)
-							@foreach ($page->categories as $i => $category)
-									<li>
-										<a
-												href="{{ '/blog/categories/' . $category }}"
-												title="View posts in {{ $category }}"
-												class="inline-block opacity-65 hover:opacity-100 duration-150 leading-loose tracking-wide text-current border border-current uppercase text-xs font-normal rounded-lg mr-4 px-3 pt-px"
-										>{{ $category }}</a>
-									</li>
-							@endforeach
-					@endif
-						</ul>
+					<div class="flex w-full flex-col pt-8 lg:pt-12">
+						<a href="/blog" class="inline-block pl-4 relative mb-12">&LeftArrow; Back to All Articles</a>
+						<div class="max-w-[900px] mx-auto flex flex-col">
+							<h1 class="leading-none mb-2">{{ $page->title }}</h1>
+							<p>{{ $page->description }}</p>
+							<ul class="flex gap-1 list-none mb-0">
+								@if ($page->categories)
+									@foreach ($page->categories as $i => $category)
+											<a
+													href="{{ '/blog/categories/' . $category }}"
+													title="View posts in {{ $category }}"
+													class="inline-block opacity-65 hover:opacity-100 duration-150 leading-loose tracking-wide text-current border border-current uppercase text-xs font-normal rounded-lg mr-4 px-3 pt-px"
+											>{{ $category }}</a>
+									@endforeach
+								@endif
+							</ul>
+						</div>
 					</div>
-			
-					<div class="mb-10 pb-4 mx-auto max-w-[800px]" v-pre>
+					<hr class="max-w-[900px] mx-auto">
+					<div class="mb-10 pb-4 mx-auto max-w-[900px]" v-pre>
 							@yield('content')
 					</div>
 			

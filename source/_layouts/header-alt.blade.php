@@ -6,7 +6,7 @@
 		<h2 class="block order-1 uppercase mb-3 mt-0 text-xs font-normal tracking-widest">
 			{!! $h2 ?? $h2!!}
 		</h2>
-		<p class="block order-3 mt-6 mb-0 mx-auto max-w-[800px]">
+		<p class="block order-3 mt-6 mb-0 mx-auto max-w-[900px]">
 			{!! $desc ?? $desc !!}
 		</p>
 	
