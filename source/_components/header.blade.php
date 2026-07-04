@@ -36,10 +36,10 @@
 								if (!el) el = document.querySelector('#contact-form')
 								if (!el) return
 								const top = el.getBoundingClientRect().top + window.scrollY - 100
+								window.scrollTo({ top, behavior: 'smooth' })
 								let el2 = document.querySelector('#contact-name')
 								if (!el2) return
 								el2.focus()
-								window.scrollTo({ top, behavior: 'smooth' })
 						}"
 				class="m-0 group-hover:text-red-500 group-hover:font-extrabold group-[&.in-view]:text-red-500 group-[&.in-view]:font-extrabold block text-6xl lg:text-8xl leading-tightest text-center font-bold max-w-[850px] max-w-[1050px] duration-150">
 				{!! $h2 ?? $h2!!}

@@ -16,7 +16,7 @@ pagination:
 			Knowledge is power.
 		</x-slot>
 		<x-slot name="desc">
-			When you are armed with the facts, you are empowered to make the best choices. Check out the articles below to learn more about Frendo's approach to the modern web. If you don't see what you are looking for, ask any and all questions <a @click="$store.visitor.cta = 'Fire away.'" href="/contact">here</a>.
+			Arm yourself with facts and empower yourself to make the best choices. Check out the articles below for deep dives into Frendo's approach to the modern web. If you don't see what you are looking for, ask any and all questions <a @click="$store.visitor.cta = 'Fire away.'" href="/contact">here</a>.
 		</x-slot>
 	</x-header>
 
